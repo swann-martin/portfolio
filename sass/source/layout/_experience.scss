@@ -1,0 +1,43 @@
+.experience{
+	height : 450px;
+	width: 95%;
+	&__title{
+		color: $color-primary;
+		text-align: center;
+	}
+	&__box{
+		&__image{
+			width: 200px;
+			height: 250px;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 5%;
+			float : left;
+			&__logo{
+				margin: auto;
+				width: 80px;
+				height: 50px;
+			}			
+			&__dates{
+				font-size : $small-size;
+				padding-top : 5%;
+				color: $color-graphics;
+			}
+		}
+		&__texte{	
+			padding : 2.5%;
+		 	width: 80%;
+		 	margin-left: 10% ;
+		 	margin-right: 10%;
+		 	color : $color-primary;
+			 &__title {
+			 	text-align: left;
+			 	color :$color-graphics;
+		 		font-size: $normal-size;	
+		 		& a{
+		 			color : $color-graphics;
+		 		}
+		 	}
+		}
+	}
+}

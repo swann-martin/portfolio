@@ -1,0 +1,30 @@
+//menu navigation*/
+.nav {
+	padding-top: 1px;
+	padding-bottom : 1px; 
+	padding-right: 6rem;
+	text-align: right;
+	border : solid 3px groove;
+	border-color: $color-accent;
+	background-color:$color-accent;
+	height : 70	px;
+	border-radius : 0px 0px 40px 40px;
+	&__link{
+		list-style : none;
+		display : inline;
+		padding-left: 1.5rem;
+		font-size: 2rem;
+		& a{
+			text-decoration : none;
+			font-weight: bold;
+			color : $color-background2;
+			&:hover{
+				color : $color-background1;
+			}
+		}
+		&--active a{
+		color : $color-background1;
+		text-decoration: underline;
+		}	
+	}
+}

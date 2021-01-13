@@ -1,0 +1,22 @@
+
+body{
+	width: 100%;
+	font-family: trebuchet, arial, verdana;
+}
+
+h1{
+	@include title-typography($color-background, $title-size);
+	margin-top: 350px;
+}
+
+
+h2{	text-align: center;
+	color : $color-background;
+}
+
+p{
+	font-size:1em;	
+	margin-left: 10px;
+}
+
+x

@@ -1,0 +1,8 @@
+@mixin title-typography($color : $color-background2, $size :$medium-size){
+	font-size : $size;
+	font-family: $title-font;
+	font-weight: bold;
+	text-decoration: italic;
+	color : $color;
+	text-align : center;
+}

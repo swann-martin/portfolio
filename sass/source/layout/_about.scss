@@ -1,0 +1,31 @@
+.liseret{
+ 	width: 95%;
+ 	margin : auto;
+ 	height: 500px;
+ 	border-radius: 10px;
+ 	border : solid 3px $color-accent;
+ 	background-color: $color-background2; //ivory
+ 	margin-bottom: 20px;
+ 	&__title{
+ 		color : $color-background1;
+ 	}
+ 	&__box{
+	 	&__image{
+	 		border : solid 2px $color-background2;
+	 		box-shadow: outset 1px $color-primary;
+	 		width: 20%;
+	 		height: 250px;
+	 		margin-left: 5%;
+			padding : 2.5%;
+			float :left;
+	 	}
+	 	&__paragraphe{
+	 		padding : 5%;
+	 	 	width: 75%;
+	 		color : $color-primary;
+	 		margin-left: 10% ;
+	 		margin-right: 5px ;
+		}
+ 	}
+
+}

@@ -1,0 +1,65 @@
+.savoirs{
+	display: flex;
+	width: 95%;
+	margin: auto;
+	height : 620px;
+	.competence{
+		margin-top : 20px;
+		width: 40%;
+		height : 400px;
+		background-color : $color-primary;
+		color : $color-background2; 
+		padding-left: 5%;
+		& ul{
+			list-style: none;
+		}
+	}
+	.formation{
+		margin-left: 10%;
+		border-radius: 10px;
+ 		border : solid 3px $color-accent;
+ 		background-color: $color-background2; 
+ 		width: 45%;			
+		height: 600px;
+		&__master{
+			width : 100%;
+			margin: 5% 0 5% 0;
+			&__image--logo{
+				display: inline-block;
+				width :10%;
+				height : 10%;
+				margin-left: 10%;
+				&:hover{
+					transition: transform 200ms;
+					transform: rotate(2turn) scale(1.5);
+				}
+			}
+		}		
+		&__title{
+			color :$color-primary;
+		}
+		ul, p{
+			color: $color-primary;
+			margin-right : 15%;
+			padding-left : 5%;
+		}
+		&__carre{
+			transition : transform 200ms;
+			width: 60px;
+			height:60px;
+			display: flex;
+			align-items: center;
+			background-color : $color-primary;
+			margin-left : 5%;
+			& span{
+				overflow: hidden;
+				width: 100%;
+				text-align: center;
+				font-size: $small-size;
+			}
+			&:hover{
+				transform : rotate(-2turn) scale(1.5);
+			}
+		}
+	}
+}

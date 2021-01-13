@@ -1,0 +1,21 @@
+h1{
+	@include title-typography($color-background2, $big-size);
+	margin-top: 350px;
+}
+
+h2{
+	@include title-typography;
+	text-decoration:underline;
+	text-align:center;
+	margin: auto ;
+}
+
+h3 {
+	@include title-typography($color-background2, $medium-size);
+ 	text-align : center;
+ }
+
+ h4{
+ 	@include title-typography($color-background2, $normal-size);
+ 	text-align : center;
+ }
