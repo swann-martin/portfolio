@@ -1,24 +1,23 @@
-
-footer{
-		background-color: $color-background1;
-		border : solid $color-background1 2px;
-	& ul{
-		list-style: none;
-		text-align: center;
-		& li{
-			display: inline;
-			padding-right: 10%;	 
-		}
-		& a{
-			color: $color-graphics;
-			text-decoration: none;
-			&:hover{
-				text-decoration: underline;
-			}
-		}
-	}
-	p {
-		padding-left: 5%;
-		color: $color-graphics;
-	}
+footer {
+  background-color: $color-background1;
+  border: solid $color-background1 2px;
+  & ul {
+    list-style: none;
+    text-align: center;
+    & li {
+      display: inline;
+      padding-right: 10%;
+    }
+    & a {
+      color: $color-graphics;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  p {
+    padding-left: 5%;
+    color: $color-graphics;
+  }
 }
