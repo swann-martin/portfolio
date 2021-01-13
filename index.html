@@ -2,241 +2,192 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style_cv_swann.css" />
+    <link rel="stylesheet" href="./sass/build/css/main.css" />
     <title>Curriculum Vitae Swann Martin</title>
   </head>
   <body>
     <div id="mainwrap" class="mainwrap">
       <!--first title-->
-      <header>
+
+      <header class="header">
         <nav class="nav">
           <!--menu navigation-->
           <ul>
             <li class="nav__link nav__link--active">
-              <a href="#experience" title="aller à la partie experience"
-                >Expérience
-              </a>
+              <a href="#mainwrap" title="accueil">Accueil</a>
+            </li>
+            <li class="nav__link">
+              <a href="#experience" title="go to experience">Exp</a>
             </li>
             <li class="nav__link">
               <a href="#competence" title="aller à la partie compétence"
-                >Compétence
-              </a>
+                >Savoirs</a
+              >
             </li>
             <li class="nav__link">
               <a
                 href="file:///home/swann/Documents/Coder/Projet_chez_swann/sitesejours.html"
-                title="des exemples de sites qu'il a fait"
-                >Réalisation</a
+                title="projects"
+                >Projets</a
               >
             </li>
-            <li class="nav__link"><a href="form_contact.html">Contact</a></li>
           </ul>
         </nav>
-        <h1>Swann who? Mais qui est-il?</h1>
+        <h1 class="header__title">Swann who? Mais qui est-il?</h1>
+        <h2 class="header__subtitle">Développeur front-end</h2>
+        <div class="button button__contact">
+          <a href="mailto:swannmartin1988@gmail.com"> Contact </a>
+        </div>
       </header>
+
       <div class="main-bloc">
-        <h2>Sa vie, son oeuvre, son CV!</h2>
         <div id="liseret" class="liseret">
           <aside>
-            <h3>Quelques mots sur Swann</h3>
-            <a href="images/bebe_swann.jpg"
-              ><img
-                src="images/bebe_swann_mini.jpg"
-                id="imagebebe"
-                alt="photo de Swann bébé"
-                title="belle capuche hein!"
-            /></a>
-            <ul>
-              <li>né le 10/05/1988</li>
-              <li>
-                à
-                <a href="https://fr.wikipedia.org/wiki/Compi%C3%A8gne"
-                  >Compiègne (60200)</a
-                >
-              </li>
-              <li>vit à Bruges (33520)</li>
-              <li>Bilingue anglais</li>
-              <li>A vécu 2 ans au Royaume-Uni</li>
-              <li>Permis B</li>
-            </ul>
-            <h3>Un peu plus sur moi</h3>
-            <p>
-              C'est aussi l'occasion de vous raconter ce qui m'amène à
-              travailler dans le développement après toutes ces années à
-              travailler dans les langues étrangères.
-            </p>
-            <p>
-              Voyez-vous, lorsque j'étais au lycée, bien qu'en filière STI
-              électronique, j'aimais beaucoup l'anglais. Ainsi, j'ai donc
-              poursuivi des études d'anglais. Puis je me suis dit que vivre à
-              l'étranger et enseigner le français pourrait être très sympa.
-            </p>
-            <p>
-              Après un master et un an à enseigner au Royaume Uni à des petits
-              anglais. J'ai appris beaucoup, j'ai adoré créer des cours et
-              contenus, j'ai une grande résistance au stress et une énorme force
-              de travail. Ce métier n'est cependant pas fait pour moi. Je n'ai
-              pas assez d'abnegation. Je me suis réorienté avec succès dans la
-              vente pour un organisme de séjours linguistiques.
-            </p>
-            <p>Aujourd'hui l'avenir est sur internet.</p>
+            <h3 class="title liseret__title">Quelques mots sur Swann</h3>
+            <div class="liseret_box">
+              <p>
+                <img class="liseret__box__image" src="./images/codeur.png" />
+              </p>
+              <div class="liseret__box__paragraphe">
+                <p>
+                  Tout le monde est connecté : je créérai pour vous un site
+                  sur-mesure qui correspond à vos besoins et vos envies Lorem
+                  ipsum....Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
           </aside>
         </div>
-        <div id="contenu" class="contenu">
+
+        <div id="contenu" class="container">
           <!--ouvre bloc pincipal 1 regroupant present, experience, competence-->
 
-          <article>
-            <section>
-              <!--insert experience-->
-              <div id="experience" class="experience">
-                <h3>Expérience</h3>
-                <figure>
+          <section id="experience" class="experience">
+            <h3 class="experience__title">Expérience</h3>
+            <div class="experience__box">
+              <div class="experience__box__image">
+                <p class="experience__box__image__logo">
                   <a href="images/logo_oise.png"
                     ><img
-                      src="images/logo_oise_mini.png"
+                      src="./images/logo_oise_mini.png"
                       alt="logo société oise"
                       id="logo_oise"
+                      title="Oxford Intensive School of English"
                   /></a>
-                  <figcaption>
-                    <a href="https://www.oise.com/fr"
-                      >OISE Etudes linguistiques</a
-                    ><br />
-                    6ans d'expérience
-                  </figcaption>
-                </figure>
-
-                <br />
-
-                <p>
-                  <strong>Responsable</strong> vente de séjours linguistiques
-                  regional, <br />
-                  <a href="https://www.oise.com/fr"
-                    >OISE Etudes Linguistiques</a
-                  >
-                  de octobre 2017 à août 2020 à <strong>Bordeaux</strong> et de
-                  2015 à 2017 à <strong>Lille</strong>:<br />
-                  En <strong>autonomie</strong>, j'étais chargé de la
-                  commercialisation des séjours linguistiques de la marque OISE
-                  sur tout le territoire de la région qui m'était assignée.
-                  <br />
                 </p>
 
-                <p>
-                  Mon rôle était de vendre les séjours linguistiques de la
-                  marque OISE en BtoC et BtoB:
-                </p>
-                <ul>
-                  <!--liste savoirs faire 1-->
-                  <li>la prospection du territoire</li>
-                  <li>la création d'une stratégie marketing</li>
-                  <li>la gestion des budgets</li>
-                  <li>le recrutement de conseiller</li>
-                  <li>le management de deux personnes</li>
-                  <li>
-                    la création et la mise à jour de documents commerciaux
-                  </li>
-                  <li>l'organisation des voyages</li>
-                  <li>la vente du séjour</li>
-                  <li>la relation clients</li>
-                </ul>
-                <!--close experience 1-->
+                <p class="experience__box__image__dates">
+                  de 2017 à 2020 à <strong>Bordeaux</strong>
 
-                <p>
-                  <!--open experience 2-->
-                  <strong>Conseiller</strong> vente de séjours linguistiques
-                  regional,<br />
-                  <a href="https://www.oise.com/fr"
-                    >OISE Etudes Linguistiques</a
-                  >
-                  de février 2014 à janvier 2015 à <strong>Lille</strong>:
-                  <br />
+                  de 2015 à 2017 à <strong>Lille</strong>
                 </p>
-
-                <p>
-                  Sous la responsabilité de ma supérieure hierarchique directe,
-                  j'étais chargé de vendre des séjours linguistiques dela marque
-                  OISE pour la partie Nord-Est France et le Benelux.
-                </p>
-                <br />
-
-                <p>J'avais en charge :</p>
-                <ul>
-                  <!--liste savoirs faire 2-->
-                  <li>la vente</li>
-                  <li>le suivi client</li>
-                  <li>la gestion administrative des dossiers clients</li>
-                  <li>la facturation</li>
-                  <li>la mise à jour des informations de la base de données</li>
-                  <li>les devis et conventions de formation</li>
-                  <li>le paiement des séjours</li>
-                  <li>le suivi et la relation SAV clients</li>
-                </ul>
               </div>
-            </section>
+              <div class="experience__box__texte">
+                <h4 class="experience__box__texte__title">
+                  <strong>Responsable</strong> vente de séjours linguistiques,
+                  <a href="https://www.oise.com/fr"
+                    >OISE Etudes Linguistiques</a
+                  >
+                </h4>
+                <p class="experience__box__texte__paragraphe">
+                  En <strong>autonomie</strong>, je gérais un bureau de vente
+                  pour la marque de séjours linguistiques
+                  <span>Oxford Intensive School of English</span> sur les
+                  régions (Nouvelle-Aquitaine, Haut-de-France, Benelux). Mon
+                  rôle était de vendre les séjours linguistiques de la marque
+                  OISE en BtoC et BtoB:
+                  <br />
+                  J'ai notament effectué la prospection du terrioire, la
+                  création d'une stratégie marketing, la gestion des budgets, le
+                  recrutement de conseillers, le management de deux personnes,
+                  la création et la mise à jour de documents commerciaux,
+                  l'organisation de voyages, la vente, la relation clients.
+                </p>
+              </div>
+            </div>
+            <!--close experience 1-->
+          </section>
 
-            <section>
+          <section>
+            <div class="savoirs">
               <!--insert competences-->
               <div id="competence" class="competence">
-                <h3>Compétences</h3>
-                <!-- liste compétences savoirs être 1-->
+                <h3 class="competence__title">Compétences</h3>
                 <ul>
                   <li>
+                    <h4>Technologies</h4>
+                    <ul>
+                      <li>
+                        <strong>Front-End :</strong> Html5, Css3, Sass,
+                        Bootstrap
+                      </li>
+                      <li>JavaScript, Vue, Angular, JQuery</li>
+                      <li>
+                        <strong>Back-End :</strong> PHP, Symfony, Laravel,
+                        NodeJs
+                      </li>
+                      <li>
+                        <strong>Autres :</strong> Ruby, Linux OS, Debian, Git,
+                        GitHub, Gimp
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
                     <h4>Savoirs être: un vrai couteau suisse</h4>
-                    <ol>
+                    <ul>
                       <li>Adaptabilité</li>
                       <li>Communication</li>
-                      <li>Anglais</li>
+                      <li>Anglais (très bon niveau)</li>
                       <li>Analyse</li>
                       <li>Résolution de problèmes</li>
                       <li>Négociation</li>
                       <li>Gestion de projet</li>
                       <li>Formation</li>
-                    </ol>
-                  </li>
-
-                  <!--liste 2 savoirs informatiques-->
-                  <li>
-                    <h4>Compétences techniques</h4>
-                    <ul>
-                      <li>Html5</li>
-                      <li>Css3</li>
-                      <li>Linux OS</li>
-                      <li>GitHub/GitLab</li>
-                      <li>Gimp2.10</li>
-                      <li>Open Source</li>
                     </ul>
                   </li>
                 </ul>
               </div>
               <!--ferme competences-->
-            </section>
-            <section>
-              <!--insert formation-->
-              <div id="formation" class="formation">
-                <h3>Formation</h3>
 
+              <div id="formation" class="formation">
+                <h3 class="formation__title">Formation & Loisirs</h3>
                 <div id="Master" class="formation__master">
                   <!--groupe logo pour double master-->
                   <img
-                    class="formation__master__images"
-                    src="images/uportsmouth.png"
+                    class="formation__master__image--logo"
+                    src="./images/WEBFORCE.png"
+                    alt="logo ecole webforce3"
+                    title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
+                  />
+                  <img
+                    class="formation__master__image--logo"
+                    src="./images/uportsmouth.png"
                     alt="logo université de portsmouth"
-                    title="Portsmouth Uni 2013"
+                    title="2013 Université de Portsmouth UK : Master 2"
                   />
                   <img
-                    class="formation__master__images"
-                    src="images/upx.png"
+                    class="formation__master__image--logo"
+                    src="./images/upx.png"
                     alt="logo Univ ParisX"
-                    title="Univ Paris X 2012"
+                    title="2012 Université de Paris X : Master"
                   />
                   <img
-                    class="formation__master__images"
-                    src="images/upjv_mini.png"
+                    class="formation__master__image--logo"
+                    src="./images/upjv_mini.png"
                     alt="logo université UPJV"
-                    title="Univ Picardie 2010"
+                    title="2010 Université de Picardie : Licence"
                   />
                 </div>
                 <ul>
+                  <li>2021 Certification Développeur Web</li>
                   <li>
                     2013 Master 2 double diplôme Français Langue Etrangère PGCE
                   </li>
@@ -248,34 +199,43 @@
                   <li>Mooc Gestion de Projet</li>
                   <li>Cours Open Classroom parcours développeur web</li>
                 </ul>
+                <div class="formation__loisirs">
+                  <h3 class="formation__title">Loisirs</h3>
+                  <div class="formation__carre"><span>rotation</span></div>
+                  <p>
+                    Escalade, jeux vidéo (plutôt RPG), lecture (en particulier
+                    fantasy et SF), Linux, Open Source, Crypto-monnaies
+                  </p>
+                </div>
               </div>
               <!--ferme formation-->
-            </section>
-          </article>
+            </div>
+          </section>
         </div>
         <!--ferme bloc1-->
       </div>
-      <footer>
-        <p>Ce site appartient à Swann Martin</p>
+
+      <footer class="footer">
         <ul>
-          <li><a href="#main_wrap" title="aller à accueil"> Accueil </a></li>
+          <li><a href="#main_wrap" title="aller à accueil">Accueil</a></li>
           <li>
-            <a href="#experience" title="aller à la partie experience">
-              Expérience
-            </a>
+            <a href="#experience" title="aller à la partie experience"
+              >Expérience</a
+            >
           </li>
           <li>
-            <a href="#competence" title="aller à la partie compétence">
-              Compétence
-            </a>
+            <a href="#competence" title="aller à la partie compétence"
+              >Compétence</a
+            >
           </li>
           <li>
-            <a href="#formation" title="c'est bon vous avez compris je pense">
-              Formation
-            </a>
+            <a href="#formation" title="c'est bon vous avez compris je pense"
+              >Formation</a
+            >
           </li>
-          <li><a href="mailto:swannmartin1988@gmail.com"> Contact </a></li>
+          <li><a href="mailto:swannmartin1988@gmail.com">Contact</a></li>
         </ul>
+        <p>Ce site appartient à Swann Martin</p>
       </footer>
     </div>
   </body>
