@@ -1,0 +1,16 @@
+.savoirs {
+  width: 80%;
+  margin: auto;
+
+  &__title {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  &__liste {
+    @include flex-between;
+    font-size: 3rem;
+    i {
+      color: orangered;
+    }
+  }
+}

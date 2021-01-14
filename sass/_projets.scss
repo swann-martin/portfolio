@@ -1,0 +1,22 @@
+.projets {
+  &__title {
+    text-align: center;
+    margin: 4rem;
+  }
+  &__vignettes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    &__pict {
+      cursor: pointer;
+      margin: 2rem;
+      height: 30rem;
+      width: 25%;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}

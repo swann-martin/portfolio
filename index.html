@@ -14,7 +14,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./sass/build/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Swann Martin Developpeur Front End React JavaScript</title>
   </head>
   <body>
@@ -25,29 +25,20 @@
           <a href="#mainwrap" title="accueil"><i class="fas fa-home"></i></a>
         </li>
         <li class="nav__link">
-          <a href="#experience" title="go to experience">Exp</a>
+          <a href="#about" title="Qui est Swann?">A propos</a>
         </li>
         <li class="nav__link">
           <a href="#competence" title="aller à la partie compétence">Savoirs</a>
         </li>
         <li class="nav__link">
-          <a
-            href="file:///home/swann/Documents/Coder/Projet_chez_swann/sitesejours.html"
-            title="projects"
-            >Projets</a
-          >
+          <a href="#projets" title="projects">Projets</a>
         </li>
       </ul>
     </nav>
 
     <header class="header">
-      <div class="header__title">
-        <h1>Swann Martin</h1>
-        <h2>Développeur front-end Junior</h2>
-      </div>
-
-      <div class="contact">
-        <ul>
+      <div class="header__left">
+        <ul class="header__left__contact">
           <li>
             <a href="#"
               ><i title="Voir son Github" class="fab fa-github"></i
@@ -67,216 +58,201 @@
             ></a>
           </li>
         </ul>
-        <form>
-          <input
-            class="email"
-            type="email"
-            placeholder="Entrez votre email ici"
-          />
-          <input
-            class="description"
-            type="text"
-            placeholder="Inscivez une brève description du projet que vous souhaitez me soumettre"
-          />
-          <button type="submit">Contacter</button>
+      </div>
 
-          <div class="goDown">
-            <a title="voir la suite" href="#liseret"
-              ><i class="fas fa-chevron-down"></i
-            ></a>
-          </div>
-        </form>
+      <div class="header__right">
+        <h1>Développeur front-end Junior</h1>
+        <h2>Bonjour, je m'appelle Swann</h2>
+        <a class="header__right__chevron" title="voir la suite" href="#about"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
       </div>
     </header>
 
     <!-- partie principale -->
 
-    <div class="main-bloc">
-      <aside id="liseret" class="liseret">
-        <h3 class="title liseret__title">Quelques mots sur Swann</h3>
-
-        <div id="picture" class="picture">
-          <img src="./images/profile1.jpg" alt="profile__picture" />
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem dolorem reprehenderit impedit, aspernatur eum aut
-          facilis ipsam harum ratione ut excepturi eius laboriosam nisi esse
-          ullam ea voluptatum voluptate natus.
-        </p>
-      </aside>
-
-      <section class="projets">
-        <div class="vignettes">
-          <div class="line">
-            <div class="pict">
-              <img src="./images/traduction.png" alt="illu1" />
-            </div>
-            <div class="pict">
-              <img src="./images/qovery.png" alt="illu2" />
-            </div>
-          </div>
-
-          <div class="line">
-            <div class="pict">
-              <img src="./images/chezSwann.png" alt="illu3" />
-            </div>
-            <div class="pict">
-              <img src="./images/athena.png" alt="illu3" />
-            </div>
-          </div>
-        </div>
-        betweenclass="fab fa-css3-alt"></i>,
-                  <i title="Sass" class="fab fa-sass"></i>,
-                  <i title="Bootstrap" class="fab fa-bootstrap"></i>
-                </li>
-                <li>
-                  <i title="JavaScript" class="fab fa-js-square"></i>
-                  <i title="React" class="fab fa-react"></i>
-                  <i title="Vue" class="fab fa-vuejs"></i>
-                </li>
-                <li>
-                  <strong>Back-End :</strong>
-                  <i title="PHP" class="fab fa-php"></i>, Symfony, Laravel,
-                  NodeJs
-                </li>
-                <li>
-                  <strong>Autres :</strong
-                  ><i
-                    title="Linux OS : ubuntu, debian, manjaro"
-                    class="fab fa-linux"
-                  ></i
-                  >, Debian, Git, Gimp
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <h4>Savoirs être: un vrai couteau suisse</h4>
-              <ul>
-                <li>Adaptabilité</li>
-                <li>Communication</li>
-                <li>Anglais (très bon niveau)</li>
-                <li>Analyse</li>
-                <li>Résolution de problèmes</li>
-                <li>Négociation</li>
-                <li>Gestion de projet</li>
-                <li>Formation</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!--ferme competences-->
-      </section>
-
-      <div id="contenu" class="container">
-        <!--ouvre bloc pincipal 1 regroupant present, experience, competence-->
-        <section>
-          <div class="savoirs">
-            <section id="experience" class="experience">
-              <h3 class="experience__title">Expérience</h3>
-              <div class="experience__box">
-                <div class="experience__box__image">
-                  <p class="experience__box__image__logo">
-                    <a href="images/logo_oise.png"
-                      ><img
-                        src="./images/logo_oise_mini.png"
-                        alt="logo société oise"
-                        id="logo_oise"
-                        title="Oxford Intensive School of English"
-                    /></a>
-                  </p>
-
-                  <p class="experience__box__image__dates">
-                    de 2017 à 2020 à <strong>Bordeaux</strong>
-
-                    de 2015 à 2017 à <strong>Lille</strong>
-                  </p>
-                </div>
-                <div class="experience__box__texte">
-                  <h4 class="experience__box__texte__title">
-                    <strong>Responsable</strong> vente de séjours linguistiques,
-                    <a href="https://www.oise.com/fr"
-                      >OISE Etudes Linguistiques</a
-                    >
-                  </h4>
-                  <p class="experience__box__texte__paragraphe">
-                    En <strong>autonomie</strong>, je gérais un bureau de vente
-                    pour la marque de séjours linguistiques
-                    <span>Oxford Intensive School of English</span> sur les
-                    régions (Nouvelle-Aquitaine, Haut-de-France, Benelux). Mon
-                    rôle était de vendre les séjours linguistiques de la marque
-                    OISE en BtoC et BtoB:
-                    <br />
-                    J'ai notament effectué la prospection du terrioire, la
-                    création d'une stratégie marketing, la gestion des budgets,
-                    le recrutement de conseillers, le management de deux
-                    personnes, la création et la mise à jour de documents
-                    commerciaux, l'organisation de voyages, la vente, la
-                    relation clients.
-                  </p>
-                </div>
-              </div>
-              <!--close experience 1-->
-            </section>
-
-            <div id="formation" class="formation">
-              <h3 class="formation__title">Formation & Loisirs</h3>
-              <div id="Master" class="formation__master">
-                <!--groupe logo pour double master-->
-                <img
-                  class="formation__master__image--logo"
-                  src="./images/WEBFORCE.png"
-                  alt="logo ecole webforce3"
-                  title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
-                />
-                <img
-                  class="formation__master__image--logo"
-                  src="./images/uportsmouth.png"
-                  alt="logo université de portsmouth"
-                  title="2013 Université de Portsmouth UK : Master 2"
-                />
-                <img
-                  class="formation__master__image--logo"
-                  src="./images/upx.png"
-                  alt="logo Univ ParisX"
-                  title="2012 Université de Paris X : Master"
-                />
-                <img
-                  class="formation__master__image--logo"
-                  src="./images/upjv_mini.png"
-                  alt="logo université UPJV"
-                  title="2010 Université de Picardie : Licence"
-                />
-              </div>
-              <ul>
-                <li>2021 Certification Développeur Web</li>
-                <li>
-                  2013 Master 2 double diplôme Français Langue Etrangère PGCE
-                </li>
-                <li>
-                  2010 Licence LLCE anglais littérature et civilisation
-                  étrangère
-                </li>
-                <li>Bac Sti électonique mention TB</li>
-                <li>Mooc Gestion de Projet</li>
-                <li>Cours Open Classroom parcours développeur web</li>
-              </ul>
-              <div class="formation__loisirs">
-                <h3 class="formation__title">Loisirs</h3>
-                <div class="formation__carre"><span>rotation</span></div>
-                <p>
-                  Escalade, jeux vidéo (plutôt RPG), lecture (en particulier
-                  fantasy et SF), Linux, Open Source, Crypto-monnaies
-                </p>
-              </div>
-            </div>
-            <!--ferme formation-->
-          </div>
-        </section>
+    <aside id="about" class="about">
+      <h2 class="about__title">Quelques mots sur Swann</h2>
+      <div class="about__image">
+        <img src="./images/profile1.jpg" alt="profile__picture" />
       </div>
-      <!--ferme bloc1-->
+
+      <p class="about__texte">
+        Depuis 10 ans, j'ai été enseignant, commercial puis dévelopeur. J'ai
+        vécu en Angleterre, à Liverpool, Sheffield, Portsmouth, en France à
+        Lille, Paris et à Bordeaux. Passionné de sport, je pratique l'escalade
+        depuis plus de 15 ans. J'adore la raclette et la tartiflette. J'aime
+        lire de bons romans de Fantasy et de Science Fiction. J'ai
+        particulièrement aimé la chute de l'empire Malazéen de Steven Erikson.
+        J'aime aussi jouer à des jeux vidéos et regarder des séries. Mes jeux
+        préférés sont The Witcher 3 et Deus Ex Machina.
+      </p>
+    </aside>
+
+    <section class="projets">
+      <h2 class="projets__title">Mes projets</h2>
+      <div class="projets__vignettes">
+        <div class="projets__vignettes__pict">
+          <img src="./images/traduction.png" alt="illu1" />
+        </div>
+        <div class="projets__vignettes__pict">
+          <img src="./images/qovery.png" alt="illu2" />
+        </div>
+
+        <div class="projets__vignettes__pict">
+          <img src="./images/chezSwann.png" alt="illu3" />
+        </div>
+
+        <div class="projets__vignettes__pict">
+          <img src="./images/athena.png" alt="illu4" />
+        </div>
+
+        <div class="projets__vignettes__pict">
+          <img src="./images/WonderWoman.png" alt="illu5" />
+        </div>
+
+        <div class="projets__vignettes__pict">
+          <img src="./images/leMonde.png" alt="illu6" />
+        </div>
+
+        <div class="projets__vignettes__pict">
+          <img src="./images/chanel.png" alt="illu3" />
+        </div>
+      </div>
+    </section>
+
+    <section class="savoirs">
+      <h2 class="savoirs__title">Un vrai couteau suisse</h2>
+      <div class="savoirs__liste">
+        <ul class="savoirs__liste__1">
+          <li>
+            <strong>Front :</strong>
+            <i class="fab fa-css3-alt"></i>
+            <i title="Sass" class="fab fa-sass --fav"></i>
+            <i title="Bootstrap" class="fab fa-bootstrap"></i>
+          </li>
+          <li>
+            <i title="JavaScript" class="fab fa-js-square --fav"></i>
+            <i title="React" class="fab fa-react --fav"></i>
+            <i title="Vue" class="fab fa-vuejs"></i>
+          </li>
+          <li>
+            <strong>Back-End :</strong>
+            <i title="PHP" class="fab fa-php"></i> Symfony, Laravel, NodeJs
+          </li>
+          <li>
+            <strong>Autres : </strong
+            ><i
+              title="Linux OS : ubuntu, debian, manjaro"
+              class="fab fa-linux --fav"
+            ></i
+            >, Debian, Git, Gimp
+          </li>
+        </ul>
+
+        <ul class="savoirs__liste__2">
+          <li>Adaptabilité</li>
+          <li>Communication</li>
+          <li>Anglais (très bon niveau)</li>
+          <li>Analyse</li>
+          <li>Résolution de problèmes</li>
+          <li>Négociation</li>
+          <li>Gestion de projet</li>
+          <li>Formation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--ouvre savoirs compétences web-->
+    <section class="experience">
+      <h3 class="experience__title">Expérience</h3>
+      <div class="experience__box">
+        <div class="experience__box__image">
+          <p class="experience__box__image__logo">
+            <a href="images/logo_oise.png"
+              ><img
+                src="./images/logo_oise_mini.png"
+                alt="logo société oise"
+                id="logo_oise"
+                title="Oxford Intensive School of English"
+            /></a>
+          </p>
+
+          <p class="experience__box__image__dates">
+            de 2017 à 2020 à <strong>Bordeaux</strong>
+
+            de 2015 à 2017 à <strong>Lille</strong>
+          </p>
+        </div>
+        <div class="experience__box__texte">
+          <h4 class="experience__box__texte__title">
+            <strong>Responsable</strong> vente de séjours linguistiques,
+            <a href="https://www.oise.com/fr">OISE Etudes Linguistiques</a>
+          </h4>
+          <p class="experience__box__texte__paragraphe">
+            En <strong>autonomie</strong>, je gérais un bureau de vente pour la
+            marque de séjours linguistiques
+            <span>Oxford Intensive School of English</span> sur les régions
+            (Nouvelle-Aquitaine, Haut-de-France, Benelux). Mon rôle était de
+            vendre les séjours linguistiques de la marque OISE en BtoC et BtoB:
+            <br />
+            J'ai notament effectué la prospection du terrioire, la création
+            d'une stratégie marketing, la gestion des budgets, le recrutement de
+            conseillers, le management de deux personnes, la création et la mise
+            à jour de documents commerciaux, l'organisation de voyages, la
+            vente, la relation clients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="formation" class="formation">
+      <h3 class="formation__title">Formation & Loisirs</h3>
+      <div id="Master" class="formation__master">
+        <!--groupe logo pour double master-->
+        <img
+          class="formation__master__image--logo"
+          src="./images/WEBFORCE.png"
+          alt="logo ecole webforce3"
+          title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
+        />
+        <img
+          class="formation__master__image--logo"
+          src="./images/uportsmouth.png"
+          alt="logo université de portsmouth"
+          title="2013 Université de Portsmouth UK : Master 2"
+        />
+        <img
+          class="formation__master__image--logo"
+          src="./images/upx.png"
+          alt="logo Univ ParisX"
+          title="2012 Université de Paris X : Master"
+        />
+        <img
+          class="formation__master__image--logo"
+          src="./images/upjv_mini.png"
+          alt="logo université UPJV"
+          title="2010 Université de Picardie : Licence"
+        />
+      </div>
+      <ul>
+        <li>2021 Certification Développeur Web</li>
+        <li>2013 Master 2 double diplôme Français Langue Etrangère PGCE</li>
+        <li>2010 Licence LLCE anglais littérature et civilisation étrangère</li>
+        <li>Bac Sti électonique mention TB</li>
+        <li>Mooc Gestion de Projet</li>
+        <li>Cours Open Classroom parcours développeur web</li>
+      </ul>
+      <div class="formation__loisirs">
+        <h3 class="formation__title">Loisirs</h3>
+        <div class="formation__carre"><span>rotation</span></div>
+        <p>
+          Escalade, jeux vidéo (plutôt RPG), lecture (en particulier fantasy et
+          SF), Linux, Open Source, Crypto-monnaies
+        </p>
+      </div>
     </div>
+    <!--ferme formation-->
 
     <footer class="footer">
       <ul>
