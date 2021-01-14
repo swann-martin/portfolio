@@ -35,24 +35,20 @@ nav {
   align-items: center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
 }
-
 nav h2 {
   font-size: 2rem;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   font-size: 1.8rem;
 }
-
 nav ul a {
   margin-right: 1rem;
   text-decoration: none;
   font-weight: bold;
   padding: 2.5rem;
 }
-
 nav ul a:hover {
   color: orangered;
   background: rgba(0, 0, 0, 0.1);
@@ -63,29 +59,24 @@ nav ul a:hover {
   height: 70vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../images/IMG_20200911_192522.jpg) top/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../images/header-bg-pict.jpg) top/cover;
 }
-
 .header__left {
   width: 2%;
 }
-
 .header__left__contact {
   list-style: none;
   margin-left: 2rem;
   font-size: 3rem;
 }
-
 .header__left__contact li {
   transition: all 0.2s ease-in;
   margin-bottom: 3rem;
 }
-
 .header__left__contact li:hover {
   transform: scale(1.4);
   color: orangered;
 }
-
 .header__right {
   width: 98%;
   margin: auto;
@@ -94,18 +85,15 @@ nav ul a:hover {
   justify-content: space-between;
   text-align: center;
 }
-
 .header__right h1 {
   margin: 4rem 0;
 }
-
 .header__right__chevron {
   width: 5%;
   margin: auto;
   font-size: 5rem;
   margin-top: 20%;
 }
-
 .header__right__chevron:hover {
   color: orangered;
   background: rgba(0, 0, 0, 0.1);
@@ -115,26 +103,22 @@ nav ul a:hover {
   margin: 2rem auto;
   text-align: center;
 }
-
 .about__title {
   margin-top: 4rem;
 }
-
 .about__image {
   width: 100%;
 }
-
 .about__image img {
   position: relative;
   top: 7rem;
-  right: +45rem;
+  right: 45rem;
   text-align: center;
   border-radius: 100%;
   height: 20rem;
   width: 20rem;
   object-fit: cover;
 }
-
 .about__texte {
   padding: 2rem;
   text-align: justify;
@@ -149,14 +133,12 @@ nav ul a:hover {
   text-align: center;
   margin: 4rem;
 }
-
 .projets__vignettes {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
-
 .projets__vignettes__pict {
   cursor: pointer;
   margin: 2rem;
@@ -164,7 +146,6 @@ nav ul a:hover {
   width: 25%;
   transition: all 0.3s ease-in-out;
 }
-
 .projets__vignettes__pict:hover {
   transform: scale(1.3);
 }
@@ -173,20 +154,22 @@ nav ul a:hover {
   width: 80%;
   margin: auto;
 }
-
 .savoirs__title {
   text-align: center;
   margin: 2rem 0;
 }
-
 .savoirs__liste {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 3rem;
 }
-
-.savoirs__liste i {
+.savoirs__liste__el {
+  font-size: 4rem;
   color: orangered;
 }
+.savoirs__liste__el--fav {
+  color: cadetblue;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -9,8 +9,12 @@
   &__liste {
     @include flex-between;
     font-size: 3rem;
-    i {
+    &__el {
+      font-size: 4rem;
       color: orangered;
+      &--fav {
+        color: cadetblue;
+      }
     }
   }
 }
