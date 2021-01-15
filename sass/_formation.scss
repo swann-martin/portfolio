@@ -1,0 +1,20 @@
+.formation {
+  margin-top: 2rem;
+  &__title {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  &__master {
+    @include flex-center;
+    &__image {
+      &--logo {
+        margin: 2rem;
+        width: 8rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: rotate(2turn);
+        }
+      }
+    }
+  }
+}

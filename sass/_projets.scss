@@ -1,19 +1,27 @@
 .projets {
   &__title {
     text-align: center;
-    margin: 4rem;
+    margin: 4rem auto;
   }
   &__vignettes {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
     &__pict {
       cursor: pointer;
       margin: 2rem;
       height: 30rem;
       width: 25%;
       transition: all 0.3s ease-in-out;
+      @media screen and (max-width: 600px) {
+        width: 80%;
+        height: auto;
+        margin: 2rem auto;
+      }
       &:hover {
         transform: scale(1.3);
       }

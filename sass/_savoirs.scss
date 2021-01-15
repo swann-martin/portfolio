@@ -1,6 +1,9 @@
 .savoirs {
   width: 80%;
   margin: auto;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 
   &__title {
     text-align: center;
@@ -8,13 +11,19 @@
   }
   &__liste {
     @include flex-between;
-    font-size: 3rem;
+    font-size: 2rem;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
     &__el {
       font-size: 4rem;
       color: orangered;
       &--fav {
         color: cadetblue;
       }
+    }
+    &__right {
+      margin-top: 2rem;
     }
   }
 }

@@ -1,0 +1,22 @@
+.experience {
+  margin-top: 2rem;
+  &__title {
+    text-align: center;
+  }
+  &__box {
+    @include flex-center;
+    margin: auto;
+    padding: 4rem;
+    &__image {
+      text-align: center;
+      &__dates {
+        font-size: 1.4rem;
+        text-align: left;
+      }
+    }
+    &__texte {
+      width: 50%;
+      margin-left: 5%;
+    }
+  }
+}

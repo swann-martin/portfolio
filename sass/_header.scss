@@ -4,16 +4,31 @@
   display: flex;
   align-items: center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-    url(../images/header-bg-pict.jpg) top/cover;
+    url(../images/header-bg-pict.jpg) no-repeat center;
+  position: relative;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
   &__left {
     width: 2%;
+    position: absolute;
+    @media screen and (max-width: 600px) {
+      order: 1;
+      position: inherit;
+    }
     &__contact {
       list-style: none;
       margin-left: 2rem;
       font-size: 3rem;
+      @media screen and (max-width: 600px) {
+        @include flex-center;
+      }
       li {
         transition: all 0.2s ease-in;
         margin-bottom: 3rem;
+        @media screen and (max-width: 600px) {
+          margin: 3rem 0.5rem;
+        }
         &:hover {
           transform: scale(1.4);
           color: orangered;
@@ -22,14 +37,14 @@
     }
   }
   &__right {
-    width: 98%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     h1 {
-      margin: 4rem 0;
+      margin: 4rem auto;
     }
     &__chevron {
       width: 5%;

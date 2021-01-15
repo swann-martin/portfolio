@@ -5,6 +5,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+  @media screen and (max-width: 600px) {
+    padding: 2rem;
+  }
   h2 {
     font-size: 2rem;
   }
@@ -12,8 +15,11 @@ nav {
     list-style: none;
     display: flex;
     font-size: 1.8rem;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
     a {
-      margin-right: 1rem;
+      margin-left: 1rem;
       text-decoration: none;
       font-weight: bold;
       padding: 2.5rem;
