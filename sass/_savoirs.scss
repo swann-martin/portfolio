@@ -20,6 +20,9 @@
       color: orangered;
       &--fav {
         color: cadetblue;
+        @media screen and (max-width: "600px") {
+          font-size: 2rem;
+        }
       }
     }
     &__right {

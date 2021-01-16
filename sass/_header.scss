@@ -3,8 +3,8 @@
   height: 70vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-    url(../images/header-bg-pict.jpg) no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url(../images/luca-bravo-hFzIoD0F_i8-unsplash.jpg) no-repeat;
   position: relative;
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -22,12 +22,13 @@
       font-size: 3rem;
       @media screen and (max-width: 600px) {
         @include flex-center;
+        margin-left: 0;
       }
       li {
         transition: all 0.2s ease-in;
         margin-bottom: 3rem;
         @media screen and (max-width: 600px) {
-          margin: 3rem 0.5rem;
+          margin: 2rem 01rem;
         }
         &:hover {
           transform: scale(1.4);
@@ -45,12 +46,23 @@
     text-align: center;
     h1 {
       margin: 4rem auto;
+      @media screen and (max-width: "600px") {
+        font-size: 2rem;
+      }
+      h2 {
+        @media screen and (max-width: "600px") {
+          font-size: 2rem;
+        }
+      }
     }
     &__chevron {
       width: 5%;
       margin: auto;
       font-size: 5rem;
-      margin-top: 20%;
+      margin-top: 15%;
+      @media screen and (max-width: "600px") {
+        font-size: 2rem;
+      }
       &:hover {
         color: orangered;
         background: rgba(0, 0, 0, 0.1);

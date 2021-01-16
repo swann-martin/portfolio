@@ -20,16 +20,16 @@
   </head>
   <body>
     <nav>
-      <h2>Swann Martin</h2>
+      <h2 id="top">Swann Martin</h2>
       <ul>
         <li class="nav__link nav__link--active">
-          <a href="#mainwrap" title="accueil"><i class="fas fa-home"></i></a>
+          <a href="#top" title="top"><i class="fas fa-home"></i></a>
         </li>
         <li class="nav__link">
           <a href="#about" title="Qui est Swann?">A propos</a>
         </li>
         <li class="nav__link">
-          <a href="#competence" title="aller à la partie compétence">Savoirs</a>
+          <a href="#savoirs" title="aller à la partie savoirs">Savoirs</a>
         </li>
         <li class="nav__link">
           <a href="#projets" title="projects">Projets</a>
@@ -95,7 +95,7 @@
       </p>
     </aside>
 
-    <section class="projets">
+    <section id="projets" class="projets">
       <h2 class="projets__title">Mes projets</h2>
       <div class="projets__vignettes">
         <div class="projets__vignettes__pict">
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section class="savoirs">
+    <section id="savoirs" class="savoirs">
       <h2 class="savoirs__title">Un vrai couteau suisse</h2>
       <div class="savoirs__liste">
         <ul class="savoirs__liste__left">
@@ -148,7 +148,7 @@
             <strong>Programmation : </strong>
             <i
               title="JavaScript"
-              class="fab fa-js-square savoirs__liste__el--fav"
+              class="fab fa-js-square savoirs__liste__el savoirs__liste__el--fav"
             ></i>
             <i title="Node js" class="fab fa-node-js savoirs__liste__el"></i>
             <i title="React" class="fab fa-react savoirs__liste__el"></i>
@@ -198,9 +198,12 @@
       </div>
     </section>
 
-    <!--ouvre savoirs compétences web-->
-    <section class="experience">
+    <section id="experience" class="experience">
       <h2 class="experience__title">Expérience</h2>
+      <div class="experience__illu">
+        <img src="./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="work" />
+      </div>
+
       <div class="experience__box">
         <div class="experience__box__image">
           <p class="experience__box__image__logo">
@@ -242,75 +245,131 @@
       </div>
     </section>
 
-    <div id="formation" class="formation">
+    <section id="formation" class="formation">
       <h3 class="formation__title">Formation</h3>
       <div id="Master" class="formation__master">
         <!--groupe logo pour double master-->
-        <img
-          class="formation__master__image--logo"
-          src="./images/WEBFORCE.png"
-          alt="logo ecole webforce3"
-          title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
-        />
-        <img
-          class="formation__master__image--logo"
-          src="./images/uportsmouth.png"
-          alt="logo université de portsmouth"
-          title="2013 Université de Portsmouth UK : Master 2"
-        />
-        <img
-          class="formation__master__image--logo"
-          src="./images/upx.png"
-          alt="logo Univ ParisX"
-          title="2012 Université de Paris X : Master"
-        />
-        <img
-          class="formation__master__image--logo"
-          src="./images/upjv_mini.png"
-          alt="logo université UPJV"
-          title="2010 Université de Picardie : Licence"
-        />
+
+        <div class="formation__master__card">
+          <img
+            class="formation__master__card__image--logo"
+            src="./images/WEBFORCE.png"
+            alt="logo ecole webforce3"
+            title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
+          />
+          <h4>2021</h4>
+          <p>Certification Développeur Web</p>
+        </div>
+
+        <div class="formation__master__card">
+          <img
+            class="formation__master__card__image--logo"
+            src="./images/logo-openClassroom.png"
+            alt="logo ecole webforce3"
+            title="Cours sur Open Classrooms : Développeur Web"
+          />
+          <h4>2020</h4>
+          <p>Cours Développement Web</p>
+        </div>
+
+        <div class="formation__master__card">
+          <img
+            class="formation__master__card__image--logo"
+            src="./images/uportsmouth.png"
+            alt="logo université de portsmouth"
+            title="2013 Université de Portsmouth UK : Master 2"
+          />
+          <h4>2013</h4>
+          <p>Master 2 double diplôme Français Langue Etrangère PGCE</p>
+        </div>
+
+        <div class="formation__master__card">
+          <img
+            class="formation__master__card__image--logo"
+            src="./images/upx.png"
+            alt="logo Univ ParisX"
+            title="2012 Université de Paris X : Master"
+          />
+          <h4>2012</h4>
+          <p>Master 2 double diplôme Français Langue Etrangère PGCE</p>
+        </div>
+
+        <div class="formation__master__card">
+          <img
+            class="formation__master__card__image--logo"
+            src="./images/upjv_mini.png"
+            alt="logo université UPJV"
+            title="2010 Université de Picardie : Licence"
+          />
+          <h4>2010</h4>
+          <p>Licence LLCE anglais littérature et civilisation étrangère</p>
+        </div>
+
+        <div class="formation__master__card">
+          <img
+            class="formation__master__card__image--logo"
+            src="./images/logoMireilleGrenet1.png"
+            alt="Lycée Mireille Grenet"
+            title="2007 Bac Sti électonique mention TB"
+          />
+          <h4>2007</h4>
+          <p>Bac STI électonique mention TB</p>
+        </div>
       </div>
-      <ul>
-        <li>2021 Certification Développeur Web</li>
-        <li>2013 Master 2 double diplôme Français Langue Etrangère PGCE</li>
-        <li>2010 Licence LLCE anglais littérature et civilisation étrangère</li>
-        <li>Bac Sti électonique mention TB</li>
-        <li>Mooc Gestion de Projet</li>
-        <li>Cours Open Classroom parcours développeur web</li>
-      </ul>
-      <div class="formation__loisirs">
-        <h3 class="formation__title">Loisirs</h3>
-        <div class="formation__carre"><span>rotation</span></div>
-        <p>
-          Escalade, jeux vidéo (plutôt RPG), lecture (en particulier fantasy et
-          SF), Linux, Open Source, Crypto-monnaies
-        </p>
-      </div>
-    </div>
-    <!--ferme formation-->
+    </section>
+
+    <!-- loisirs-->
+
+    <section class="loisirs">
+      <h3 class="loisirs__title">Loisirs</h3>
+      <p>
+        Escalade, jeux vidéo (plutôt RPG), lecture (en particulier fantasy et
+        SF), Linux, Open Source, Crypto-monnaies
+      </p>
+    </section>
 
     <footer class="footer">
       <ul>
-        <li><a href="#main_wrap" title="aller à accueil">Accueil</a></li>
         <li>
-          <a href="#experience" title="aller à la partie experience"
-            >Expérience</a
-          >
+          <a href="#"><i title="Voir son Github" class="fab fa-github"></i></a>
         </li>
         <li>
-          <a href="#competence" title="aller à la partie compétence"
-            >Compétence</a
-          >
+          <a href="#"
+            ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i
+          ></a>
         </li>
         <li>
-          <a href="#formation" title="c'est bon vous avez compris je pense"
-            >Formation</a
-          >
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </li>
+        <li>
+          <a href="mailto:swannmartin1988@gmail.com"
+            ><i title="email" class="fab fa-google"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+      </ul>
+      <!-- menu retour aux sections -->
+      <ul>
+        <li><a href="#about" title="à propos">About</a></li>
+        <li>
+          <a href="#savoirs" title="aller à la partie experience">Savoirs</a>
+        </li>
+
+        <li>
+          <a href="#projets" title="projects">Projets</a>
+        </li>
+        <li>
+          <a href="#experience" title="aller à la partie Xp">Expérience</a>
+        </li>
+        <li>
+          <a href="#formation"> Formation</a>
+        </li>
+
         <li><a href="mailto:swannmartin1988@gmail.com">Contact</a></li>
       </ul>
-      <p>Ce site appartient à Swann Martin</p>
+      <p>&copy2021 Tous droits réservés à Swann Martin</p>
     </footer>
   </body>
 </html>

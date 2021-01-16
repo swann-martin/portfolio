@@ -1,12 +1,31 @@
 .experience {
-  margin-top: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+  @media screen and (max-width: "600px") {
+    width: 100%;
+  }
   &__title {
     text-align: center;
+  }
+  &__illu {
+    margin: 2rem auto;
+    width: 100%;
+    height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
   }
   &__box {
     @include flex-center;
     margin: auto;
-    padding: 4rem;
+    padding: 2rem;
+    @media screen and (max-width: "600px") {
+      flex-wrap: wrap;
+    }
     &__image {
       text-align: center;
       &__dates {
@@ -17,6 +36,10 @@
     &__texte {
       width: 50%;
       margin-left: 5%;
+      @media screen and (max-width: "600px") {
+        width: 100%;
+        margin: 1rem 0.5rem;
+      }
     }
   }
 }
