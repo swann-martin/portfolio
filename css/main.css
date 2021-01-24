@@ -339,6 +339,7 @@ nav ul li:hover {
 }
 .savoirs__liste__el {
   font-size: 4rem;
+  padding: 1rem;
   color: orangered;
 }
 .savoirs__liste__el--fav {
@@ -347,6 +348,15 @@ nav ul li:hover {
 @media screen and (max-width: 600px) {
   .savoirs__liste__el--fav {
     font-size: 2rem;
+  }
+}
+.savoirs__liste__middle {
+  width: 30%;
+}
+@media screen and (max-width: 650px) {
+  .savoirs__liste__middle {
+    width: 100%;
+    margin: 10% 0;
   }
 }
 .savoirs__liste__right {

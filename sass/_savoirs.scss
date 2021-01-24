@@ -15,14 +15,23 @@
     @media screen and (max-width: 600px) {
       flex-direction: column;
     }
+
     &__el {
       font-size: 4rem;
+      padding: 1rem;
       color: orangered;
       &--fav {
         color: cadetblue;
         @media screen and (max-width: "600px") {
           font-size: 2rem;
         }
+      }
+    }
+    &__middle {
+      width: 30%;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+        margin: 10% 0;
       }
     }
     &__right {
