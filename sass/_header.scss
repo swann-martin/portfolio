@@ -6,13 +6,13 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url(../images/luca-bravo-hFzIoD0F_i8-unsplash.jpg) no-repeat;
   position: relative;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 650px) {
     flex-direction: column;
   }
   &__left {
     width: 2%;
     position: absolute;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
       order: 1;
       position: inherit;
     }
@@ -20,15 +20,15 @@
       list-style: none;
       margin-left: 2rem;
       font-size: 3rem;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 650px) {
         @include flex-center;
         margin-left: 0;
       }
       li {
         transition: all 0.2s ease-in;
         margin-bottom: 3rem;
-        @media screen and (max-width: 600px) {
-          margin: 2rem 01rem;
+        @media screen and (max-width: 650px) {
+          margin: 1rem 01rem;
         }
         &:hover {
           transform: scale(1.4);
@@ -49,10 +49,11 @@
       @media screen and (max-width: "600px") {
         font-size: 2rem;
       }
-      h2 {
-        @media screen and (max-width: "600px") {
-          font-size: 2rem;
-        }
+    }
+    h2 {
+      font-size: 2rem;
+      @media screen and (max-width: "600px") {
+        font-size: 1.6rem;
       }
     }
     &__chevron {

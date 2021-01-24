@@ -28,29 +28,56 @@ a {
   color: inherit;
 }
 
-nav {
-  padding: 4rem;
+.nav {
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
 }
-@media screen and (max-width: 600px) {
-  nav {
+.nav__burger {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .nav {
     padding: 2rem;
   }
+  .nav__burger {
+    display: block;
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    z-index: 10;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+  }
+  .nav__burger--open .nav__burger__bar__top {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+  .nav__burger--open .nav__burger__bar__bottom {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+  .nav__burger--open .nav__burger__bar__middle {
+    opacity: 0;
+  }
+  .nav__burger__bar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 3.5px 0;
+  }
+  .nav nav h2 {
+    font-size: 2rem;
+  }
 }
-nav h2 {
-  font-size: 2rem;
-}
+
 nav ul {
   list-style: none;
   display: flex;
   font-size: 1.8rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   nav ul {
-    flex-direction: column;
+    display: none;
     font-size: 1.5rem;
   }
 }
@@ -58,7 +85,8 @@ nav ul li {
   margin-left: 1rem;
   text-decoration: none;
   font-weight: bold;
-  padding: 2.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 @media screen and (max-width: 600px) {
   nav ul li {
@@ -78,7 +106,7 @@ nav ul li:hover {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/luca-bravo-hFzIoD0F_i8-unsplash.jpg) no-repeat;
   position: relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .header {
     flex-direction: column;
   }
@@ -87,7 +115,7 @@ nav ul li:hover {
   width: 2%;
   position: absolute;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .header__left {
     order: 1;
     position: inherit;
@@ -98,7 +126,7 @@ nav ul li:hover {
   margin-left: 2rem;
   font-size: 3rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .header__left__contact {
     display: flex;
     align-items: center;
@@ -110,9 +138,9 @@ nav ul li:hover {
   transition: all 0.2s ease-in;
   margin-bottom: 3rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .header__left__contact li {
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
   }
 }
 .header__left__contact li:hover {
@@ -135,9 +163,12 @@ nav ul li:hover {
     font-size: 2rem;
   }
 }
+.header__right h2 {
+  font-size: 2rem;
+}
 @media screen and (max-width: 600px) {
-  .header__right h1 h2 {
-    font-size: 2rem;
+  .header__right h2 {
+    font-size: 1.6rem;
   }
 }
 .header__right__chevron {
@@ -410,6 +441,4 @@ footer ul li {
 }
 footer ul li:hover {
   color: orangered;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
