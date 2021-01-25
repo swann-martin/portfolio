@@ -21,43 +21,354 @@
     <script src="./dom.js" async></script>
   </head>
   <body>
-    <nav class="nav">
-      <span class="nav__burger">
-        <div class="nav__burger__bar nav__burger__bar__top"></div>
-        <div class="nav__burger__bar nav__burger__bar__middle"></div>
-        <div class="nav__burger__bar nav__burger__bar__bottom"></div>
-      </span>
-
-      <h2 id="top">Swann Martin</h2>
-
-      <ul>
-        <li class="nav__link">
-          <a href="#top" title="top"><i class="fas fa-home"></i></a>
-        </li>
-        <li class="nav__link">
-          <a href="#about" title="Qui est Swann?">A propos</a>
-        </li>
-        <li class="nav__link">
-          <a href="#savoirs" title="aller à la partie savoirs">Savoirs</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projets" title="projects">Projets</a>
-        </li>
-      </ul>
-    </nav>
-
-    <header class="header">
-      <div class="header__left">
-        <ul class="header__left__contact">
-          <li>
+    <section class="main-container">
+      <nav class="nav">
+        <div class="nav__burger">
+          <div class="nav__burger__bar nav__burger__bar__top"></div>
+          <div class="nav__burger__bar nav__burger__bar__middle"></div>
+          <div class="nav__burger__bar nav__burger__bar__bottom"></div>
+          <div class="menu --invisible">
+            <a href="#about"><i class="fas fa-user-tie"></i> A propos</a>
+            <a href=""><i class="far fa-envelope"></i> Contacter</a>
             <a href="https://github.com/swannwho"
+              ><i title="Voir son Github" class="fab fa-github"></i> Github</a
+            >
+            <a href="https://www.linkedin.com/in/swann-martin/"
+              ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i>
+              LinkedIn</a
+            >
+            <a href="#projets"><i class="fas fa-tasks"></i> Projets</a>
+          </div>
+        </div>
+
+        <h2 id="top">Swann Martin</h2>
+
+        <ul>
+          <li class="nav__link">
+            <a href="#top" title="top"><i class="fas fa-home"></i></a>
+          </li>
+          <li class="nav__link">
+            <a href="#about" title="Qui est Swann?">A propos</a>
+          </li>
+          <li class="nav__link">
+            <a href="#savoirs" title="aller à la partie savoirs">Savoirs</a>
+          </li>
+          <li class="nav__link">
+            <a href="#projets" title="projects">Projets</a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="header">
+        <div class="header__left">
+          <ul class="header__left__contact">
+            <li>
+              <a href="https://github.com/swannwho"
+                ><i title="Voir son Github" class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="www.linkedin.com/in/swann-martin"
+                ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:swannmartin1988@gmail.com"
+                ><i class="far fa-envelope" title="email"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__right">
+          <h1>Développeur front-end Junior</h1>
+          <h2>Vous recherchez un développeur pour un projet?</h2>
+          <a class="header__right__chevron" title="voir la suite" href="#about"
+            ><i class="fas fa-chevron-down"></i
+          ></a>
+        </div>
+      </header>
+
+      <!-- partie principale -->
+
+      <aside id="about" class="about">
+        <h2 class="about__title">Quelques mots sur Swann</h2>
+        <i class="fas fa-code"></i>
+        <div class="about__image">
+          <img src="./images/profile1.jpg" alt="profile__picture" />
+        </div>
+
+        <p class="about__texte">
+          Depuis 10 ans, j'ai été enseignant, commercial puis développeur. J'ai
+          vécu en Angleterre, à Liverpool, Sheffield, Portsmouth, en France à
+          Lille, Paris et à Bordeaux. Comme vous pouvez le constater, je sais
+          parfaitement m'adapter aux changements. Passionné de sport, je
+          pratique l'escalade depuis plus de 15 ans.
+        </p>
+      </aside>
+
+      <section id="projets" class="projets">
+        <h2 class="projets__title">Mes projets</h2>
+        <div class="projets__vignettes">
+          <div class="projets__vignettes__pict">
+            <img src="./images/traduction.png" alt="illu1" />
+          </div>
+          <div class="projets__vignettes__pict">
+            <img src="./images/qovery.png" alt="illu2" />
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/chezSwann.png" alt="illu3" />
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/athena.png" alt="illu4" />
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/WonderWoman.png" alt="illu5" />
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/leMonde.png" alt="illu6" />
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/chanel.png" alt="illu3" />
+          </div>
+        </div>
+      </section>
+
+      <section id="savoirs" class="savoirs">
+        <h2 class="savoirs__title">Un vrai couteau suisse</h2>
+        <div class="savoirs__liste">
+          <ul class="savoirs__liste__left">
+            <li>
+              <strong>Front :</strong>
+              <i title="Html5" class="fab fa-html5 savoirs__liste__el"></i>
+              <i title="CSS3" class="fab fa-css3-alt savoirs__liste__el"></i>
+              <i
+                title="Sass"
+                class="fab fa-sass savoirs__liste__el savoirs__liste__el--fav"
+              ></i>
+              <i
+                title="Bootstrap"
+                class="fab fa-bootstrap savoirs__liste__el"
+              ></i>
+            </li>
+            <li>
+              <strong>Programmation : </strong>
+              <i
+                title="JavaScript"
+                class="fab fa-js-square savoirs__liste__el savoirs__liste__el--fav"
+              ></i>
+              <i title="Node js" class="fab fa-node-js savoirs__liste__el"></i>
+              <i title="React js" class="fab fa-react savoirs__liste__el"></i>
+              <i
+                title="Vue js"
+                class="fab fa-vuejs savoirs__liste__el savoirs__liste__el--fav"
+              ></i>
+            </li>
+            <li>
+              <strong>Back-End :</strong>
+              <i title="PHP" class="fab fa-php savoirs__liste__el"></i>
+              <i
+                title="symfony"
+                class="fab fa-symfony savoirs__liste__el savoirs__liste__el"
+              ></i>
+              <i
+                title="Laravel"
+                class="fab fa-laravel savoirs__liste__el savoirs__liste__el--fav"
+              ></i>
+            </li>
+            <li>
+              <strong>Autres : </strong>
+              <i
+                title="Linux OS : ubuntu, debian, manjaro"
+                class="fab fa-linux savoirs__liste__el savoirs__liste__el--fav"
+              ></i>
+              <i class="fab fa-python savoirs__liste__el"></i>
+              <i
+                title="Open Source"
+                class="fab fa-osi savoirs__liste__el savoirs__liste__el--fav"
+              ></i>
+              <i title="git" class="fab fa-git-alt savoirs__liste__el"></i>
+              Gimp
+            </li>
+          </ul>
+
+          <div class="savoirs__liste__middle">
+            <h4>Technologies préférées</h4>
+            <p>
+              J'apprécier travailler sur l'OS Linux et favorise l'open source
+              lorsque celà est possible.
+            </p>
+          </div>
+
+          <ul class="savoirs__liste__right">
+            <li>Adaptabilité</li>
+            <li>Communication</li>
+            <li>Anglais (très bon niveau)</li>
+            <li>Analyse</li>
+            <li>Résolution de problèmes</li>
+            <li>Négociation</li>
+            <li>Gestion de projet</li>
+            <li>Formation</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <h2 class="experience__title">Expérience</h2>
+        <div class="experience__illu">
+          <img
+            src="./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+            alt="work"
+          />
+        </div>
+
+        <div class="experience__box">
+          <div class="experience__box__image">
+            <p class="experience__box__image__logo">
+              <a href="images/logo_oise.png"
+                ><img
+                  src="./images/logo_oise_mini.png"
+                  alt="logo société oise"
+                  id="logo_oise"
+                  title="Oxford Intensive School of English"
+              /></a>
+            </p>
+
+            <p class="experience__box__image__dates"></p>
+            <p>
+              2017 à 2020 à <strong>Bordeaux</strong>
+              <br />
+              de 2015 à 2017 à <strong>Lille</strong>
+            </p>
+          </div>
+          <div class="experience__box__texte">
+            <h4 class="experience__box__texte__title">
+              <strong>Responsable</strong> vente de séjours linguistiques,
+              <a href="https://www.oise.com/fr">OISE Etudes Linguistiques</a>
+            </h4>
+            <p class="experience__box__texte__paragraphe">
+              En <strong>autonomie</strong>, je gérais un bureau de vente pour
+              la marque de séjours linguistiques
+              <span>Oxford Intensive School of English</span> sur les régions
+              (Nouvelle-Aquitaine, Haut-de-France, Benelux). Mon rôle était de
+              vendre les séjours linguistiques de la marque OISE en BtoC et
+              BtoB:
+              <br />
+              J'ai notamment effectué la prospection du terrioire, la création
+              d'une stratégie marketing, la gestion des budgets, le recrutement
+              de conseillers, le management de deux personnes, la création et la
+              mise à jour de documents commerciaux, l'organisation de voyages,
+              la vente, la relation clients.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="formation" class="formation">
+        <h3 class="formation__title">Formation</h3>
+        <div id="Master" class="formation__master">
+          <!--groupe logo pour double master-->
+
+          <div class="formation__master__card">
+            <img
+              class="formation__master__card__image--logo"
+              src="./images/WEBFORCE.png"
+              alt="logo ecole webforce3"
+              title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
+            />
+            <h4>2021</h4>
+            <p>Certification Développeur Web</p>
+          </div>
+
+          <div class="formation__master__card">
+            <img
+              class="formation__master__card__image--logo"
+              src="./images/logo-openClassroom.png"
+              alt="logo ecole webforce3"
+              title="Cours sur Open Classrooms : Développeur Web"
+            />
+            <h4>2020</h4>
+            <p>Cours Développement Web</p>
+          </div>
+
+          <div class="formation__master__card">
+            <img
+              class="formation__master__card__image--logo"
+              src="./images/uportsmouth.png"
+              alt="logo université de portsmouth"
+              title="2013 Université de Portsmouth UK : Master 2"
+            />
+            <h4>2013</h4>
+            <p>Master 2 double diplôme Français Langue Etrangère PGCE</p>
+          </div>
+
+          <div class="formation__master__card">
+            <img
+              class="formation__master__card__image--logo"
+              src="./images/upx.png"
+              alt="logo Univ ParisX"
+              title="2012 Université de Paris X : Master"
+            />
+            <h4>2012</h4>
+            <p>Master 1 double diplôme Français Langue Etrangère PGCE</p>
+          </div>
+
+          <div class="formation__master__card">
+            <img
+              class="formation__master__card__image--logo"
+              src="./images/upjv_mini.png"
+              alt="logo université UPJV"
+              title="2010 Université de Picardie : Licence"
+            />
+            <h4>2010</h4>
+            <p>Licence LLCE anglais littérature et civilisation étrangère</p>
+          </div>
+
+          <div class="formation__master__card">
+            <img
+              class="formation__master__card__image--logo"
+              src="./images/logoMireilleGrenet1.png"
+              alt="Lycée Mireille Grenet"
+              title="2007 Bac Sti électonique mention TB"
+            />
+            <h4>2007</h4>
+            <p>Bac STI électonique mention TB</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- loisirs-->
+
+      <section class="loisirs">
+        <h3 class="loisirs__title">Loisirs</h3>
+        <p>
+          Escalade, jeux vidéo (plutôt RPG), lecture (en particulier fantasy et
+          SF), Linux, Open Source, Crypto-monnaies
+        </p>
+      </section>
+
+      <footer class="footer">
+        <ul>
+          <li>
+            <a href="#"
               ><i title="Voir son Github" class="fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="www.linkedin.com/in/swann-martin"
+            <a href="#"
               ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i
             ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
             <a href="mailto:swannmartin1988@gmail.com"
@@ -68,318 +379,27 @@
             <a href="#"><i class="fab fa-facebook-f"></i></a>
           </li>
         </ul>
-      </div>
-
-      <div class="header__right">
-        <h1>Développeur front-end Junior</h1>
-        <h2>Vous recherchez un développeur pour un projet?</h2>
-        <a class="header__right__chevron" title="voir la suite" href="#about"
-          ><i class="fas fa-chevron-down"></i
-        ></a>
-      </div>
-    </header>
-
-    <!-- partie principale -->
-
-    <aside id="about" class="about">
-      <h2 class="about__title">Quelques mots sur Swann</h2>
-      <i class="fas fa-code"></i>
-      <div class="about__image">
-        <img src="./images/profile1.jpg" alt="profile__picture" />
-      </div>
-
-      <p class="about__texte">
-        Depuis 10 ans, j'ai été enseignant, commercial puis développeur. J'ai
-        vécu en Angleterre, à Liverpool, Sheffield, Portsmouth, en France à
-        Lille, Paris et à Bordeaux. Comme vous pouvez le constater, je sais
-        parfaitement m'adapter aux changements. Passionné de sport, je pratique
-        l'escalade depuis plus de 15 ans.
-      </p>
-    </aside>
-
-    <section id="projets" class="projets">
-      <h2 class="projets__title">Mes projets</h2>
-      <div class="projets__vignettes">
-        <div class="projets__vignettes__pict">
-          <img src="./images/traduction.png" alt="illu1" />
-        </div>
-        <div class="projets__vignettes__pict">
-          <img src="./images/qovery.png" alt="illu2" />
-        </div>
-
-        <div class="projets__vignettes__pict">
-          <img src="./images/chezSwann.png" alt="illu3" />
-        </div>
-
-        <div class="projets__vignettes__pict">
-          <img src="./images/athena.png" alt="illu4" />
-        </div>
-
-        <div class="projets__vignettes__pict">
-          <img src="./images/WonderWoman.png" alt="illu5" />
-        </div>
-
-        <div class="projets__vignettes__pict">
-          <img src="./images/leMonde.png" alt="illu6" />
-        </div>
-
-        <div class="projets__vignettes__pict">
-          <img src="./images/chanel.png" alt="illu3" />
-        </div>
-      </div>
-    </section>
-
-    <section id="savoirs" class="savoirs">
-      <h2 class="savoirs__title">Un vrai couteau suisse</h2>
-      <div class="savoirs__liste">
-        <ul class="savoirs__liste__left">
+        <!-- menu retour aux sections -->
+        <ul>
+          <li><a href="#about" title="à propos">About</a></li>
           <li>
-            <strong>Front :</strong>
-            <i title="Html5" class="fab fa-html5 savoirs__liste__el"></i>
-            <i title="CSS3" class="fab fa-css3-alt savoirs__liste__el"></i>
-            <i
-              title="Sass"
-              class="fab fa-sass savoirs__liste__el savoirs__liste__el--fav"
-            ></i>
-            <i
-              title="Bootstrap"
-              class="fab fa-bootstrap savoirs__liste__el"
-            ></i>
+            <a href="#savoirs" title="aller à la partie experience">Savoirs</a>
+          </li>
+
+          <li>
+            <a href="#projets" title="projects">Projets</a>
           </li>
           <li>
-            <strong>Programmation : </strong>
-            <i
-              title="JavaScript"
-              class="fab fa-js-square savoirs__liste__el savoirs__liste__el--fav"
-            ></i>
-            <i title="Node js" class="fab fa-node-js savoirs__liste__el"></i>
-            <i title="React js" class="fab fa-react savoirs__liste__el"></i>
-            <i
-              title="Vue js"
-              class="fab fa-vuejs savoirs__liste__el savoirs__liste__el--fav"
-            ></i>
+            <a href="#experience" title="aller à la partie Xp">Expérience</a>
           </li>
           <li>
-            <strong>Back-End :</strong>
-            <i title="PHP" class="fab fa-php savoirs__liste__el"></i>
-            <i
-              title="symfony"
-              class="fab fa-symfony savoirs__liste__el savoirs__liste__el"
-            ></i>
-            <i
-              title="Laravel"
-              class="fab fa-laravel savoirs__liste__el savoirs__liste__el--fav"
-            ></i>
+            <a href="#formation"> Formation</a>
           </li>
-          <li>
-            <strong>Autres : </strong>
-            <i
-              title="Linux OS : ubuntu, debian, manjaro"
-              class="fab fa-linux savoirs__liste__el savoirs__liste__el--fav"
-            ></i>
-            <i class="fab fa-python savoirs__liste__el"></i>
-            <i
-              title="Open Source"
-              class="fab fa-osi savoirs__liste__el savoirs__liste__el--fav"
-            ></i>
-            <i title="git" class="fab fa-git-alt savoirs__liste__el"></i>
-            Gimp
-          </li>
+
+          <li><a href="mailto:swannmartin1988@gmail.com">Contact</a></li>
         </ul>
-
-        <div class="savoirs__liste__middle">
-          <h4>Technologies préférées</h4>
-          <p>
-            J'apprécier travailler sur l'OS Linux et favorise l'open source
-            lorsque celà est possible.
-          </p>
-        </div>
-
-        <ul class="savoirs__liste__right">
-          <li>Adaptabilité</li>
-          <li>Communication</li>
-          <li>Anglais (très bon niveau)</li>
-          <li>Analyse</li>
-          <li>Résolution de problèmes</li>
-          <li>Négociation</li>
-          <li>Gestion de projet</li>
-          <li>Formation</li>
-        </ul>
-      </div>
+        <p>&copy2021 Tous droits réservés à Swann Martin</p>
+      </footer>
     </section>
-
-    <section id="experience" class="experience">
-      <h2 class="experience__title">Expérience</h2>
-      <div class="experience__illu">
-        <img src="./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="work" />
-      </div>
-
-      <div class="experience__box">
-        <div class="experience__box__image">
-          <p class="experience__box__image__logo">
-            <a href="images/logo_oise.png"
-              ><img
-                src="./images/logo_oise_mini.png"
-                alt="logo société oise"
-                id="logo_oise"
-                title="Oxford Intensive School of English"
-            /></a>
-          </p>
-
-          <p class="experience__box__image__dates"></p>
-          <p>
-            2017 à 2020 à <strong>Bordeaux</strong>
-            <br />
-            de 2015 à 2017 à <strong>Lille</strong>
-          </p>
-        </div>
-        <div class="experience__box__texte">
-          <h4 class="experience__box__texte__title">
-            <strong>Responsable</strong> vente de séjours linguistiques,
-            <a href="https://www.oise.com/fr">OISE Etudes Linguistiques</a>
-          </h4>
-          <p class="experience__box__texte__paragraphe">
-            En <strong>autonomie</strong>, je gérais un bureau de vente pour la
-            marque de séjours linguistiques
-            <span>Oxford Intensive School of English</span> sur les régions
-            (Nouvelle-Aquitaine, Haut-de-France, Benelux). Mon rôle était de
-            vendre les séjours linguistiques de la marque OISE en BtoC et BtoB:
-            <br />
-            J'ai notamment effectué la prospection du terrioire, la création
-            d'une stratégie marketing, la gestion des budgets, le recrutement de
-            conseillers, le management de deux personnes, la création et la mise
-            à jour de documents commerciaux, l'organisation de voyages, la
-            vente, la relation clients.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="formation" class="formation">
-      <h3 class="formation__title">Formation</h3>
-      <div id="Master" class="formation__master">
-        <!--groupe logo pour double master-->
-
-        <div class="formation__master__card">
-          <img
-            class="formation__master__card__image--logo"
-            src="./images/WEBFORCE.png"
-            alt="logo ecole webforce3"
-            title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
-          />
-          <h4>2021</h4>
-          <p>Certification Développeur Web</p>
-        </div>
-
-        <div class="formation__master__card">
-          <img
-            class="formation__master__card__image--logo"
-            src="./images/logo-openClassroom.png"
-            alt="logo ecole webforce3"
-            title="Cours sur Open Classrooms : Développeur Web"
-          />
-          <h4>2020</h4>
-          <p>Cours Développement Web</p>
-        </div>
-
-        <div class="formation__master__card">
-          <img
-            class="formation__master__card__image--logo"
-            src="./images/uportsmouth.png"
-            alt="logo université de portsmouth"
-            title="2013 Université de Portsmouth UK : Master 2"
-          />
-          <h4>2013</h4>
-          <p>Master 2 double diplôme Français Langue Etrangère PGCE</p>
-        </div>
-
-        <div class="formation__master__card">
-          <img
-            class="formation__master__card__image--logo"
-            src="./images/upx.png"
-            alt="logo Univ ParisX"
-            title="2012 Université de Paris X : Master"
-          />
-          <h4>2012</h4>
-          <p>Master 2 double diplôme Français Langue Etrangère PGCE</p>
-        </div>
-
-        <div class="formation__master__card">
-          <img
-            class="formation__master__card__image--logo"
-            src="./images/upjv_mini.png"
-            alt="logo université UPJV"
-            title="2010 Université de Picardie : Licence"
-          />
-          <h4>2010</h4>
-          <p>Licence LLCE anglais littérature et civilisation étrangère</p>
-        </div>
-
-        <div class="formation__master__card">
-          <img
-            class="formation__master__card__image--logo"
-            src="./images/logoMireilleGrenet1.png"
-            alt="Lycée Mireille Grenet"
-            title="2007 Bac Sti électonique mention TB"
-          />
-          <h4>2007</h4>
-          <p>Bac STI électonique mention TB</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- loisirs-->
-
-    <section class="loisirs">
-      <h3 class="loisirs__title">Loisirs</h3>
-      <p>
-        Escalade, jeux vidéo (plutôt RPG), lecture (en particulier fantasy et
-        SF), Linux, Open Source, Crypto-monnaies
-      </p>
-    </section>
-
-    <footer class="footer">
-      <ul>
-        <li>
-          <a href="#"><i title="Voir son Github" class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="#"
-            ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="mailto:swannmartin1988@gmail.com"
-            ><i title="email" class="fab fa-google"></i
-          ></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-      </ul>
-      <!-- menu retour aux sections -->
-      <ul>
-        <li><a href="#about" title="à propos">About</a></li>
-        <li>
-          <a href="#savoirs" title="aller à la partie experience">Savoirs</a>
-        </li>
-
-        <li>
-          <a href="#projets" title="projects">Projets</a>
-        </li>
-        <li>
-          <a href="#experience" title="aller à la partie Xp">Expérience</a>
-        </li>
-        <li>
-          <a href="#formation"> Formation</a>
-        </li>
-
-        <li><a href="mailto:swannmartin1988@gmail.com">Contact</a></li>
-      </ul>
-      <p>&copy2021 Tous droits réservés à Swann Martin</p>
-    </footer>
   </body>
 </html>

@@ -4,37 +4,47 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   &__burger {
-    display: none;
+    position: absolute;
+    top: 20px;
   }
+
   @media screen and (max-width: 650px) {
     padding: 2rem;
     &__burger {
-      display: block;
-      width: 35px;
-      height: 30px;
+      position: relative;
+      visibility: visible;
+      opacity: 1;
       background-color: transparent;
-      z-index: 10;
-      transition: all 0.2s ease-in;
+      z-index: 111111;
+      width: 50px;
+      height: 50px;
+      padding-left: 1rem;
+      transition: all 0.2s ease-in-out;
       cursor: pointer;
 
       &--open .nav__burger__bar {
         &__top {
-          transform: rotate(45deg) translate(5px, 7px);
+          transform: rotate(45deg) translate(5px, 8px);
+          background-color: orangered;
+          z-index: 2;
         }
         &__bottom {
-          transform: rotate(-45deg) translate(5px, -7px);
+          transform: rotate(-45deg) translate(5px, -8px);
+          background-color: orangered;
+          z-index: 2;
         }
         &__middle {
+          transform: translateX(10px);
           opacity: 0;
+          z-index: 2;
         }
       }
       &__bar {
         width: 35px;
         height: 5px;
         background-color: black;
-        margin: 3.5px 0;
+        margin: 4px 0;
       }
     }
     nav h2 {
@@ -65,4 +75,24 @@ nav ul {
       background: rgba(0, 0, 0, 0.1);
     }
   }
+}
+
+.menu {
+  z-index: 1111;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+}
+.menu a {
+  min-width: 13rem;
+  padding: 1rem;
+  margin: 1px;
+  color: orangered;
+  background-color: rgba(1, 1, 1, 0.4);
+}
+
+.menu a:hover {
+  background-color: rgba(1, 1, 1, 1);
+  color: white;
 }
