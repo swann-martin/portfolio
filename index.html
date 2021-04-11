@@ -84,70 +84,89 @@
       <aside id="about" class="about">
         <h2 class="about__title">Quelques mots sur Swann</h2>
         <i class="fas fa-code"></i>
-        <div class="about__image">
-          <img src="./images/profile1.jpg" alt="profile__picture" />
-        </div>
 
-        <p class="about__texte">
-          Je suis développeur spécialisé dans le front-end. J'apprécie
-          particulièrement l'open-source et les technologies libres. Depuis 10
-          ans, j'ai été enseignant, commercial puis développeur. J'ai vécu dans
-          plusieurs villes d'Angleterre, en France à Lille, Paris et Bordeaux.
-          Je sais parfaitement m'adapter aux changements. Passionné de sport, je
-          pratique l'escalade depuis plus de 15 ans.
-        </p>
+        <div class="about__container">
+          <div class="about__container__image">
+            <img src="./images/swann.jpg" alt="profile__picture" />
+          </div>
+
+          <p class="about__container__texte">
+            Je suis développeur spécialisé dans le back-end. Je travaille avec
+            le langage <strong>PHP</strong> sur le framework
+            <strong>Symfony</strong>. J'ai également des connaissances en
+            front-end, JavaScript, TypeScript et sur les frameworks Angular et
+            VueJS. J'ai déjà utilisé Wordpress. J'apprécie particulièrement
+            l'open-source et les technologies libres. Ayant fait des études de
+            langues étrangères et travaillé pendant 8 ans en Angleterre et en
+            France pour une société britannique, je suis bilingue. Je m'adapte
+            facilement aux changements.
+          </p>
+        </div>
       </aside>
 
       <section id="projets" class="projets">
         <h2 class="projets__title">Mes projets</h2>
         <div class="projets__vignettes">
           <div class="projets__vignettes__pict">
-            <img src="./images/traduction.png" alt="illu1" />
-            <p>HTML5, CSS3</p>
-          </div>
-          <div class="projets__vignettes__pict">
-            <img src="./images/qovery.png" alt="illu2" />
-          </div>
-
-          <div class="projets__vignettes__pict">
             <img src="./images/burgrerDeMaman.png" alt="burgrerDeMaman" />
             <p>Angular</p>
           </div>
 
           <div class="projets__vignettes__pict">
-            <img src="./images/chezSwann.png" alt="illu3" />
+            <a href="https://github.com/swann-martin/"
+              ><img src="./images/chezSwann.png" alt="illu3"
+            /></a>
+            <p>HTML5, CSS3</p>
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <a href="https://github.com/swann-martin/car-rental"
+              ><img src="./images/Europcar.png" alt="illu3"
+            /></a>
+            <p>HTML5, CSS3</p>
           </div>
 
           <div class="projets__vignettes__pict">
             <img src="./images/athena.png" alt="illu4" />
-          </div>
-
-          <div class="projets__vignettes__pict">
-            <img src="./images/WonderWoman.png" alt="illu5" />
+            <p>HTML5, CSS3</p>
           </div>
 
           <div class="projets__vignettes__pict">
             <img src="./images/leMonde.png" alt="illu6" />
+            <p>HTML5, CSS3</p>
           </div>
 
           <div class="projets__vignettes__pict">
             <img src="./images/chanel.png" alt="illu3" />
+            <p>HTML5, CSS3</p>
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/WonderWoman.png" alt="illu5" />
+            <p>HTML5, CSS3</p>
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/traduction.png" alt="illu1" />
+            <p>HTML5, CSS3</p>
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/qovery.png" alt="illu2" />
+            <p>Intégration d'un projet d'un youtuber en HTML CSS</p>
           </div>
         </div>
       </section>
 
       <section id="savoirs" class="savoirs">
-        <h2 class="savoirs__title">Un vrai couteau suisse</h2>
+        <h2 class="savoirs__title">Adaptabilité</h2>
         <div class="savoirs__liste">
           <ul class="savoirs__liste__left">
             <li>
               <strong>Front :</strong>
               <i title="Html5" class="fab fa-html5 savoirs__liste__el"></i>
               <i title="CSS3" class="fab fa-css3-alt savoirs__liste__el"></i>
-              <i
-                title="Sass"
-                class="fab fa-sass savoirs__liste__el savoirs__liste__el--fav"
-              ></i>
+              <i title="Sass" class="fab fa-sass savoirs__liste__el"></i>
               <i
                 title="Bootstrap"
                 class="fab fa-bootstrap savoirs__liste__el"
@@ -159,10 +178,9 @@
                 title="JavaScript"
                 class="fab fa-js-square savoirs__liste__el savoirs__liste__el--fav"
               ></i>
-              <i title="Node js" class="fab fa-node-js savoirs__liste__el"></i>
-              <i title="React js" class="fab fa-react savoirs__liste__el"></i>
+              <i title="NodeJS" class="fab fa-node-js savoirs__liste__el"></i>
               <i
-                title="Vue js"
+                title="VueJS"
                 class="fab fa-vuejs savoirs__liste__el savoirs__liste__el--fav"
               ></i>
             </li>
@@ -171,13 +189,12 @@
               <i title="PHP" class="fab fa-php savoirs__liste__el"></i>
               <i
                 title="symfony"
-                class="fab fa-symfony savoirs__liste__el savoirs__liste__el"
+                class="fab fa-symfony savoirs__liste__el savoirs__liste__el--fav"
               ></i>
               <i
-                title="Laravel"
-                class="fab fa-laravel savoirs__liste__el savoirs__liste__el--fav"
+                class="fas fa-database savoirs__liste__el"
+                title="MariaDb/Mysql"
               ></i>
-              MySQL
             </li>
             <li>
               <strong>Autres : </strong>
@@ -186,11 +203,10 @@
                 class="fab fa-linux savoirs__liste__el savoirs__liste__el--fav"
               ></i>
               <i
-                title="Open Source"
+                title="OpenSource"
                 class="fab fa-osi savoirs__liste__el savoirs__liste__el--fav"
               ></i>
               <i title="git" class="fab fa-git-alt savoirs__liste__el"></i>
-              Gimp
             </li>
           </ul>
 
@@ -272,23 +288,28 @@
           <!--groupe logo pour double master-->
 
           <div class="formation__master__card">
-            <img
-              class="formation__master__card__image--logo"
-              src="./images/WEBFORCE.png"
-              alt="logo ecole webforce3"
-              title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
-            />
+            <a
+              href="https://www.wf3.fr/formation/formation-developpeur-web-et-web-mobile/"
+              ><img
+                class="formation__master__card__image--logo"
+                src="./images/WEBFORCE.png"
+                alt="logo ecole webforce3"
+                title="2021 Webforce3 Philomatique Bordeaux : Développeur Web"
+            /></a>
             <h4>2021</h4>
             <p>Certification Développeur Web</p>
           </div>
 
           <div class="formation__master__card">
-            <img
-              class="formation__master__card__image--logo"
-              src="./images/logo-openClassroom.png"
-              alt="logo ecole webforce3"
-              title="Cours sur Open Classrooms : Développeur Web"
-            />
+            <a
+              href="https://openclassrooms.com/fr/paths/185-developpeur-web#path-tabs"
+              ><img
+                class="formation__master__card__image--logo"
+                src="./images/logo-openClassroom.png"
+                alt="logo ecole webforce3"
+                title="Cours sur Open Classrooms : Développeur Web"
+              />
+            </a>
             <h4>2020</h4>
             <p>Cours Développement Web</p>
           </div>
@@ -357,12 +378,9 @@
             ></a>
           </li>
           <li>
-            <a href="#"
+            <a href="https://www.linkedin.com/in/swann-martin/"
               ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i
             ></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
             <a href="mailto:swannmartin1988@gmail.com"
@@ -392,7 +410,7 @@
 
           <li><a href="mailto:swannmartin1988@gmail.com">Contact</a></li>
         </ul>
-        <p>&copy2021 Tous droits réservés à Swann Martin</p>
+        <p>&copy;Swann-Martin-2021 Tous droits réservés à Swann Martin</p>
       </footer>
     </section>
   </body>
