@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -23,10 +28,8 @@
   <body>
     <section class="main-container">
       <nav class="nav">
-        <div class="nav__burger">
-          <div class="nav__burger__bar nav__burger__bar__top"></div>
-          <div class="nav__burger__bar nav__burger__bar__middle"></div>
-          <div class="nav__burger__bar nav__burger__bar__bottom"></div>
+        <button class="nav__burger">
+          <i class="fas fa-bars"></i>
           <div class="menu --invisible">
             <a href="#about"><i class="fas fa-user-tie"></i> A propos</a>
             <a href=""><i class="far fa-envelope"></i> Contacter</a>
@@ -39,9 +42,7 @@
             >
             <a href="#projets"><i class="fas fa-tasks"></i> Projets</a>
           </div>
-        </div>
-
-        <h2 id="top">Swann Martin</h2>
+        </button>
 
         <ul>
           <li class="nav__link">
@@ -60,33 +61,19 @@
       </nav>
 
       <header class="header">
-        <div class="header__left">
-          <ul class="header__left__contact">
-            <li>
-              <a href="https://github.com/swannwho"
-                ><i title="Voir son Github" class="fab fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="www.linkedin.com/in/swann-martin"
-                ><i title="Voir sur LinkedIn" class="fab fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:swannmartin1988@gmail.com"
-                ><i class="far fa-envelope" title="email"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-          </ul>
+        <div class="header__top">
+          <div class="header__title-container">
+            <h1>Je m'appelle Swann Martin</h1>
+            <h2>
+              Je suis le développeur Web Junior que vous recherchez&nbsp;!
+            </h2>
+          </div>
+          <div class="header__img">
+            <img src="./images/web-programmer.jpg" alt="Developpeur" />
+          </div>
         </div>
-
-        <div class="header__right">
-          <h1>Développeur front-end Junior</h1>
-          <h2>Vous recherchez un développeur pour un projet?</h2>
-          <a class="header__right__chevron" title="voir la suite" href="#about"
+        <div class="header__bottom">
+          <a title="voir la suite" href="#about"
             ><i class="fas fa-chevron-down"></i
           ></a>
         </div>
@@ -102,10 +89,11 @@
         </div>
 
         <p class="about__texte">
-          Depuis 10 ans, j'ai été enseignant, commercial puis développeur. J'ai
-          vécu en Angleterre, à Liverpool, Sheffield, Portsmouth, en France à
-          Lille, Paris et à Bordeaux. Comme vous pouvez le constater, je sais
-          parfaitement m'adapter aux changements. Passionné de sport, je
+          Je suis développeur spécialisé dans le front-end. J'apprécie
+          particulièrement l'open-source et les technologies libres. Depuis 10
+          ans, j'ai été enseignant, commercial puis développeur. J'ai vécu dans
+          plusieurs villes d'Angleterre, en France à Lille, Paris et Bordeaux.
+          Je sais parfaitement m'adapter aux changements. Passionné de sport, je
           pratique l'escalade depuis plus de 15 ans.
         </p>
       </aside>
@@ -115,9 +103,15 @@
         <div class="projets__vignettes">
           <div class="projets__vignettes__pict">
             <img src="./images/traduction.png" alt="illu1" />
+            <p>HTML5, CSS3</p>
           </div>
           <div class="projets__vignettes__pict">
             <img src="./images/qovery.png" alt="illu2" />
+          </div>
+
+          <div class="projets__vignettes__pict">
+            <img src="./images/burgrerDeMaman.png" alt="burgrerDeMaman" />
+            <p>Angular</p>
           </div>
 
           <div class="projets__vignettes__pict">
@@ -183,6 +177,7 @@
                 title="Laravel"
                 class="fab fa-laravel savoirs__liste__el savoirs__liste__el--fav"
               ></i>
+              MySQL
             </li>
             <li>
               <strong>Autres : </strong>
@@ -190,7 +185,6 @@
                 title="Linux OS : ubuntu, debian, manjaro"
                 class="fab fa-linux savoirs__liste__el savoirs__liste__el--fav"
               ></i>
-              <i class="fab fa-python savoirs__liste__el"></i>
               <i
                 title="Open Source"
                 class="fab fa-osi savoirs__liste__el savoirs__liste__el--fav"
