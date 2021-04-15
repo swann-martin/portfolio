@@ -33,6 +33,18 @@ nav ul {
   }
 }
 
+nav button {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 100%;
+  border: none;
+  &:hover {
+    background-color: rgb(80, 153, 80);
+    outline: none;
+    border: none;
+  }
+}
+
 .menu {
   z-index: 1111;
   display: flex;

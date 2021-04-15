@@ -10,8 +10,9 @@
     margin: 2rem 0;
   }
   &__liste {
-    @include flex-between;
+    @include flex-center;
     font-size: 2rem;
+
     @media screen and (max-width: 600px) {
       flex-direction: column;
     }
@@ -27,15 +28,9 @@
         }
       }
     }
-    &__middle {
-      width: 30%;
-      @media screen and (max-width: 650px) {
-        width: 100%;
-        margin: 10% 0;
-      }
-    }
+
     &__right {
-      margin-top: 2rem;
+      margin: 2rem;
     }
   }
 }
