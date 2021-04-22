@@ -16,7 +16,8 @@ mainContainer.addEventListener("click", (e) => {
 });
 
 const btnSkills = document.querySelector(".btn-skills");
-console.log(btnSkills);
+btnSkills.classList.add("--d-none");
+
 let counter = 0;
 let skills = [
   "Adaptabilité",
