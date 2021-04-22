@@ -8,6 +8,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px;
     justify-items: center;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
     .card {
       margin: 1rem;
       min-width: 20rem;
@@ -17,7 +21,9 @@
       background-color: whitesmoke;
       overflow: hidden;
       box-shadow: grey 5px 5px 5px;
-
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
       img {
         width: 100%;
         height: 80%;
@@ -27,15 +33,9 @@
       }
     }
     .card:hover {
-      background: linear-gradient(
-        to right rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      );
       cursor: pointer;
     }
-    @media screen and (max-width: 600px) {
-      flex-direction: column;
-    }
+
     &__pict {
       cursor: pointer;
       margin: 2rem;
