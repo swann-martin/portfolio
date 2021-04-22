@@ -250,27 +250,21 @@ header .header__bottom a:hover {
     width: 100%;
   }
 }
+.projets__cards-container .card:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+  color: white;
+}
+.projets__cards-container .card:active {
+  background-color: cadetblue;
+  color: white;
+}
 .projets__cards-container .card img {
   width: 100%;
   height: 80%;
 }
 .projets__cards-container .card p {
   margin-left: 1rem;
-}
-.projets__cards-container .card:hover {
-  cursor: pointer;
-}
-.projets__cards-container__pict {
-  cursor: pointer;
-  margin: 2rem;
-  height: 30rem;
-}
-@media screen and (max-width: 600px) {
-  .projets__cards-container__pict {
-    width: 80%;
-    height: auto;
-    margin: 2rem auto;
-  }
 }
 
 .experience {
