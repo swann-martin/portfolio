@@ -27,6 +27,7 @@
   </head>
   <body>
     <section class="main-container">
+      <!-- partie  nav -->
       <nav class="nav">
         <button class="nav__burger">
           <i class="fas fa-bars"></i>
@@ -61,7 +62,7 @@
           </li>
         </ul>
       </nav>
-
+      <!-- partie header -->
       <header class="header">
         <div class="header__top">
           <div class="header__title-container">
@@ -108,54 +109,64 @@
 
       <section id="projets" class="projets">
         <h2 class="projets__title">Mes projets</h2>
-        <div class="projets__vignettes">
-          <div class="projets__vignettes__pict">
-            <img src="./images/burgrerDeMaman.png" alt="burgrerDeMaman" />
-            <p>Angular</p>
+
+        <!-- part cards  -->
+
+        <div class="projets__cards-container">
+          <div class="card">
+            <a href="https://github.com/swann-martin/archive_jummmp">
+              <img src="./images/jummmp.png" alt="jummmp"
+            /></a>
+            <p>Symfony, CSS</p>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
+            <a href="https://github.com/swann-martin/burgersDeMaman">
+              <img src="./images/burgerDeMaman.png" alt="burgerDeMaman"
+            /></a>
+            <p>Angular CSS</p>
+          </div>
+
+          <div class="card">
             <a href="https://github.com/swann-martin/"
               ><img src="./images/chezSwann.png" alt="illu3"
             /></a>
-            <p>HTML5, CSS3</p>
+            <p>HTML, CSS</p>
           </div>
 
-          <div class="projets__vignettes__pict">
-            <a href="https://github.com/swann-martin/car-rental"
-              ><img src="./images/Europcar.png" alt="illu3"
-            /></a>
-            <p>HTML5, CSS3</p>
+          <div class="card">
+            <img src="./images/Europcar.png" alt="illu3" />
+            <a href="https://github.com/swann-martin/car-rental">HTML, CSS</a>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
             <img src="./images/athena.png" alt="illu4" />
             <p>HTML5, CSS3</p>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
             <img src="./images/leMonde.png" alt="illu6" />
             <p>HTML5, CSS3</p>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
             <img src="./images/chanel.png" alt="illu3" />
             <p>HTML5, CSS3</p>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
             <img src="./images/WonderWoman.png" alt="illu5" />
             <p>HTML5, CSS3</p>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
             <img src="./images/traduction.png" alt="illu1" />
             <p>HTML5, CSS3</p>
           </div>
 
-          <div class="projets__vignettes__pict">
+          <div class="card">
             <img src="./images/qovery.png" alt="illu2" />
-            <p>Intégration d'un projet d'un youtuber en HTML CSS</p>
+            <p>Intégration d'un projet HTML CSS</p>
           </div>
         </div>
       </section>
@@ -283,7 +294,7 @@
       </section>
 
       <section id="formation" class="formation">
-        <h3 class="formation__title">Formation</h3>
+        <h3 class="formation__title">Formations</h3>
         <div id="Master" class="formation__master">
           <!--groupe logo pour double master-->
 
