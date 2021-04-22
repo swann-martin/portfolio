@@ -163,6 +163,11 @@ header .header__top .header__title-container a {
 header .header__top .header__title-container a:hover {
   background-color: cadetblue;
 }
+@media screen and (max-width: 600px) {
+  header .header__top .header__title-container a {
+    margin-bottom: 3rem;
+  }
+}
 header .header__top .header__img {
   margin-left: 2rem;
   max-width: 50%;
@@ -177,8 +182,7 @@ header .header__top .header__img img {
 }
 @media screen and (max-width: 600px) {
   header .header__top .header__img {
-    width: 100%;
-    margin: 2rem auto;
+    display: none;
   }
 }
 header .header__bottom {
@@ -189,6 +193,11 @@ header .header__bottom {
 header .header__bottom a:hover {
   color: cadetblue;
 }
+@media screen and (max-width: 600px) {
+  header .header__bottom {
+    display: none;
+  }
+}
 
 .about {
   width: 80%;
@@ -196,7 +205,7 @@ header .header__bottom a:hover {
   text-align: center;
 }
 .about__title {
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 .about__container {
   margin: 2rem auto;
@@ -204,8 +213,21 @@ header .header__bottom a:hover {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .about__container {
+    flex-direction: column;
+  }
+}
 .about__container__image {
   max-width: 20%;
+  position: relative;
+  bottom: 130px;
+  left: 140px;
+}
+@media screen and (max-width: 600px) {
+  .about__container__image {
+    position: initial;
+  }
 }
 .about__container__image img {
   text-align: center;
@@ -213,6 +235,7 @@ header .header__bottom a:hover {
   height: 10rem;
   width: 10rem;
   object-fit: cover;
+  box-shadow: gray 5px 5px 5px;
 }
 @media screen and (max-width: 600px) {
   .about__container__image img {
@@ -234,6 +257,10 @@ header .header__bottom a:hover {
     width: 90%;
     margin: auto;
   }
+}
+.about__container__texte p {
+  line-height: 3rem;
+  margin: 1rem;
 }
 
 .projets__title {

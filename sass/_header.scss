@@ -43,6 +43,9 @@ header {
         &:hover {
           background-color: cadetblue;
         }
+        @media screen and (max-width: "600px") {
+          margin-bottom: 3rem;
+        }
       }
     }
 
@@ -58,8 +61,7 @@ header {
         max-height: 100%;
       }
       @media screen and (max-width: "600px") {
-        width: 100%;
-        margin: 2rem auto;
+        display: none;
       }
     }
   }
@@ -69,6 +71,9 @@ header {
     margin: 2rem;
     a:hover {
       color: cadetblue;
+    }
+    @media screen and (max-width: "600px") {
+      display: none;
     }
   }
 }
