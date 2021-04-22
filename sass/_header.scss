@@ -41,7 +41,7 @@ header {
         color: whitesmoke;
         cursor: pointer;
         &:hover {
-          background-color: cadetblue;
+          background-color: $color-primary;
         }
         @media screen and (max-width: "600px") {
           margin-bottom: 3rem;
@@ -70,7 +70,7 @@ header {
     font-size: 4rem;
     margin: 2rem;
     a:hover {
-      color: cadetblue;
+      color: $color-primary;
     }
     @media screen and (max-width: "600px") {
       display: none;
