@@ -18,13 +18,28 @@
     }
 
     &__el {
+      &-container {
+        display: flex;
+        align-items: center;
+      }
       padding: 2rem;
+      width: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 8rem;
+      text-align: center;
       font-size: 3rem;
       margin: 1rem;
       border-radius: 10px;
       background-color: whitesmoke;
       box-shadow: grey 5px 5px 5px;
       color: #333;
+      &:hover {
+        background-color: $color-primary;
+        color: whitesmoke;
+      }
+
       &--fav {
         @media screen and (max-width: "600px") {
           font-size: 2rem;
