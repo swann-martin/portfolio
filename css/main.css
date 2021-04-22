@@ -69,7 +69,7 @@ nav ul li {
   }
 }
 nav ul li:hover {
-  color: green;
+  color: cadetblue;
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +80,7 @@ nav button {
   border: none;
 }
 nav button:hover {
-  background-color: #509950;
+  background-color: cadetblue;
   outline: none;
   border: none;
 }
@@ -97,13 +97,13 @@ nav button:hover {
   min-width: 10rem;
   padding: 1rem;
   margin: 1px;
-  color: green;
-  background-color: rgba(1, 1, 1, 0.199);
+  color: whitesmoke;
+  background-color: rgba(3, 3, 3, 0.6);
   text-align: justify;
 }
 
 .menu a:hover {
-  background-color: #010101;
+  background-color: cadetblue;
   color: white;
 }
 
