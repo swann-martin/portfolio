@@ -18,11 +18,14 @@
     }
 
     &__el {
-      font-size: 4rem;
-      padding: 1rem;
-      color: orangered;
+      padding: 2rem;
+      font-size: 3rem;
+      margin: 1rem;
+      border-radius: 10px;
+      background-color: whitesmoke;
+      box-shadow: grey 5px 5px 5px;
+      color: #333;
       &--fav {
-        color: cadetblue;
         @media screen and (max-width: "600px") {
           font-size: 2rem;
         }

@@ -210,15 +210,10 @@
       <section id="savoirs" class="savoirs">
         <h2 class="savoirs__title">Technologies</h2>
 
-        <p>
-          J'apprécie travailler sur Linux OS, j'aime aussi favoriser les
-          solutions open source lorsque c'est possible.
-        </p>
-
         <div class="savoirs__liste">
-          <ul class="savoirs__liste__left">
-            <li>
-              <strong>Front :</strong>
+          <div class="savoirs__liste__container">
+            <div>
+              <h4>Front :</h4>
               <i title="Html5" class="fab fa-html5 savoirs__liste__el"></i>
               <i title="CSS3" class="fab fa-css3-alt savoirs__liste__el"></i>
               <i title="Sass" class="fab fa-sass savoirs__liste__el"></i>
@@ -226,22 +221,24 @@
                 title="Bootstrap"
                 class="fab fa-bootstrap savoirs__liste__el"
               ></i>
-            </li>
-            <li>
-              <strong>Programmation : </strong>
+            </div>
+            <div class="savoirs__liste__container">
+              <h4>Programmation :</h4>
               <i
                 title="JavaScript"
                 class="fab fa-js-square savoirs__liste__el savoirs__liste__el--fav"
               ></i>
-              <i title="NodeJS" class="fab fa-node-js savoirs__liste__el"></i>
+              <i title="React" class="fab fa-react savoirs__liste__el"></i>
+              <i title="Angular" class="fab fa-angular savoirs__liste__el"></i>
               <i
                 title="VueJS"
                 class="fab fa-vuejs savoirs__liste__el savoirs__liste__el--fav"
               ></i>
-            </li>
-            <li>
-              <strong>Back-End :</strong>
+            </div>
+            <div class="savoirs__liste__container">
+              <h4>Back-End :</h4>
               <i title="PHP" class="fab fa-php savoirs__liste__el"></i>
+              <i title="NodeJS" class="fab fa-node-js savoirs__liste__el"></i>
               <i
                 title="symfony"
                 class="fab fa-symfony savoirs__liste__el savoirs__liste__el--fav"
@@ -250,9 +247,9 @@
                 class="fas fa-database savoirs__liste__el"
                 title="MariaDb/Mysql"
               ></i>
-            </li>
-            <li>
-              <strong>Autres : </strong>
+            </div>
+            <div class="savoirs__liste__container">
+              <h4>DevOps :</h4>
               <i
                 title="Linux OS : ubuntu, debian, manjaro"
                 class="fab fa-linux savoirs__liste__el savoirs__liste__el--fav"
@@ -262,19 +259,9 @@
                 class="fab fa-osi savoirs__liste__el savoirs__liste__el--fav"
               ></i>
               <i title="git" class="fab fa-git-alt savoirs__liste__el"></i>
-            </li>
-          </ul>
-
-          <ul class="savoirs__liste__right">
-            <li>Adaptabilité</li>
-            <li>Communication</li>
-            <li>Anglais (très bon niveau)</li>
-            <li>Analyse</li>
-            <li>Résolution de problèmes</li>
-            <li>Négociation</li>
-            <li>Gestion de projet</li>
-            <li>Formation</li>
-          </ul>
+              <i title="heroku" class="fas fa-server savoirs__liste__el"></i>
+            </div>
+          </div>
         </div>
       </section>
       <!-- part xp -->
@@ -406,7 +393,11 @@
           </div>
         </div>
       </section>
-
+      <section class="transversal">
+        <div class="savoirs__liste__right">
+          <button class="btn btn-skills">click</button>
+        </div>
+      </section>
       <!-- part hobbies-->
 
       <section class="loisirs">

@@ -3,6 +3,17 @@
   opacity: 0;
 }
 
+.--fav {
+  background-color: cadetblue !important;
+}
+
+.btn {
+  background-color: #333;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
 /*menu navigation*/
 * {
   margin: 0;
@@ -390,12 +401,13 @@ header .header__bottom a:hover {
   }
 }
 .savoirs__liste__el {
-  font-size: 4rem;
-  padding: 1rem;
-  color: orangered;
-}
-.savoirs__liste__el--fav {
-  color: cadetblue;
+  padding: 2rem;
+  font-size: 3rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: grey 5px 5px 5px;
+  color: #333;
 }
 @media screen and (max-width: 600px) {
   .savoirs__liste__el--fav {

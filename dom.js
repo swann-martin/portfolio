@@ -14,3 +14,33 @@ mainContainer.addEventListener("click", (e) => {
     menu.classList.add("--invisible");
   }
 });
+
+const btnSkills = document.querySelector(".btn-skills");
+console.log(btnSkills);
+let counter = 0;
+let skills = [
+  "Adaptabilité",
+  "Communication",
+  "Anglais bilingue",
+  "Analyse",
+  "Résolution de problèmes",
+  "Négociation",
+  "Gestion de projet",
+  "Formation",
+];
+btnSkills.addEventListener("click", () => {
+  let counter = 0;
+  let skills = [
+    "Adaptabilité",
+    "Communication",
+    "Anglais bilingue",
+    "Analyse",
+    "Résolution de problèmes",
+    "Négociation",
+    "Gestion de projet",
+    "Formation",
+  ];
+  counter < skills.length ? counter++ : (counter = 0);
+  console.log(skills[counter]);
+  btnSkills.classList.toggle("--fav");
+});
