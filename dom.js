@@ -1,6 +1,6 @@
 const mainContainer = document.querySelector(".main-container");
 
-const btnBurger = document.querySelector(".nav button");
+const btnBurger = document.querySelector(".nav__burger");
 console.log(btnBurger);
 const menu = document.querySelector(".menu");
 

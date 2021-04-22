@@ -33,12 +33,20 @@ nav ul {
   }
 }
 
-nav button {
+.nav__burger {
+  background-color: #333;
   cursor: pointer;
   padding: 1rem;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   border: none;
   &:hover {
+    background-color: $color-primary;
+    outline: none;
+    border: none;
+  }
+  &:active {
     background-color: $color-primary;
     outline: none;
     border: none;
