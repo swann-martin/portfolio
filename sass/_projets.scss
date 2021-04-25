@@ -6,7 +6,7 @@
   &__cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     justify-items: center;
     @media screen and (max-width: 600px) {
       display: flex;
@@ -21,7 +21,7 @@
       background-color: whitesmoke;
       overflow: hidden;
       box-shadow: grey 5px 5px 5px;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 900px) {
         margin: 1rem 0;
         width: 100%;
       }

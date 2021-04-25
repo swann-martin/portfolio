@@ -44,5 +44,21 @@
         height: 6rem;
       }
     }
+    &__right {
+      width: 50rem;
+      margin: auto;
+      @media screen and (max-width: "600px") {
+        font-size: 2rem;
+        width: 100%;
+      }
+      .btn-skills {
+        text-align: center;
+        cursor: pointer;
+        box-shadow: #333 5px 5px 5px;
+      }
+      div {
+        margin: 1rem 0;
+      }
+    }
   }
 }

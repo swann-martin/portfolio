@@ -16,9 +16,7 @@ mainContainer.addEventListener("click", (e) => {
 });
 
 const btnSkills = document.querySelector(".btn-skills");
-btnSkills.classList.add("--d-none");
 
-let counter = 0;
 let skills = [
   "Adaptabilité",
   "Communication",
@@ -29,19 +27,32 @@ let skills = [
   "Gestion de projet",
   "Formation",
 ];
+
+let savoirs = document.querySelector(".savoirs__liste__right");
+
+let counter = -1;
+
+function selectSkill(arrlist) {
+  counter++;
+  if (counter < arrlist.length) {
+    let showDiv = document.createElement("div");
+    showDiv.innerHTML = `<div class="savoirs__liste btn ${
+      counter % 2 ? "--fav" : ""
+    }">${skills[counter]}</div>`;
+    savoirs.appendChild(showDiv);
+    if (counter === 4) {
+      btnSkills.innerHTML = "Encore ?";
+    }
+    if (counter === 7) {
+      btnSkills.innerHTML = "La liste est finie mais j'en ai encore plein !";
+    }
+  } else {
+    btnSkills.classList.add("--d-none");
+  }
+}
+
 btnSkills.addEventListener("click", () => {
-  let counter = 0;
-  let skills = [
-    "Adaptabilité",
-    "Communication",
-    "Anglais bilingue",
-    "Analyse",
-    "Résolution de problèmes",
-    "Négociation",
-    "Gestion de projet",
-    "Formation",
-  ];
-  counter < skills.length ? counter++ : (counter = 0);
-  console.log(skills[counter]);
+  selectSkill(skills);
+
   btnSkills.classList.toggle("--fav");
 });
