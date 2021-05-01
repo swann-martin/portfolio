@@ -43,6 +43,7 @@ nav ul {
   border: none;
   color: whitesmoke;
   @include flex-center;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: $color-primary;
     outline: none;
@@ -70,9 +71,8 @@ nav ul {
   color: whitesmoke;
   background-color: rgba(3, 3, 3, 0.6);
   text-align: justify;
-}
-
-.menu a:hover {
-  background-color: $color-primary;
-  color: white;
+  &:hover {
+    background-color: $color-primary;
+    color: white;
+  }
 }

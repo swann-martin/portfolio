@@ -16,12 +16,18 @@
 
     @media screen and (max-width: 600px) {
       display: block;
+      text-align: center;
+      width: 100%;
+      padding-left: 1rem;
     }
 
     &__el {
       &-container {
         display: flex;
         align-items: center;
+        @media screen and (max-width: "600px") {
+          justify-content: center;
+        }
       }
       padding: 2rem;
       width: 8rem;
@@ -34,10 +40,7 @@
       background-color: whitesmoke;
       box-shadow: grey 5px 5px 5px;
       color: #333;
-      &:hover {
-        background-color: $color-primary;
-        color: whitesmoke;
-      }
+
       @media screen and (max-width: "600px") {
         font-size: 2rem;
         width: 6rem;
@@ -45,6 +48,8 @@
       }
     }
     &__right {
+      display: flex;
+      flex-wrap: wrap;
       width: 50rem;
       margin: auto;
       @media screen and (max-width: "600px") {
@@ -52,12 +57,21 @@
         width: 100%;
       }
       .btn-skills {
+        margin: 1rem auto;
         text-align: center;
         cursor: pointer;
         box-shadow: #333 5px 5px 5px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $color-primary;
+        }
       }
-      div {
-        margin: 1rem 0;
+      .badge {
+        padding: 1rem;
+        border-radius: 20px;
+        width: 20rem;
+        @include flex-center;
+        margin: 2rem;
       }
     }
   }

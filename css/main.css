@@ -9,6 +9,11 @@
 
 .--fav {
   background-color: cadetblue !important;
+  color: white;
+}
+
+.--cool {
+  background-color: whitesmoke;
 }
 
 .btn {
@@ -16,6 +21,10 @@
   color: whitesmoke;
   border-radius: 10px;
   padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: cadetblue;
 }
 
 /*menu navigation*/
@@ -100,6 +109,7 @@ nav ul li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 .nav__burger:hover {
   background-color: cadetblue;
@@ -129,7 +139,6 @@ nav ul li:hover {
   background-color: rgba(3, 3, 3, 0.6);
   text-align: justify;
 }
-
 .menu a:hover {
   background-color: cadetblue;
   color: white;
@@ -421,6 +430,9 @@ header .header__bottom a:hover {
 @media screen and (max-width: 600px) {
   .savoirs__liste {
     display: block;
+    text-align: center;
+    width: 100%;
+    padding-left: 1rem;
   }
 }
 .savoirs__liste__el {
@@ -442,9 +454,10 @@ header .header__bottom a:hover {
   display: flex;
   align-items: center;
 }
-.savoirs__liste__el:hover {
-  background-color: cadetblue;
-  color: whitesmoke;
+@media screen and (max-width: 600px) {
+  .savoirs__liste__el-container {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .savoirs__liste__el {
@@ -454,6 +467,8 @@ header .header__bottom a:hover {
   }
 }
 .savoirs__liste__right {
+  display: flex;
+  flex-wrap: wrap;
   width: 50rem;
   margin: auto;
 }
@@ -464,12 +479,23 @@ header .header__bottom a:hover {
   }
 }
 .savoirs__liste__right .btn-skills {
+  margin: 1rem auto;
   text-align: center;
   cursor: pointer;
   box-shadow: #333 5px 5px 5px;
+  transition: all 0.2s ease-in-out;
 }
-.savoirs__liste__right div {
-  margin: 1rem 0;
+.savoirs__liste__right .btn-skills:hover {
+  background-color: cadetblue;
+}
+.savoirs__liste__right .badge {
+  padding: 1rem;
+  border-radius: 20px;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
 }
 
 .formation {
