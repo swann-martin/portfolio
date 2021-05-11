@@ -102,8 +102,8 @@ let projects = [
 const displayProjects = () => {
   projects.forEach(function (project) {
     let card = document.createElement("div");
-    let titre = document.createElement("p");
-    titre.textContent = `${project.title}`;
+    let dataContainer = document.createElement("div");
+    dataContainer.classList.add("data-container");
 
     card.classList.add("card");
     let img = document.createElement("img");
@@ -111,10 +111,16 @@ const displayProjects = () => {
     card.style.width = "40rem";
     card.style.borderRadius = "20px";
     card.style.overflow = "hidden";
-    titre.style.paddingLeft = "2rem";
+
+    dataContainer.innerHTML = `
+    <h2>${project.title}</h2>
+    <h3>${project.languages}</h3>
+    <p>${project.infos}</p>
+    `;
+
     card.classList.add("card");
     card.appendChild(img);
-    card.appendChild(titre);
+    card.appendChild(dataContainer);
     myProjects.appendChild(card);
   });
 };
