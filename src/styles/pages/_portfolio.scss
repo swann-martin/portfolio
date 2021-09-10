@@ -31,38 +31,7 @@
       @include verticalCenter;
 
       input[type="radio"] {
-        // visibility: hidden;
-        // position: relative;
         margin-right: 0.5rem;
-
-        // &:before {
-        //   content: "";
-        //   visibility: visible;
-        //   position: absolute;
-        //   top: -4px;
-        //   left: -12px;
-        //   height: 0.9rem;
-        //   width: 0.9rem;
-        //   border-radius: 50%;
-        //   border: 2px solid $color-4;
-        //   cursor: pointer;
-        //   transition: 0.3s;
-        // }
-        // &:after {
-        //   content: "";
-        //   visibility: visible;
-        //   position: absolute;
-        //   top: -4px;
-        //   left: -12px;
-        //   height: 0.9rem;
-        //   width: 0.9rem;
-        //   border-radius: 50%;
-        //   cursor: pointer;
-        //   transition: 0.3s;
-        //   background: $color-4;
-        //   transform: scale(0);
-        //   transform-origin: center;
-        // }
       }
       input:checked:after {
         transform: scale(1.17) translate(-25%, -25%);
