@@ -25,19 +25,25 @@
       // transform: translateX(-50%);
       margin: 2rem 0;
       width: 100%;
-      img {
+      &-avatar {
         border-radius: 50%;
         box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
         width: 8rem;
         height: 8rem;
         object-fit: cover;
       }
-      h3 {
+      &-title {
+        display: flex;
+        align-items: center;
         font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         margin-top: 1.5rem;
         color: $color-5;
+        img {
+          width: 46px;
+          height: 46px;
+        }
       }
     }
   }

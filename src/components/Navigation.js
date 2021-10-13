@@ -2,14 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import avatar from '../media/swann.jpg';
 import cv from '../media/CVSwannMartin.pdf';
-
+import logo from '../media/swannlogo.png';
 const Navigation = () => {
   return (
     <div className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src={avatar} alt="profile-pic" />
-          <h3>Swann</h3>
+          <img className="idContent-avatar" src={avatar} alt="profile-pic" />
+          <h3 className="idContent-title">
+            <img className="idContent-title-pic" src={logo} alt="swann-logo" />
+            wann Martin
+          </h3>
         </div>
       </div>
 
