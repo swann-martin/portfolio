@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Hobbies = () => {
   return (
@@ -12,12 +12,9 @@ const Hobbies = () => {
         <li className="hobby">
           <i className="fas fa-hiking"></i> <span>Randonnées</span>
         </li>
+
         <li className="hobby">
-          <i className="fas fa-snowboarding"></i>
-          <span>Surf</span>
-        </li>
-        <li className="hobby">
-          <i className="fab fa-bitcoin"></i> <span>Blockchain</span>
+          <i className="fab fa-bitcoin"></i> <span>Blockchain, Web3</span>
         </li>
         <li className="hobby">
           <i className="fas fa-seedling"></i> <span>Ecologie</span>

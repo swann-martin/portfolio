@@ -44,7 +44,7 @@ const Navigation = () => {
         <ul>
           <li>
             <a
-              href="http://linkedin.com"
+              href="https://www.linkedin.com/in/swann-martin/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,7 +53,7 @@ const Navigation = () => {
           </li>
           <li>
             <a
-              href="http://github.com"
+              href="https://github.com/swann-martin/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,7 +62,7 @@ const Navigation = () => {
           </li>
           <li>
             <a
-              href="http://github.com"
+              href="https://twitter.com/martiswann"
               target="_blank"
               rel="noopener noreferrer"
             >

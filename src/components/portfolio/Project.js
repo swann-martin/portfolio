@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export class Project extends Component {
   state = {
@@ -39,7 +39,7 @@ export class Project extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Code source
+                    Voir le code sur Github
                   </a>
                 </div>
               </div>

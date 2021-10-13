@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ProgressBar = (props) => {
   return (
@@ -13,10 +13,10 @@ const ProgressBar = (props) => {
       <div>
         {props.languages.map((item) => {
           let xpYears = 2;
-          let ProgressBar = (item.xp / xpYears) * 100 + "%";
+          let ProgressBar = (item.xp / xpYears) * 100 + '%';
 
           return (
-            <div key={item.id} className="languagesList">
+            <div key={item.value + item.id} className="languagesList">
               <li>{item.value}</li>
               <div className="progressBar" style={{ width: ProgressBar }}></div>
             </div>

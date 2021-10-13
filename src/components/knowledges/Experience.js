@@ -5,7 +5,10 @@ const Experience = () => {
     <div className="experience">
       <h3>Expérience</h3>
       <div className="exp-1">
-        <h4>Directeur d'agence - Oxford Intensive School of English</h4>
+        <h4>
+          Directeur d'agence séjours linguistiques&nbsp;-&nbsp;
+          <span title="Oxford Intensive School of English">OISE</span>
+        </h4>
         <h5>2014-2020</h5>
         <ul>
           <li>Gestion d'une antenne régionnale à Bordeaux & Lille</li>
@@ -14,7 +17,10 @@ const Experience = () => {
         </ul>
       </div>
       <div className="exp-2">
-        <h4>Enseignant - City of Portsmouth School</h4>
+        <h4>
+          Enseignant Français / Espagnol&nbsp;-&nbsp;
+          <span title="Ciy of Portsmouth Girl School">CPGS</span>
+        </h4>
         <h5>2012-2014</h5>
         <ul>
           <li>

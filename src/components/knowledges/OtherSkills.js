@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const OtherSkills = () => {
   return (
@@ -7,7 +7,7 @@ const OtherSkills = () => {
       <div className="list">
         <ul>
           <li>
-            <i className="fas fa-check-square"></i> Anglais
+            <i className="fas fa-check-square"></i> Anglais bilingue
           </li>
           <li>
             <i className="fas fa-check-square"></i> Github
@@ -16,7 +16,7 @@ const OtherSkills = () => {
             <i className="fas fa-check-square"></i> SEO
           </li>
           <li>
-            <i className="fas fa-check-square"></i> Linux
+            <i className="fas fa-check-square"></i> GNU Linux
           </li>
         </ul>
         <ul>
@@ -27,7 +27,7 @@ const OtherSkills = () => {
             <i className="fas fa-check-square"></i> UI/UX
           </li>
           <li>
-            <i className="fas fa-check-square"></i> PhotoGimp
+            <i className="fas fa-check-square"></i> Gimp
           </li>
           <li>
             <i className="fas fa-check-square"></i> Agiles
