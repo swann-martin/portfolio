@@ -52,14 +52,13 @@
       &-pdf {
         &-link {
           font-size: 1.5rem;
-          background: $color-3;
+          background: $color-5;
           padding: 1rem 2rem;
           border-radius: $borderRadius;
-          box-shadow: 0 5px 1px rgb(15, 15, 15);
-          transition: 0.2s ease;
+          box-shadow: 0 2.5px 0.5px rgba(0.5, 0.5, 0.5, 5);
+          transition: all 0.2s ease-in-out;
           &:hover {
             background-color: $color-4;
-            transform: scale(1.2);
           }
         }
       }

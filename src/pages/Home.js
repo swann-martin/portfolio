@@ -9,7 +9,7 @@ const Home = () => {
       <div className="homeContent">
         <div className="content">
           <h1 className="content-title">Swann Martin</h1>
-          <h2 className="content-subtitle">Développeur Web React</h2>
+          <h2 className="content-subtitle">Développeur</h2>
           <div className="content-pdf">
             <a
               className="content-pdf-link"
@@ -17,7 +17,9 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fas fa-download"></i> Télécharger CV
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              <span> Voir mon</span>
+              CV
             </a>
           </div>
         </div>

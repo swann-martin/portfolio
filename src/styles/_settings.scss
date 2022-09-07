@@ -21,6 +21,12 @@ $min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
+@mixin columnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
 * {
   box-sizing: border-box;

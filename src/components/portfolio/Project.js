@@ -12,7 +12,8 @@ export class Project extends Component {
   };
 
   render() {
-    let { name, languagesIcons, source, info, picture } = this.props.item;
+    let { name, languagesIcons, sourceCode, info, picture, deployedAt } =
+      this.props.item;
 
     return (
       <div className="project">
@@ -23,30 +24,40 @@ export class Project extends Component {
         </div>
         <h3>{name}</h3>
         <img src={picture} alt={name} onClick={this.handleInfo} />
-        <span className="infos" onClick={this.handleInfo}>
-          <i className="fas fa-plus-circle"></i>
-        </span>
+        <p className="infos">
+          <a
+            className="infos-link"
+            href={deployedAt}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {deployedAt}
+          </a>
+          <span className="infos-link" onClick={this.handleInfo}>
+            Voir infos
+            <i className="fa fa-circle-info "></i>
+          </span>
+        </p>
 
         {this.state.showInfo && (
           <div className="showInfos">
             <div className="infosContent">
               <div className="head">
                 <h2>{name}</h2>
-                <div className="sourceCode">
-                  <a
-                    href={source}
-                    className="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Voir le code sur Github
-                  </a>
+                <div className="button close" onClick={this.handleInfo}>
+                  <i className="fa-solid fa-xmark"></i>
                 </div>
               </div>
               <p className="text">{info}</p>
-
-              <div className="button return" onClick={this.handleInfo}>
-                Retourner sur le site
+              <div className="sourceCode">
+                <a
+                  href={sourceCode}
+                  className="button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le code sur Github
+                </a>
               </div>
             </div>
           </div>

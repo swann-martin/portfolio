@@ -1,8 +1,12 @@
-import React from "react";
-import Navigation from "../components/Navigation";
-import ProjectList from "../components/portfolio/ProjectList";
+import React, { useEffect } from 'react';
+import Navigation from '../components/Navigation';
+import ProjectList from '../components/portfolio/ProjectList';
 
-const Portfolio = () => {
+const Portfolio = (data) => {
+  useEffect(() => {
+    console.log(data);
+  }, []);
+
   return (
     <div className="portfolio">
       <Navigation />

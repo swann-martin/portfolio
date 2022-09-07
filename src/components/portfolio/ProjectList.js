@@ -1,17 +1,18 @@
-import React, { Component } from "react";
-import { portfolioData } from "../../data/portfolioData";
-import Project from "./Project";
+import React, { Component } from 'react';
+import { portfolioData } from '../../data/portfolioData';
+import Project from './Project';
 
 export default class ProjectList extends Component {
   state = {
     projects: portfolioData,
     radios: [
-      { id: 1, value: "javascript" },
-      { id: 2, value: "react" },
-      { id: 3, value: "typescript" },
-      { id: 4, value: "php" },
+      { id: 1, value: 'javascript' },
+      { id: 2, value: 'react' },
+      { id: 3, value: 'typescript' },
+      { id: 4, value: 'php' },
+      { id: 5, value: 'all' },
     ],
-    selectedRadio: "javascript",
+    selectedRadio: 'all',
   };
 
   handleRadio = (event) => {

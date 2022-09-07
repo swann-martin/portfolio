@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import avatar from '../media/swann.jpg';
-import cv from '../media/CVSwannMartin.pdf';
+import avatar from '../media/swann.jpeg';
+
 import logo from '../media/swannlogo.png';
 const Navigation = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <div className="sidebar">
       <div className="id">
@@ -65,11 +68,11 @@ const Navigation = () => {
           </li>
           <li>
             <a
-              href="https://twitter.com/martiswann"
+              href="https://api.whatsapp.com/send?phone=33667025467"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fa-brands fa-whatsapp"></i>
             </a>
           </li>
         </ul>
@@ -79,7 +82,7 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            swann martin - 2021
+            &copy;swann martin - {year}
           </a>
         </div>
       </div>

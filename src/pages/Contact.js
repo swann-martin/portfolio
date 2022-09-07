@@ -13,7 +13,7 @@ const Contact = () => {
           <ul>
             <li>
               <i className="fas fa-map-marker-alt"></i>
-              <span>Bordeaux</span>
+              <span>Bruxelles</span>
             </li>
             <li>
               <i className="fas fa-mobile-alt"></i>
@@ -24,7 +24,7 @@ const Contact = () => {
                     alert('Numéro de téléphone copié');
                   }}
                 >
-                  06 67 02 54 67
+                  0032 4 56 59 60 82
                 </span>
               </CopyToClipboard>
             </li>
@@ -64,12 +64,12 @@ const Contact = () => {
             </a>
 
             <a
-              href="http://twitter.com/martiswann"
+              href="https://api.whatsapp.com/send?phone=33667025467"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h4>Twitter</h4>
-              <i className="fab fa-twitter"></i>
+              <h4>Whatsapp</h4>
+              <i className="fa-brands fa-whatsapp"></i>
             </a>
           </ul>
         </div>
