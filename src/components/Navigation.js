@@ -7,6 +7,30 @@ const Navigation = () => {
   const date = new Date();
   const year = date.getFullYear();
 
+  const navLinks = [
+    {
+      label: 'Accueil',
+      icon: 'fas fa-home',
+      path: '/',
+    },
+    {
+      label: 'Portfolio',
+      icon: 'fas fa-images',
+      path: '/portfolio',
+    },
+    {
+      label: 'Compétences',
+      icon: 'fas fa-brain',
+      path: '/knowledges',
+    },
+
+    {
+      label: 'Contact',
+      icon: 'fas fa-address-book',
+      path: '/contact',
+    },
+  ];
+
   return (
     <div className="sidebar">
       <div className="id">
@@ -21,7 +45,16 @@ const Navigation = () => {
 
       <div className="navigation">
         <ul>
-          <li>
+          {navLinks.map((link, index) => (
+            <li key={`${link.label}${index}`}>
+              <NavLink exact to={link.path} activeClassName="navActive">
+                <i className={link.icon}></i>
+                <span>{link.label}</span>
+              </NavLink>
+            </li>
+          ))}
+
+          {/* <li>
             <NavLink exact to="/" activeClassName="navActive">
               <i className="fas fa-home"></i>
               <span>Accueil</span>
@@ -43,9 +76,11 @@ const Navigation = () => {
               <i className="fas fa-address-book"></i> <span>Contact</span>
             </NavLink>
           </li>
+   
+      
+        */}
         </ul>
       </div>
-
       <div className="socialNetwork">
         <ul>
           <li>

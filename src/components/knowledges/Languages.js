@@ -1,36 +1,42 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
 
-export default class Languages extends Component {
-  state = {
-    languages: [
-      { id: 1, value: 'JavaScript', xp: 1 },
-      { id: 2, value: 'CSS', xp: 1.8 },
-      { id: 3, value: 'TypeScript', xp: 0.8 },
-      { id: 4, value: 'Php', xp: 1.5 },
-    ],
-    frameworks: [
-      { id: 1, value: 'React', xp: 0.8 },
-      { id: 2, value: 'Bootstrap', xp: 0.5 },
-      { id: 3, value: 'Sass', xp: 1.2 },
-      { id: 4, value: 'Symfony', xp: 0.4 },
-    ],
-  };
-  render() {
-    let { languages, frameworks } = this.state;
-    return (
-      <div className="languagesFrameworks">
-        <ProgressBar
-          languages={languages}
-          className="languagesDisplay"
-          title="languages"
-        />
-        <ProgressBar
-          languages={frameworks}
-          className="frameworksDisplay"
-          title="frameworks & bibliothèques"
-        />
-      </div>
-    );
-  }
-}
+const date1 = new Date('09/10/2020');
+const now = new Date();
+const diffTime = Math.abs(now - date1);
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+const diffYears = Math.ceil(diffDays / 365);
+console.log(diffTime + ' milliseconds');
+console.log(diffDays + ' days');
+
+const Languages = () => {
+  const [languages, setLanguages] = useState([
+    { id: 1, value: 'JavaScript', xp: diffYears },
+    { id: 2, value: 'SCSS', xp: diffYears },
+    { id: 3, value: 'TypeScript', xp: diffYears - 0.25 },
+    { id: 4, value: 'Php', xp: 1 },
+  ]);
+  const [frameworks, setFrameworks] = useState([
+    { id: 1, value: 'React', xp: diffYears - 0.4 },
+    { id: 2, value: 'Bootstrap', xp: diffYears },
+    { id: 3, value: 'Flutter', xp: diffYears - 1.9 },
+    { id: 4, value: 'Symfony', xp: 0.5 },
+  ]);
+
+  return (
+    <div className="languagesFrameworks">
+      <ProgressBar
+        languages={languages}
+        className="languagesDisplay"
+        title="languages"
+      />
+      <ProgressBar
+        languages={frameworks}
+        className="frameworksDisplay"
+        title="frameworks & bibliothèques"
+      />
+    </div>
+  );
+};
+
+export default Languages;

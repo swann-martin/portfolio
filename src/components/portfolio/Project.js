@@ -23,7 +23,11 @@ export class Project extends Component {
           ))}
         </div>
         <h3>{name}</h3>
-        <img src={picture} alt={name} onClick={this.handleInfo} />
+        {picture == '' ? (
+          <i className="infos-link fab fa-github" onClick={this.handleInfo}></i>
+        ) : (
+          <img src={picture} alt={name} onClick={this.handleInfo} />
+        )}
         <p className="infos">
           <a
             className="infos-link"
