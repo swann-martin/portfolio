@@ -1,4 +1,15 @@
-export const portfolioData = [
+export type PortfolioData = {
+  id: number;
+  name: string;
+  deployedAt?: string;
+  languages: string[];
+  languagesIcons: string[];
+  sourceCode: string;
+  info: string;
+  picture: string;
+};
+
+export const portfolioData: PortfolioData[] = [
   {
     id: 1,
     name: 'Burgers Restaurant',

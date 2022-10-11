@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navigation from '../components/Navigation';
 import ProjectList from '../components/portfolio/ProjectList';
 
-const Portfolio = (data) => {
-  useEffect(() => {
-    console.log(data);
-  }, []);
-
+const Portfolio = ({ data }: { data: any }) => {
   return (
     <div className="portfolio">
       <Navigation />

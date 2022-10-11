@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { portfolioData } from '../../data/portfolioData';
+import { PortfolioData, portfolioData } from '../../data/portfolioData';
 import Project from './Project';
 
 export default class ProjectList extends Component {
@@ -16,7 +16,7 @@ export default class ProjectList extends Component {
     selectedRadio: 'all',
   };
 
-  handleRadio = (event) => {
+  handleRadio = (event: any) => {
     let radio = event.target.value;
     this.setState({ selectedRadio: radio });
   };
@@ -46,9 +46,11 @@ export default class ProjectList extends Component {
 
         <div className="projects">
           {projects
-            .filter((item) => item.languages.includes(selectedRadio))
-            .map((item) => {
-              return <Project key={item.id} item={item} />;
+            .filter((item: PortfolioData) =>
+              item.languages.includes(selectedRadio),
+            )
+            .map((item: PortfolioData) => {
+              return <Project key={item?.id} item={item} />;
             })}
         </div>
       </div>

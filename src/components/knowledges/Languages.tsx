@@ -3,7 +3,13 @@ import ProgressBar from './ProgressBar';
 
 const date1 = new Date('09/10/2020');
 const now = new Date();
-const diffTime = Math.abs(now - date1);
+const day = now.getDay();
+const month = now.getMonth();
+const year = now.getFullYear();
+const today = new Date(`${day}/${month}/${year}`);
+const diffTime = Math.abs(
+  (today as unknown as number) - (date1 as unknown as number),
+);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 const diffYears = Math.ceil(diffDays / 365);
 console.log(diffTime + ' milliseconds');
