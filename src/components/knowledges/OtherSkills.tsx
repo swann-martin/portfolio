@@ -1,57 +1,40 @@
-import React from 'react';
+import React from "react";
 
 const OtherSkills = () => {
+  const hobbies: {
+    name: string;
+    icon: string;
+  }[] = [
+    { name: "Escalade", icon: "fas fa-mountain" },
+    { name: "Randonnée", icon: "fas fa-hiking" },
+    { name: "Ecologie", icon: "fas fa-seedling" },
+    { name: "Ecologie", icon: "fas fa-seedling" },
+  ];
+
+  const skills = ["anglais bilingue", "agile", "git", "figma", "linux", "gimp"];
+
   return (
     <div className="otherSkills">
       <h3>Autres compétences</h3>
       <div className="list">
         <ul>
-          <li>
-            <i className="fas fa-check-square"></i> Anglais bilingue
-          </li>
-          <li>
-            <i className="fas fa-check-square"></i> Github
-          </li>
-          <li>
-            <i className="fas fa-check-square"></i> SEO
-          </li>
-          <li>
-            <i className="fas fa-check-square"></i> GNU Linux
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <i className="fas fa-check-square"></i> Figma
-          </li>
-          <li>
-            <i className="fas fa-check-square"></i> UI/UX
-          </li>
-          <li>
-            <i className="fas fa-check-square"></i> Gimp
-          </li>
-          <li>
-            <i className="fas fa-check-square"></i> Agiles
-          </li>
+          {skills?.map((skill) => (
+            <li key={skill}>
+              <i className="fas fa-check-square"></i>
+              <span>{skill}</span>
+            </li>
+          ))}
         </ul>
       </div>
-      <div className="hobbies">
+      <div className="hobbies" style={{ padding: 0, marginTop: ".5rem" }}>
         <h3>Intérêts</h3>
         <ul>
-          <li className="hobby">
-            <i className="fas fa-mountain"></i>
-            <span>Escalade</span>
-          </li>
-          <li className="hobby">
-            <i className="fas fa-hiking"></i> <span>Randonnées</span>
-          </li>
-
-          <li className="hobby">
-            <i className="fas fa-seedling"></i> <span>Ecologie</span>
-          </li>
-          <li className="hobby">
-            <i className="fas fa-book"></i>{' '}
-            <span>Science-fiction, Fantasy</span>
-          </li>
+          {hobbies?.map((hobbies) => (
+            <li key={hobbies?.name} className="hobby">
+              <i className={hobbies?.icon}></i>
+              <span>{hobbies?.name}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
