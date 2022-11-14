@@ -1,25 +1,21 @@
 .contactContent {
   background: $color-3;
-  border-radius: $borderRadius;
   width: 100%;
+  min-height: 95vh;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 45% 35%;
-  grid-template-areas:
-    "1"
-    "2"
-    "3";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 
   .header {
-    grid-area: 1;
     width: 100%;
     position: relative;
     background: $color-1;
-    height: 340px;
-
+    min-height: 45vh;
+    z-index: 0;
     &:before {
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       position: absolute;
@@ -27,7 +23,7 @@
       filter: grayscale(100%);
     }
     &:after {
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       position: absolute;
@@ -36,7 +32,12 @@
     }
   }
   .contactBox {
-    grid-area: 2;
+    position: relative;
+    top: -25%;
+    z-index: 1;
+    @media screen and (max-width: 850px) {
+      top: -50%;
+    }
     background: $color-5;
     margin: 0 auto;
     padding: 1rem 3rem;
@@ -45,7 +46,7 @@
     box-shadow: 0 3px 10px #333;
     width: 50%;
     min-width: 440px;
-    min-height: 200px;
+    min-height: 300px;
     color: $white;
 
     h1 {
@@ -53,68 +54,55 @@
       margin-top: 0.3rem;
       position: relative;
       color: $color-2;
-
-      &:after {
-        content: "";
-        height: 1px;
-        width: 50%;
-        background: $color-1;
-        position: absolute;
-        bottom: -25px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
     }
     ul {
-      height: 72%;
-      width: inherit;
-      display: grid;
-      margin-top: 3.5rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
 
       li {
-        position: relative;
+        margin: 0.5rem 0;
+        height: 2rem;
       }
-
       i {
         font-size: 1.4rem;
-        position: absolute;
-        transform: translateY(2px);
         color: $color-2;
       }
       span {
         font-size: 1.4rem;
-        position: absolute;
-        transform: translateX(52px);
+        margin-left: 0.5rem;
+        &:hover {
+          position: absolute;
+          transform: translateX(2px);
+          color: $color-3;
+        }
         background: transparent;
         border: none;
         outline: none;
-        width: 350px;
+
         transition: 0.2s ease;
       }
       .clickInput:hover {
-        transform: translateX(56px);
+        transform: translateX(2px);
         cursor: pointer;
         color: $color-3;
       }
     }
   }
   .socialNetwork {
-    grid-area: 3;
-    @include verticalCenter;
-
     ul {
       display: flex;
       text-align: center;
       width: 100%;
       justify-content: space-around;
-
+      margin-bottom: 2rem;
       a {
-        width: 20%;
+        margin: 0 2rem;
         font-size: 1.2rem;
         background: $color-5;
         border-radius: $borderRadius;
         display: inline-block;
-        padding: 0.7rem 0;
+        padding: 1rem;
         box-shadow: $shadow;
         transform: scaleY(0);
         transform-origin: center;

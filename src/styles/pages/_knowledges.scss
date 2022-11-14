@@ -1,14 +1,16 @@
 .knowledges {
   .knowledgesContent {
+    padding-top: 2rem;
     margin-left: 1rem;
     min-height: $min-height;
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 38% 1fr 1fr;
-    grid-template-rows: 70% 30%;
-    grid-template-areas: "L E E", "O O H";
+    display: flex;
+    // grid-template-columns: 38% 1fr 1fr;
+    // grid-template-rows: 40% 40%;
+    // grid-template-areas: "L E E", "O O H";
 
     .languagesFrameworks,
     .experience,
@@ -26,17 +28,17 @@
       text-transform: uppercase;
     }
     .languagesFrameworks {
-      grid-area: "L";
+      grid-area: "O";
       margin-bottom: 0.5rem;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "L" "F";
+      grid-template-areas: "L" "E";
       .languageDisplay {
         grid-area: "L";
       }
       .frameworkDisplay {
-        grid-area: "F";
+        grid-area: "E";
       }
       h3 {
         margin-bottom: 0.3rem;
@@ -98,10 +100,12 @@
       }
     }
     .experience {
+      color: $white;
       grid-area: "E";
       margin: 0 0 0.5rem 0.5rem;
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr, 1fr;
+
       grid-template-rows: 10% 1fr 1fr;
       grid-template-areas:
         "1"
@@ -114,12 +118,21 @@
       h4 {
         font-size: 1.1rem;
         color: $color-3;
+        margin: 0.5rem 0;
       }
       h5 {
-        color: $white;
-        padding: 0.5rem 0 0.5rem 1rem;
+        font-size: 1rem;
+        color: $color-1;
+        margin: 0.5rem 0;
       }
-      p {
+      h6 {
+        padding: 0 0.5rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+      ul {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
         text-align: justify;
         padding: 0 1rem;
       }
@@ -137,43 +150,49 @@
 
       .list {
         display: flex;
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
+        width: 100%;
+        height: 45%;
         justify-content: space-between;
         align-items: flex-start;
-
         ul {
-          height: 50%;
-          display: grid;
+          height: 100%;
           li {
+            margin-top: 1rem;
             color: $white;
           }
 
           i {
             color: $color-4;
+          }
+          span {
+            margin-left: 0.5rem;
+            color: $white;
+            text-transform: capitalize;
           }
         }
       }
     }
 
     .hobbies {
-      grid-area: "H";
-      padding-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 45%;
 
       ul {
-        height: 80%;
-        display: grid;
-
+        height: 100%;
         li {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: flex-start;
           i {
-            position: absolute;
+            margin-left: 0;
             color: $color-4;
           }
           span {
+            margin-left: 0.5rem;
             color: $white;
-            position: absolute;
-            transform: translateX(2.2rem);
+            text-transform: capitalize;
           }
         }
       }
@@ -196,6 +215,7 @@
     .hobbies {
       font-size: 0.8rem;
     }
+    text-align: left;
   }
 }
 @media screen and (max-width: 850px) {
@@ -211,10 +231,11 @@
 }
 @media screen and (max-width: 500px) {
   .knowledgesContent {
+    margin-bottom: 2rem;
     display: grid !important;
     grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 180px 180px !important;
-
+    grid-template-rows: 1fr, 1fr, 180px 180px !important;
+    margin-left: 0px !important;
     .languages {
       grid-area: 1 !important;
     }
@@ -224,11 +245,10 @@
     }
     .otherSkills {
       grid-area: 3 !important;
-      margin-right: 0 !important;
+      margin-left: 0 !important;
     }
     .hobbies {
-      grid-area: 4 !important;
-      margin-top: 0.5rem !important;
+      grid-area: 3 !important;
     }
   }
 }
