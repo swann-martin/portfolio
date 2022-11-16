@@ -1,33 +1,56 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import avatar from '../media/swann.jpeg';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import avatar from "../media/swann.jpeg";
 
-import logo from '../media/swannlogo.png';
+import logo from "../media/swannlogo.png";
 const Navigation = () => {
   const date = new Date();
   const year = date.getFullYear();
 
   const navLinks = [
     {
-      label: 'Accueil',
-      icon: 'fas fa-home',
-      path: '/',
+      label: "Accueil",
+      icon: "fas fa-home",
+      path: "/",
     },
     {
-      label: 'Portfolio',
-      icon: 'fas fa-images',
-      path: '/portfolio',
+      label: "Portfolio",
+      icon: "fas fa-images",
+      path: "/portfolio",
     },
     {
-      label: 'Compétences',
-      icon: 'fas fa-brain',
-      path: '/knowledges',
+      label: "Compétences",
+      icon: "fas fa-brain",
+      path: "/knowledges",
     },
 
     {
-      label: 'Contact',
-      icon: 'fas fa-address-book',
-      path: '/contact',
+      label: "Contact",
+      icon: "fas fa-address-book",
+      path: "/contact",
+    },
+  ];
+
+  const socialNetworkLinks = [
+    {
+      label: "Linkedin",
+      icon: "fab fa-linkedin",
+      path: "https://www.linkedin.com/in/swann-martin",
+    },
+    {
+      label: "Mastodon",
+      icon: "fa-brands fa-mastodon",
+      path: "https://fosstodon.org/@swann",
+    },
+    {
+      label: "Github",
+      icon: "fab fa-github",
+      path: "https://github.com/swann-martin/",
+    },
+    {
+      label: "WhatsApp",
+      icon: "fa-brands fa-whatsapp",
+      path: "https://api.whatsapp.com/send?phone=33667025467",
     },
   ];
 
@@ -53,67 +76,21 @@ const Navigation = () => {
               </NavLink>
             </li>
           ))}
-
-          {/* <li>
-            <NavLink exact to="/" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Accueil</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/knowledges" activeClassName="navActive">
-              <i className="fas fa-brain"></i> <span>Compétences</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/portfolio" activeClassName="navActive">
-              <i className="fas fa-images"></i>
-              <span>Portfolio</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/contact" activeClassName="navActive">
-              <i className="fas fa-address-book"></i> <span>Contact</span>
-            </NavLink>
-          </li>
-   
-      
-        */}
         </ul>
       </div>
       <div className="socialNetwork">
         <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/swann-martin/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/swann-martin/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://api.whatsapp.com/send?phone=33667025467"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-whatsapp"></i>
-            </a>
-          </li>
+          {socialNetworkLinks.map((social) => (
+            <li key={social.label}>
+              <a href={social.path} target="_blank" rel="noopener noreferrer">
+                <i className={social.icon}></i>
+              </a>
+            </li>
+          ))}
         </ul>
         <div className="signature">
           <a
-            href="http://swannwho.com"
+            href="http://swannmartin.xyz"
             target="_blank"
             rel="noopener noreferrer"
           >

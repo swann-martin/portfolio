@@ -1,8 +1,12 @@
-import React from 'react';
-import Navigation from '../components/Navigation';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import React from "react";
+import Navigation from "../components/Navigation";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Contact = () => {
+  const cityName = "Bruxelles";
+  const phoneNumber = "0032 4 56 59 60 82";
+  const emailAdress = "swannmartin1988@gmail.com";
+
   return (
     <div className="contact">
       <Navigation />
@@ -13,7 +17,7 @@ const Contact = () => {
           <ul>
             <li>
               <i className="fas fa-map-marker-alt"></i>
-              <span>Bruxelles</span>
+              <span>{cityName}</span>
             </li>
             <li>
               <i className="fas fa-mobile-alt"></i>
@@ -21,23 +25,23 @@ const Contact = () => {
                 <span
                   className="clickInput"
                   onClick={() => {
-                    alert('Numéro de téléphone copié');
+                    alert("Numéro de téléphone copié");
                   }}
                 >
-                  0032 4 56 59 60 82
+                  {phoneNumber}
                 </span>
               </CopyToClipboard>
             </li>
             <li>
               <i className="far fa-envelope"></i>
-              <CopyToClipboard text="swannmartin1988@gmail.com">
+              <CopyToClipboard text={emailAdress}>
                 <span
                   className="clickInput"
                   onClick={() => {
-                    alert('email copié');
+                    alert("email copié");
                   }}
                 >
-                  swannmartin1988@gmail.com
+                  {emailAdress}
                 </span>
               </CopyToClipboard>
             </li>
@@ -52,6 +56,14 @@ const Contact = () => {
             >
               <h4>LinkedIn</h4>
               <i className="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://fosstodon.org/@swann"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h4>Mastodon</h4>
+              <i className="fa-brands fa-mastodon"></i>
             </a>
 
             <a
