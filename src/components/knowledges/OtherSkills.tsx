@@ -8,7 +8,6 @@ const OtherSkills = () => {
     { name: "Escalade", icon: "fas fa-mountain" },
     { name: "Randonnée", icon: "fas fa-hiking" },
     { name: "Ecologie", icon: "fas fa-seedling" },
-    { name: "Ecologie", icon: "fas fa-seedling" },
   ];
 
   const skills = ["anglais bilingue", "agile", "git", "figma", "linux", "gimp"];
