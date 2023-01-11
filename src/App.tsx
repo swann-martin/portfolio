@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Knowledges from './pages/Knowledges';
@@ -26,17 +26,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/knowledges" component={Knowledges} />
-          <Route exact path="/portfolio">
-            <Portfolio data={data} />
-          </Route>
-          <Route exact path="/contact" component={Contact} />
-          <Route path="" component={NotFound} />
-        </Switch>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/knowledges" element={<Knowledges />} />
+        <Route path="/portfolio" element={<Portfolio data={data} />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 };

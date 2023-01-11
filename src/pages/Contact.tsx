@@ -1,11 +1,11 @@
-import React from "react";
-import Navigation from "../components/Navigation";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import React from 'react';
+import Navigation from '../components/Navigation';
+// import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Contact = () => {
-  const cityName = "Bruxelles";
-  const phoneNumber = "0032 4 56 59 60 82";
-  const emailAdress = "swannmartin1988@gmail.com";
+  const cityName = 'Bruxelles';
+  const phoneNumber = '0032 4 56 59 60 82';
+  const emailAdress = 'swannmartin1988@gmail.com';
 
   return (
     <div className="contact">
@@ -21,29 +21,29 @@ const Contact = () => {
             </li>
             <li>
               <i className="fas fa-mobile-alt"></i>
-              <CopyToClipboard text="0667025467">
-                <span
-                  className="clickInput"
-                  onClick={() => {
-                    alert("Numéro de téléphone copié");
-                  }}
-                >
-                  {phoneNumber}
-                </span>
-              </CopyToClipboard>
+              {/* <CopyToClipboard text="0667025467"> */}
+              <span
+                className="clickInput"
+                onClick={() => {
+                  alert('Numéro de téléphone copié');
+                }}
+              >
+                {phoneNumber}
+              </span>
+              {/* </CopyToClipboard> */}
             </li>
             <li>
               <i className="far fa-envelope"></i>
-              <CopyToClipboard text={emailAdress}>
-                <span
-                  className="clickInput"
-                  onClick={() => {
-                    alert("email copié");
-                  }}
-                >
-                  {emailAdress}
-                </span>
-              </CopyToClipboard>
+              {/* <CopyToClipboard text={emailAdress}> */}
+              <span
+                className="clickInput"
+                onClick={() => {
+                  alert('email copié');
+                }}
+              >
+                {emailAdress}
+              </span>
+              {/* </CopyToClipboard> */}
             </li>
           </ul>
         </div>
