@@ -1,56 +1,56 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import avatar from "../media/swann.jpeg";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import avatar from '../media/swann.jpeg';
 
-import logo from "../media/swannlogo.png";
+import logo from '../media/swannlogo.png';
 const Navigation = () => {
   const date = new Date();
   const year = date.getFullYear();
 
   const navLinks = [
     {
-      label: "Accueil",
-      icon: "fas fa-home",
-      path: "/",
+      label: 'Accueil',
+      icon: 'fas fa-home',
+      path: '/',
     },
     {
-      label: "Portfolio",
-      icon: "fas fa-images",
-      path: "/portfolio",
+      label: 'Portfolio',
+      icon: 'fas fa-images',
+      path: '/portfolio',
     },
     {
-      label: "Compétences",
-      icon: "fas fa-brain",
-      path: "/knowledges",
+      label: 'Compétences',
+      icon: 'fas fa-brain',
+      path: '/knowledges',
     },
 
     {
-      label: "Contact",
-      icon: "fas fa-address-book",
-      path: "/contact",
+      label: 'Contact',
+      icon: 'fas fa-address-book',
+      path: '/contact',
     },
   ];
 
   const socialNetworkLinks = [
     {
-      label: "Linkedin",
-      icon: "fab fa-linkedin",
-      path: "https://www.linkedin.com/in/swann-martin",
+      label: 'Linkedin',
+      icon: 'fab fa-linkedin',
+      path: 'https://www.linkedin.com/in/swann-martin',
     },
     {
-      label: "Mastodon",
-      icon: "fa-brands fa-mastodon",
-      path: "https://fosstodon.org/@swann",
+      label: 'Mastodon',
+      icon: 'fa-brands fa-mastodon',
+      path: 'https://fosstodon.org/@swann',
     },
     {
-      label: "Github",
-      icon: "fab fa-github",
-      path: "https://github.com/swann-martin/",
+      label: 'Github',
+      icon: 'fab fa-github',
+      path: 'https://github.com/swann-martin/',
     },
     {
-      label: "WhatsApp",
-      icon: "fa-brands fa-whatsapp",
-      path: "https://api.whatsapp.com/send?phone=33667025467",
+      label: 'WhatsApp',
+      icon: 'fa-brands fa-whatsapp',
+      path: 'https://api.whatsapp.com/send?phone=33667025467',
     },
   ];
 
@@ -70,7 +70,7 @@ const Navigation = () => {
         <ul>
           {navLinks.map((link, index) => (
             <li key={`${link.label}${index}`}>
-              <NavLink exact to={link.path} activeClassName="navActive">
+              <NavLink to={link.path}>
                 <i className={link.icon}></i>
                 <span>{link.label}</span>
               </NavLink>
