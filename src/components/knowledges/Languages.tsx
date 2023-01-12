@@ -2,18 +2,11 @@ import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
 
 const date1 = new Date('09/10/2020');
-const now = new Date();
-const day = now.getDay();
-const month = now.getMonth();
-const year = now.getFullYear();
-const today = new Date(`${day}/${month}/${year}`);
-const diffTime = Math.abs(
-  (today as unknown as number) - (date1 as unknown as number),
-);
+const now = new Date().toDateString();
+const today = new Date(now);
+const diffTime = Math.abs(today.getTime() - date1.getTime());
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 const diffYears = Math.ceil(diffDays / 365);
-console.log(diffTime + ' milliseconds');
-console.log(diffDays + ' days');
 
 const Languages = () => {
   const [languages, setLanguages] = useState([
@@ -32,11 +25,13 @@ const Languages = () => {
   return (
     <div className="languagesFrameworks">
       <ProgressBar
+        diffYears={diffYears}
         languages={languages}
         className="languagesDisplay"
         title="languages"
       />
       <ProgressBar
+        diffYears={diffYears}
         languages={frameworks}
         className="frameworksDisplay"
         title="frameworks & bibliothèques"

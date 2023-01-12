@@ -4,10 +4,12 @@ const ProgressBar = ({
   languages,
   className,
   title,
+  diffYears,
 }: {
   languages: { id: number; value: string; xp: number }[];
   className: string;
   title: string;
+  diffYears: number | null;
 }) => {
   return (
     <div className={className}>
@@ -16,7 +18,7 @@ const ProgressBar = ({
       <div className="years">
         <span>Années d'experience</span>
         <span>1 an</span>
-        <span>{languages[0].xp} ans</span>
+        <span>{diffYears} ans</span>
       </div>
       <div>
         {languages.map((item) => {
