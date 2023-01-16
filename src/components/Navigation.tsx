@@ -70,7 +70,12 @@ const Navigation = () => {
         <ul>
           {navLinks.map((link, index) => (
             <li key={`${link.label}${index}`}>
-              <NavLink to={link.path}>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? 'navActive' : undefined
+                }
+                to={link.path}
+              >
                 <i className={link.icon}></i>
                 <span>{link.label}</span>
               </NavLink>
