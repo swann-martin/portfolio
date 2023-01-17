@@ -11,18 +11,18 @@ import NotFound from './pages/NotFound';
 const App = () => {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch('https://api.github.com/users/swann-martin/repos')
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw response;
-      })
-      .then((repos) => {
-        setData(repos);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://api.github.com/users/swann-martin/repos')
+  //     .then((response) => {
+  //       if (response.ok) {
+  //         return response.json();
+  //       }
+  //       throw response;
+  //     })
+  //     .then((repos) => {
+  //       setData(repos);
+  //     });
+  // }, []);
 
   return (
     <div className="App">

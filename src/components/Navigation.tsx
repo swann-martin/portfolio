@@ -38,11 +38,6 @@ const Navigation = () => {
       path: 'https://www.linkedin.com/in/swann-martin',
     },
     {
-      label: 'Mastodon',
-      icon: 'fa-brands fa-mastodon',
-      path: 'https://fosstodon.org/@swann',
-    },
-    {
       label: 'Github',
       icon: 'fab fa-github',
       path: 'https://github.com/swann-martin/',
