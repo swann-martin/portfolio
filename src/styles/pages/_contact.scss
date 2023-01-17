@@ -19,7 +19,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      background: url(../../media/map.jpg) no-repeat center top/cover;
+      background: url(../media/map.jpg) no-repeat center top/cover;
       filter: grayscale(100%);
     }
     &:after {
@@ -28,15 +28,18 @@
       height: 100%;
       position: absolute;
       top: 30px;
-      background: url(../../media/shape.svg) no-repeat center / cover;
+      background: url(../media/shape.svg) no-repeat center / cover;
     }
   }
   .contactBox {
     position: relative;
     top: -25%;
     z-index: 1;
+    max-width: 100%;
     @media screen and (max-width: 850px) {
       top: -50%;
+      max-width: 100%;
+      padding: 0.5rem;
     }
     background: $color-5;
     margin: 0 auto;
@@ -48,47 +51,73 @@
     min-width: 440px;
     min-height: 300px;
     color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    h1 {
+    &:focus {
+      outline: none;
+    }
+
+    &-title {
       text-align: center;
       margin-top: 0.3rem;
       position: relative;
       color: $color-2;
     }
-    ul {
+
+    .form {
       display: flex;
       flex-direction: column;
-      margin-top: 3rem;
+      width: 100%;
+      &-line {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
 
-      li {
-        margin: 0.5rem 0;
-        height: 2rem;
-      }
-      i {
-        font-size: 1.4rem;
-        color: $color-2;
-      }
-      span {
-        font-size: 1.4rem;
-        margin-left: 0.5rem;
-        &:hover {
-          position: absolute;
-          transform: translateX(2px);
-          color: $color-3;
+        label {
+          padding-right: 0.5rem;
         }
-        background: transparent;
-        border: none;
-        outline: none;
-
-        transition: 0.2s ease;
+        input {
+          padding: 0.5rem;
+          border-radius: $borderRadius;
+          border: none;
+        }
+        textarea {
+          border-radius: $borderRadius;
+          padding: 0.5rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+        }
       }
-      .clickInput:hover {
-        transform: translateX(2px);
+      &-btn {
+        align-self: flex-end;
+        width: 50%;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        background: $color-4;
+        color: $color-2;
+        font-weight: bold;
+        border-radius: $borderRadius;
+        box-shadow: 0 3px 10px #333;
         cursor: pointer;
-        color: $color-3;
+        i {
+          padding-right: 0.5rem;
+        }
+        input {
+          border: none;
+          font-weight: bold;
+          background: $color-4;
+          color: $color-2;
+        }
       }
     }
   }
+
   .socialNetwork {
     ul {
       display: flex;
