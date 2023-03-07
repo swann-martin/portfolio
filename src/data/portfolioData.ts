@@ -31,7 +31,16 @@ export const portfolioData: PortfolioData[] = [
     info: 'A simple website using React.js with sass, react-router-dom and react-router. It is a mock website for a fake company very interested in sofas.',
     picture: './media/project4.png',
   },
-
+  {
+    id: Math?.random()?.toString(),
+    name: "L'Anerie",
+    languages: ['wordpress', 'php', 'all'],
+    deployedAt: 'https://swannm.me/lanerie',
+    languagesIcons: ['fa-brands fa-wordpress', 'fa-brands fa-elementor'],
+    sourceCode: 'https://swannm.me/lanerie',
+    info: 'This project was made using Wordpress with Elementor, it is hosted locally at the moment so if the link is broken it means I erased the project.',
+    picture: './media/project9.png',
+  },
   {
     id: Math?.random()?.toString(),
     name: 'WashAtHome',
@@ -64,16 +73,7 @@ export const portfolioData: PortfolioData[] = [
     info: 'This project was made following a YouTube tutorial to learn Vue3, Pinia and tailwind. ',
     picture: './media/project8.png',
   },
-  {
-    id: Math?.random()?.toString(),
-    name: "L'Anerie",
-    languages: ['wordpress', 'php', 'all'],
-    deployedAt: 'https://swannm.me/lanerie',
-    languagesIcons: ['fa-brands fa-wordpress', 'fa-brands fa-elementor'],
-    sourceCode: 'https://swannm.me/lanerie',
-    info: 'This project was made using Wordpress with Elementor, it is hosted locally at the moment so if the link is broken it means I erased the project.',
-    picture: './media/project9.png',
-  },
+
   {
     id: Math?.random()?.toString(),
     name: 'jummmp créé ton cv',
