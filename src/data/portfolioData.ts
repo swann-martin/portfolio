@@ -24,11 +24,11 @@ export const portfolioData: PortfolioData[] = [
   {
     id: Math?.random()?.toString(),
     name: 'Sofas shop',
-    deployedAt: 'https://sofas-shop.vercel.app/home',
+    deployedAt: 'https://sofas-shop.vercel.app/',
     languages: ['typescript', 'react', 'all'],
     languagesIcons: ['fab fa-js', 'fab fa-react'],
     sourceCode: 'https://github.com/swann-martin/react-leSofa',
-    info: 'A simple website using React.js with sass, react-router-dom and react-router. It is a mock website for a fake company very interested in sofas.',
+    info: 'A simple website using React, typescript, tailwind, react-router and vite. It is a mock website for a fake company very interested in sofas.',
     picture: './media/project4.png',
   },
   {
