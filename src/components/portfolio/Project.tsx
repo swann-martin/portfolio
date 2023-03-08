@@ -10,6 +10,38 @@ export const Project = ({ item }: { item: PortfolioData }) => {
 
   let { name, languagesIcons, sourceCode, info, picture, deployedAt } = item;
 
+  const Modal = ({ picture }: { picture: string }) => {
+    return (
+      <div
+        className="showInfos"
+        style={{
+          backgroundImage: `url(${picture})`,
+        }}
+        onClick={handleInfo}
+      >
+        <div className="infosContent" style={{ opacity: 1 }}>
+          <div className="head">
+            <h2>{name}</h2>
+            <div className="button close" onClick={handleInfo}>
+              <i className="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <p className="text">{info}</p>
+          <div className="sourceCode">
+            <a
+              href={sourceCode}
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le code sur Github
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="project">
       <div className="icons">
@@ -40,29 +72,7 @@ export const Project = ({ item }: { item: PortfolioData }) => {
         </span>
       </p>
 
-      {showInfo && (
-        <div className="showInfos">
-          <div className="infosContent">
-            <div className="head">
-              <h2>{name}</h2>
-              <div className="button close" onClick={handleInfo}>
-                <i className="fa-solid fa-xmark"></i>
-              </div>
-            </div>
-            <p className="text">{info}</p>
-            <div className="sourceCode">
-              <a
-                href={sourceCode}
-                className="button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir le code sur Github
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+      {showInfo && <Modal picture={picture} />}
     </div>
   );
 };
