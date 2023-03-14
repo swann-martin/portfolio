@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import ProjectList from '../components/portfolio/ProjectList';
 
-const Portfolio = ({ data }: { data: any }) => {
+const Portfolio = () => {
   return (
     <div className="portfolio">
       <Navigation />
