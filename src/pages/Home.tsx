@@ -1,11 +1,11 @@
-import React from "react";
-import Navigation from "../components/Navigation";
-import cv from "../media/CVSwannMartin.pdf";
+import React from 'react';
+import Navigation from '../components/Navigation';
+import cv from '../media/CVSwannMartin.pdf';
 
 const Home = () => {
-  const title = "Développeur";
-  const subtitle = "TypeScript | Reactjs | React Native | Flutter";
-  const linkText = " Voir mon CV";
+  const title = 'Développeur';
+  const subtitle = 'TypeScript | Reactjs | React Native | Flutter';
+  const linkText = ' Voir mon CV';
 
   return (
     <div className="home">
