@@ -44,7 +44,7 @@ export const Project = ({ item }: { item: PortfolioData }) => {
       {picture === "" ? (
         <i className="infos-link fab fa-github" onClick={handleInfo}></i>
       ) : (
-        <img src={picture} alt={name} onClick={handleInfo} />
+        <img src={picture} loading="lazy" alt={name} onClick={handleInfo} />
       )}
 
       <p className="infos">
