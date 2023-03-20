@@ -1,9 +1,17 @@
-import { useState } from "react";
-import { PortfolioData } from "../../../data/portfolioData";
-import Modal from "../modal/Modal";
-import "./project.scss";
+import { useState } from 'react';
+import { PortfolioData } from '../../../data/portfolioData';
+import Modal from '../modal/Modal';
+import './project.scss';
 
-export const Project = ({ item }: { item: PortfolioData }) => {
+export const Project = ({
+  item,
+  handleRadio,
+  selectedLanguage
+}: {
+  item: PortfolioData;
+  selectedLanguage: string;
+  handleRadio: (event: any) => void;
+}) => {
   const [showInfo, setShowInfo] = useState(false);
 
   const handleInfo = () => {
@@ -17,7 +25,7 @@ export const Project = ({ item }: { item: PortfolioData }) => {
     info,
     picture,
     deployedAt,
-    languages,
+    languages
   } = item;
 
   return (
@@ -31,24 +39,33 @@ export const Project = ({ item }: { item: PortfolioData }) => {
         <div className="tags">
           {languages?.map((language, index) => (
             <p
-              className={language === "all" ? "" : "tag"}
+              onClick={(e) => {
+                handleRadio(e);
+              }}
+              className={
+                language === 'all'
+                  ? ''
+                  : language === selectedLanguage
+                  ? 'tag tag--selected'
+                  : 'tag'
+              }
               key={`${language}-${index}`}
             >
-              {language === "all" ? null : " #" + language}
+              {language === 'all' ? null : ' #' + language}
             </p>
           ))}
         </div>
       </div>
 
       <h3>{name}</h3>
-      {picture === "" ? (
+      {picture === '' ? (
         <i className="infos-link fab fa-github" onClick={handleInfo}></i>
       ) : (
         <img src={picture} loading="lazy" alt={name} onClick={handleInfo} />
       )}
 
       <p className="infos">
-        {!!deployedAt && deployedAt !== "" && (
+        {!!deployedAt && deployedAt !== '' && (
           <a
             className="infos-link"
             href={deployedAt}

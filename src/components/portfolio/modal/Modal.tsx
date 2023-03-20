@@ -1,4 +1,5 @@
-import { PortfolioData } from "../../../data/portfolioData";
+import { PortfolioData } from '../../../data/portfolioData';
+import './modal.scss';
 
 const Modal = (props: { item: PortfolioData; handleInfo: () => void }) => {
   let {
@@ -8,15 +9,15 @@ const Modal = (props: { item: PortfolioData; handleInfo: () => void }) => {
     info,
     picture,
     deployedAt,
-    languages,
+    languages
   } = props?.item;
   return (
     <div
       className="showInfos"
       style={{
         backgroundImage: `url(${picture})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
       }}
       onClick={props.handleInfo}
     >
@@ -31,7 +32,7 @@ const Modal = (props: { item: PortfolioData; handleInfo: () => void }) => {
         {languages.map((language, index) => {
           return (
             <span key={`${language}-modal-${index}`}>
-              {language === "all" ? null : " #" + language}
+              {language === 'all' ? null : ' #' + language}
             </span>
           );
         })}
