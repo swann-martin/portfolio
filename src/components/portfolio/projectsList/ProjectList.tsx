@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
-import { PortfolioData, portfolioData } from '../../data/portfolioData';
-import Project from './Project';
+import React, { Component } from "react";
+import { PortfolioData, portfolioData } from "../../../data/portfolioData";
+import Project from "../project/Project";
+import "./project-list.scss";
 
 export default class ProjectList extends Component {
   state = {
     projects: portfolioData,
     radios: [
-      { id: 1, value: 'react' },
-      { id: 2, value: 'typescript' },
-      { id: 3, value: 'javascript' },
-      { id: 4, value: 'flutter' },
-      { id: 5, value: 'php' },
-      { id: 6, value: 'all' },
+      { id: 1, value: "react" },
+      { id: 2, value: "typescript" },
+      { id: 3, value: "javascript" },
+      { id: 4, value: "flutter" },
+      { id: 5, value: "php" },
+      { id: 6, value: "all" },
     ],
-    selectedRadio: 'all',
+    selectedRadio: "all",
   };
 
   handleRadio = (event: any) => {
@@ -47,7 +48,7 @@ export default class ProjectList extends Component {
         <div className="projects">
           {projects
             .filter((item: PortfolioData) =>
-              item.languages.includes(selectedRadio),
+              item.languages.includes(selectedRadio)
             )
             .map((item: PortfolioData) => {
               return <Project key={item?.id} item={item} />;

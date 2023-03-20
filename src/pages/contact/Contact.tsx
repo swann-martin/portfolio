@@ -1,8 +1,8 @@
-import Navigation from '../components/Navigation';
-import ContactForm from '../components/ContactForm';
+import Navigation from "../../components/Nav/Navigation";
+import ContactForm from "../../components/ContactForm";
 
 const Contact = () => {
-  const title = 'Contact me';
+  const title = "Contact me";
   return (
     <div className="contact">
       <Navigation />
