@@ -1,0 +1,155 @@
+@use "src/styles/settings.scss";
+
+.project {
+  background: settings.$color-2;
+  border-radius: settings.$borderRadius;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  width: 32%;
+  max-height: 50%;
+  padding: 0.3rem;
+  box-shadow: settings.$shadow;
+  display: grid;
+  grid-template-rows: 15% 15% 45% 25%;
+  grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4";
+}
+.header {
+  grid-area: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .icons {
+    @media screen and (max-width: 1260px) {
+      display: none;
+    }
+    i {
+      font-size: 1.8rem;
+      padding: 0 0.5rem;
+      color: settings.$color-4;
+      text-shadow: 0 0px 1px settings.$color-1;
+    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .tag {
+      margin: 0.25rem;
+      padding: 0.15rem 0.25rem;
+      background-color: settings.$color-3;
+      color: settings.$color-1;
+      border-radius: 10rem;
+    }
+  }
+}
+
+h3 {
+  grid-area: 2;
+  font-family: settings.$font-2;
+  font-size: 1.65rem;
+  @include settings.verticalCenter;
+  justify-content: left;
+}
+img {
+  grid-area: 3;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-height: 20rem;
+  box-shadow: 0 2px 6px #333;
+  border-radius: 4px;
+  cursor: pointer;
+  @include settings.verticalCenter;
+}
+.infos {
+  grid-area: 4;
+  color: settings.$color-4;
+  @include settings.columnCenter;
+  &-link {
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.5rem;
+    min-width: 10rem;
+    .fa {
+      margin-left: 1rem;
+    }
+    &:hover {
+      transform: scale(1.1);
+      color: settings.$color-3;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+}
+.showInfos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.507);
+  animation: popup 0.3s ease forwards;
+  transform-origin: center;
+  z-index: 10;
+
+  .infosContent {
+    position: relative;
+    top: 25%;
+    width: 600px;
+    max-width: 100vw;
+    margin: 0 auto;
+    color: settings.$color-5;
+    background: settings.$color-1-transparent;
+    border-radius: settings.$borderRadius;
+    padding: 2rem;
+    box-shadow: 0 10px 10px #333;
+    animation: popup 0.6s ease forwards;
+    transform: scale(0);
+    transform-origin: center;
+
+    @keyframes popup {
+      to {
+        transform: scale(1);
+      }
+    }
+  }
+  .head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    h2 {
+      text-align: left;
+      word-wrap: break-word;
+      max-width: 70%;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    color: settings.$color-1;
+    background: settings.$color-5;
+    border-radius: settings.$borderRadius;
+    padding: 0.5rem;
+    transition: 0.2s;
+
+    &:hover {
+      background: settings.$color-4;
+    }
+  }
+  .text {
+    text-align: justify;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
