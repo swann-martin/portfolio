@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
 import { PortfolioData, portfolioData } from '../../../data/portfolioData';
+import Modal from '../modal/Modal';
 import Project from '../project/Project';
 import './project-list.scss';
 
@@ -14,6 +15,13 @@ const ProjectList = () => {
     { id: 6, value: 'all' }
   ];
   const [selectedRadio, setSelectedRadio] = useState<string>('all');
+
+  const [showModal, setShowModal] = useState(false);
+  const [showInfo, setShowInfo] = useState<PortfolioData>(portfolioData[0]);
+
+  const handleInfo = () => {
+    setShowModal(!showModal);
+  };
 
   const handleRadio = (event: any) => {
     if (event.target?.value) {
@@ -63,9 +71,16 @@ const ProjectList = () => {
                 item={item}
                 handleRadio={handleRadio}
                 selectedLanguage={selectedRadio}
+                showModal={showModal}
+                showInfo={showInfo}
+                setShowInfo={setShowInfo}
+                handleInfo={handleInfo}
               />
             );
           })}
+        {showModal && !!showInfo && (
+          <Modal item={showInfo} handleInfo={handleInfo} />
+        )}
       </div>
     </div>
   );

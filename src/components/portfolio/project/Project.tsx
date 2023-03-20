@@ -6,18 +6,20 @@ import './project.scss';
 export const Project = ({
   item,
   handleRadio,
-  selectedLanguage
+  selectedLanguage,
+  showModal,
+  showInfo,
+  setShowInfo,
+  handleInfo
 }: {
   item: PortfolioData;
   selectedLanguage: string;
+  showModal: boolean;
+  showInfo?: PortfolioData;
+  setShowInfo: (item: PortfolioData) => void;
   handleRadio: (event: any) => void;
+  handleInfo: () => void;
 }) => {
-  const [showInfo, setShowInfo] = useState(false);
-
-  const handleInfo = () => {
-    setShowInfo(!showInfo);
-  };
-
   let {
     name,
     languagesIcons,
@@ -59,9 +61,31 @@ export const Project = ({
 
       <h3>{name}</h3>
       {picture === '' ? (
-        <i className="infos-link fab fa-github" onClick={handleInfo}></i>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <i
+            className="infos-link fab fa-github"
+            onClick={() => {
+              setShowInfo(item);
+              handleInfo();
+            }}
+          ></i>
+        </div>
       ) : (
-        <img src={picture} loading="lazy" alt={name} onClick={handleInfo} />
+        <img
+          src={picture}
+          loading="lazy"
+          alt={name}
+          onClick={() => {
+            setShowInfo(item);
+            handleInfo();
+          }}
+        />
       )}
 
       <p className="infos">
@@ -72,17 +96,27 @@ export const Project = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="infos-link fa fa-eye" onClick={handleInfo}></i>
+            <i
+              className="infos-link fa fa-eye"
+              onClick={() => {
+                setShowInfo(item);
+                handleInfo();
+              }}
+            ></i>
           </a>
         )}
 
-        <span className="infos-link" onClick={handleInfo}>
+        <span
+          className="infos-link"
+          onClick={() => {
+            setShowInfo(item);
+            handleInfo();
+          }}
+        >
           Voir infos
           <i className="fa fa-circle-info "></i>
         </span>
       </p>
-
-      {showInfo && <Modal item={item} handleInfo={handleInfo} />}
     </div>
   );
 };
