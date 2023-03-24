@@ -26,7 +26,7 @@ const Navigation = () => {
 
     {
       label: "Contact",
-      icon: "fas fa-address-book",
+      icon: "fa-solid fa-envelope",
       path: "/contact",
     },
   ];
@@ -43,9 +43,9 @@ const Navigation = () => {
       path: "https://github.com/swann-martin/",
     },
     {
-      label: "WhatsApp",
-      icon: "fa-brands fa-whatsapp",
-      path: "https://api.whatsapp.com/send?phone=33667025467",
+      label: "Malt.be",
+      icon: "fa-sharp fa-solid fa-id-badge",
+      path: "https://fr.malt.be/profile/swannmartin",
     },
   ];
 
