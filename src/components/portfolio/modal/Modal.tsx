@@ -51,7 +51,7 @@ const Modal = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Voir le code sur Github
+            Github Repo
           </a>
         </div>
       </div>

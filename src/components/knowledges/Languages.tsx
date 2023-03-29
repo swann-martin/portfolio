@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProgressBar from './ProgressBar';
 
 const date1 = new Date('09/10/2020');
@@ -12,14 +12,15 @@ const Languages = () => {
   const [languages, setLanguages] = useState([
     { id: 1, value: 'JavaScript', xp: diffYears },
     { id: 2, value: 'SCSS', xp: diffYears },
-    { id: 3, value: 'TypeScript', xp: diffYears - 0.25 },
-    { id: 4, value: 'Php', xp: 1 },
+    { id: 3, value: 'TypeScript', xp: diffYears - 0.5 },
+    { id: 4, value: 'Dart', xp: 0.25 },
+    { id: 5, value: 'Php', xp: 1 }
   ]);
   const [frameworks, setFrameworks] = useState([
-    { id: 1, value: 'React', xp: diffYears - 0.4 },
-    { id: 2, value: 'Bootstrap', xp: diffYears },
-    { id: 3, value: 'Flutter', xp: diffYears - 1.9 },
-    { id: 4, value: 'Symfony', xp: 0.5 },
+    { id: 1, value: 'React', xp: diffYears },
+    { id: 2, value: 'React Native', xp: diffYears - 1 },
+    { id: 3, value: 'Flutter', xp: diffYears - 2 },
+    { id: 5, value: 'Symfony', xp: 0.5 }
   ]);
 
   return (

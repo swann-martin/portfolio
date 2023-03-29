@@ -1,52 +1,57 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import avatar from "../../media/swann.jpeg";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import avatar from '../../media/swann.jpeg';
 
-import logo from "../../media/swannlogo.png";
+import logo from '../../media/swannlogo.png';
 const Navigation = () => {
   const date = new Date();
   const year = date.getFullYear();
 
   const navLinks = [
     {
-      label: "Accueil",
-      icon: "fas fa-home",
-      path: "/",
+      label: 'Home',
+      icon: 'fas fa-home',
+      path: '/'
     },
     {
-      label: "Portfolio",
-      icon: "fas fa-images",
-      path: "/portfolio",
+      label: 'Projects',
+      icon: 'fas fa-images',
+      path: '/portfolio'
     },
     {
-      label: "Compétences",
-      icon: "fas fa-brain",
-      path: "/knowledges",
+      label: 'Skills',
+      icon: 'fas fa-brain',
+      path: '/knowledges'
     },
 
     {
-      label: "Contact",
-      icon: "fa-solid fa-envelope",
-      path: "/contact",
-    },
+      label: 'Contact',
+      icon: 'fa-solid fa-envelope',
+      path: '/contact'
+    }
   ];
 
   const socialNetworkLinks = [
     {
-      label: "Linkedin",
-      icon: "fab fa-linkedin",
-      path: "https://www.linkedin.com/in/swann-martin",
+      label: 'Linkedin',
+      icon: 'fab fa-linkedin',
+      path: 'https://www.linkedin.com/in/swann-martin'
     },
     {
-      label: "Github",
-      icon: "fab fa-github",
-      path: "https://github.com/swann-martin/",
+      label: 'Github',
+      icon: 'fab fa-github',
+      path: 'https://github.com/swann-martin/'
     },
     {
-      label: "Malt.be",
-      icon: "fa-sharp fa-solid fa-id-badge",
-      path: "https://fr.malt.be/profile/swannmartin",
+      label: 'Mastodon',
+      icon: 'fa-brands fa-mastodon',
+      path: 'https://fosstodon.org/@swann'
     },
+    {
+      label: 'Malt.be',
+      icon: 'fa-sharp fa-solid fa-id-badge',
+      path: 'https://fr.malt.be/profile/swannmartin'
+    }
   ];
 
   return (
@@ -67,7 +72,7 @@ const Navigation = () => {
             <li key={`${link.label}${index}`}>
               <NavLink
                 className={(navData) =>
-                  navData.isActive ? "navActive" : undefined
+                  navData.isActive ? 'navActive' : undefined
                 }
                 to={link.path}
               >

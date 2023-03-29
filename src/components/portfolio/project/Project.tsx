@@ -88,7 +88,7 @@ export const Project = ({
         />
       )}
 
-      <p className="infos">
+      <div className="infos">
         {!!deployedAt && deployedAt !== '' && (
           <a
             className="infos-link"
@@ -107,16 +107,16 @@ export const Project = ({
         )}
 
         <span
+          title="See Source code"
           className="infos-link"
           onClick={() => {
             setShowInfo(item);
             handleInfo();
           }}
         >
-          Voir infos
           <i className="fa fa-circle-info "></i>
         </span>
-      </p>
+      </div>
     </div>
   );
 };

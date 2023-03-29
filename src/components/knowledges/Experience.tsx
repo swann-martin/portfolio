@@ -1,36 +1,33 @@
-import React from "react";
-
 const Experience = () => {
-  const title = "Expérience";
+  const title = 'Experience';
 
   const experienceInfo = [
     {
-      jobTitle: "Développeur",
-      company: "Beecoming",
-      date: "Décembre 2021 - Novembre 2022",
-      summary: "Développement d'applications hybrides et web",
+      jobTitle: 'Freelance React Developer',
+      company: 'Freelance Developer | BELGIUM',
+      date: 'Now',
+      summary: 'Development of websites and apps in React, React Native',
+      skills: 'React, React Native, Supabase, Firebase, Git',
+      softSkills: 'Self-organized, Autonomous, Problem Solving,'
+    },
+    {
+      jobTitle: 'Developer',
+      company: 'Beecoming | FRANCE',
+      date: 'December 2021 - November 2022',
+      summary: 'Hybrid & web development',
       skills:
-        "React Native, Flutter, Node, Reactjs, Angular, Ionic, git, Jira, Office 360",
-      softSkills:
-        "Organisation, Autonomie, recherche de solution, travail en équipe",
+        'React Native, Node, Reactjs, Angular, Ionic, git, Jira, Office 360',
+      softSkills: 'Self-organized, Autonomy, problem solving, team work'
     },
     {
-      jobTitle: "Formation Développeur",
+      jobTitle: 'Trainee Developer',
       company: "Webforce 3 & O'clock",
-      date: "Décembre 2020  - Septembre 2021",
-      summary: "Développement d'applications web et mobiles",
-      skills: "React.js, Angular, Ionic, Php, Symfony, Mysql, Scss, Wordpress",
-      softSkills: "Certification Techniques de développement Web RS1448",
-      softSkills2: "Certification Techniques d'intégration RSRS1447",
-    },
-    {
-      jobTitle: "Directeur d'agence séjours linguistiques",
-      company: "OISE",
-      date: "2014-2020",
-      summary: "Gestion d'une antenne régionnale à Bordeaux & Lille",
-      skills: "Chiffre d'affaire annuel moyen 250 000€",
-      softSkills: "Forte organisation, travail bilingue, négociation",
-    },
+      date: 'Decembre 2020  - Septembre 2021',
+      summary: 'Training in Web & Mobile Developement',
+      skills: 'React, Angular, Ionic, Php, Symfony, Mysql, Scss, Wordpress',
+      softSkills: 'Certification Techniques de développement Web RS1448',
+      softSkills2: "Certification Techniques d'intégration RSRS1447"
+    }
   ];
 
   return (

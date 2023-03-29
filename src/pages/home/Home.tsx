@@ -3,9 +3,9 @@ import Navigation from '../../components/Nav/Navigation';
 import cv from '../../media/CVSwannMartin.pdf';
 
 const Home = () => {
-  const title = 'Développeur';
+  const title = 'Developer';
   const subtitle = 'TypeScript | Reactjs | React Native';
-  const linkText = ' Voir mon CV';
+  const linkText = ' see my CV';
 
   return (
     <div className="home">
