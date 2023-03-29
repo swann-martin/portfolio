@@ -10,7 +10,7 @@ const ProjectList = () => {
     { id: 1, value: 'react' },
     { id: 2, value: 'typescript' },
     { id: 3, value: 'javascript' },
-    { id: 4, value: 'flutter' },
+    { id: 4, value: 'mobile' },
     { id: 5, value: 'php' },
     { id: 6, value: 'all' }
   ];
