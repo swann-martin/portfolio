@@ -44,16 +44,18 @@ const Modal = ({
         })}
         <p className="text">{info}</p>
 
-        <div className="sourceCode">
-          <a
-            href={sourceCode}
-            className="button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Repo
-          </a>
-        </div>
+        {!!sourceCode && (
+          <div className="sourceCode">
+            <a
+              href={sourceCode}
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github Repo
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

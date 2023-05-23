@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { PortfolioData } from '../../../data/portfolioData';
 import Modal from '../modal/Modal';
 import './project.scss';
@@ -77,15 +77,17 @@ export const Project = ({
           ></i>
         </div>
       ) : (
-        <img
-          src={picture}
-          loading="lazy"
-          alt={name}
-          onClick={() => {
-            setShowInfo(item);
-            handleInfo();
-          }}
-        />
+        <Suspense>
+          <img
+            src={picture}
+            loading="lazy"
+            alt={name}
+            onClick={() => {
+              setShowInfo(item);
+              handleInfo();
+            }}
+          />
+        </Suspense>
       )}
 
       <div className="infos">

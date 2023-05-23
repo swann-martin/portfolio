@@ -45,6 +45,9 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: 1450px) {
+        justify-content: flex-end;
+      }
 
       .tag {
         margin: 0.25rem;
@@ -64,6 +67,10 @@
     grid-area: 2;
     font-family: settings.$font-2;
     font-size: 1.65rem;
+    @media screen and (max-width: 1450px) {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
     @include settings.verticalCenter;
     justify-content: left;
   }
