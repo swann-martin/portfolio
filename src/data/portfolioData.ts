@@ -59,11 +59,19 @@ export const portfolioData: PortfolioData[] = [
   {
     id: Math?.random()?.toString(),
     name: "L'Anerie",
-    languages: ['wordpress', 'php', 'all'],
-    deployedAt: 'https://swannm.me/lanerie',
-    languagesIcons: ['fa-brands fa-wordpress', 'fa-brands fa-elementor'],
-    sourceCode: 'https://swannm.me/lanerie',
-    info: 'This project was made using Wordpress with Elementor, it is hosted locally at the moment so if the link is broken it means I erased the project.',
+    languages: [
+      'typescript',
+      'react',
+      'preact',
+      'deno',
+      'fresh',
+      'tailwind',
+      'all'
+    ],
+    deployedAt: 'https://lanerie.deno.dev/',
+    languagesIcons: ['fab fa-js', 'fab fa-react'],
+    sourceCode: 'https://github.com/swann-martin/lanerie',
+    info: 'This project was made for a wood artisan shop. My aim was to create a simple SPA using the framework fresh with deno, typescript, preact and tailwind-css.',
     picture: './media/project9.webp'
   },
   {
@@ -105,7 +113,7 @@ export const portfolioData: PortfolioData[] = [
     languages: ['javacript', 'vue', 'tailwind', 'all'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt'],
     sourceCode: 'https://github.com/swann-martin/vue-spotify-clone',
-    info: 'This project was made following a YouTube tutorial to learn Vue3, Pinia and tailwind. ',
+    info: 'This project was made following a YouTube tutorial to learn Vue3, Pinia and tailwind.',
     picture: './media/project8.webp'
   },
 

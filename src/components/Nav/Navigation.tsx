@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import avatar from '../../media/swann.jpeg';
-
+import avatar from '../../media/swann.webp';
 import logo from '../../media/swannlogo.png';
+
 const Navigation = () => {
   const date = new Date();
   const year = date.getFullYear();
