@@ -58,6 +58,15 @@ a {
     color: inherit;
   }
 }
+.svg {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+}
+
+.color-5 {
+  color: $color-5;
+}
 .home,
 .knowledges,
 .portfolio,

@@ -1,7 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import avatar from '../../media/swann.webp';
-import logo from '../../media/swannlogo.png';
+import logo from '../../media/logoSwann.svg';
+import {
+  BrainIcon,
+  Cart,
+  Enveloppe,
+  GitHub,
+  HomeIcon,
+  ImageIcon,
+  Linkedin,
+  Malt,
+  Mastodon
+} from '../../components/Icons';
 
 const Navigation = () => {
   const date = new Date();
@@ -10,23 +21,26 @@ const Navigation = () => {
   const navLinks = [
     {
       label: 'Home',
-      icon: 'fas fa-home',
+      icon: <HomeIcon class="icon" />,
       path: '/'
     },
     {
       label: 'Projects',
-      icon: 'fas fa-images',
+      // icon: 'fas fa-images',
+      icon: <ImageIcon class="icon" />,
       path: '/portfolio'
     },
     {
       label: 'Skills',
-      icon: 'fas fa-brain',
+      // icon: 'fas fa-brain',
+      icon: <BrainIcon class="icon" />,
       path: '/knowledges'
     },
 
     {
       label: 'Contact',
-      icon: 'fa-solid fa-envelope',
+      // icon: 'fa-solid fa-envelope',
+      icon: <Enveloppe class="icon" />,
       path: '/contact'
     }
   ];
@@ -35,21 +49,25 @@ const Navigation = () => {
     {
       label: 'Linkedin',
       icon: 'fab fa-linkedin',
+      iconComponent: <Linkedin />,
       path: 'https://www.linkedin.com/in/swann-martin'
     },
     {
       label: 'Github',
       icon: 'fab fa-github',
+      iconComponent: <GitHub />,
       path: 'https://github.com/swann-martin/'
     },
     {
       label: 'Mastodon',
       icon: 'fa-brands fa-mastodon',
+      iconComponent: <Mastodon />,
       path: 'https://fosstodon.org/@swann'
     },
     {
       label: 'Malt.be',
       icon: 'fa-sharp fa-solid fa-id-badge',
+      iconComponent: <Malt />,
       path: 'https://fr.malt.be/profile/swannmartin'
     }
   ];
@@ -76,7 +94,8 @@ const Navigation = () => {
                 }
                 to={link.path}
               >
-                <i className={link.icon}></i>
+                {/* <i className={link.icon}></i> */}
+                {link.icon}
                 <span>{link.label}</span>
               </NavLink>
             </li>
@@ -88,7 +107,7 @@ const Navigation = () => {
           {socialNetworkLinks.map((social) => (
             <li key={social.label}>
               <a href={social.path} target="_blank" rel="noopener noreferrer">
-                <i className={social.icon}></i>
+                {social.iconComponent}
               </a>
             </li>
           ))}
