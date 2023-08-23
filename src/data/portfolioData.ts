@@ -58,7 +58,7 @@ export const portfolioData: PortfolioData[] = [
   },
   {
     id: Math?.random()?.toString(),
-    name: "L'Anerie",
+    name: 'Menuiserie Joire',
     languages: [
       'typescript',
       'react',
@@ -68,7 +68,7 @@ export const portfolioData: PortfolioData[] = [
       'tailwind',
       'all'
     ],
-    deployedAt: 'https://lanerie.deno.dev/',
+    deployedAt: 'https://menuiserie-joire.deno.dev/',
     languagesIcons: ['fab fa-js', 'fab fa-react'],
     sourceCode: 'https://github.com/swann-martin/lanerie',
     info: 'This project was made for a wood artisan shop. My aim was to create a simple SPA using the framework fresh with deno, typescript, preact and tailwind-css.',
