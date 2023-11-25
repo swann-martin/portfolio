@@ -1,7 +1,7 @@
-import React from 'react';
-import Navigation from '../../components/Nav/Navigation';
-import cv from '../../media/CVSwannMartin.pdf';
-import { ValidatOffer } from '../../components/Icons';
+import React from "react";
+import Navigation from "../../components/Nav/Navigation";
+import cv from "../../media/CVSwannMartin.pdf";
+import { ValidatOffer } from "../../components/Icons";
 
 const ServiceOffer = (props: {
   title: string;
@@ -20,8 +20,8 @@ const ServiceOffer = (props: {
       <ul className="list">
         {servicesList?.map((el, i) => (
           <li
-            className={`list-item ${i === 0 ? 'list-item--first' : ''} ${
-              i === servicesList.length - 1 ? 'list-item--last' : ''
+            className={`list-item ${i === 0 ? "list-item--first" : ""} ${
+              i === servicesList.length - 1 ? "list-item--last" : ""
             }`}
             key={`list-element-${i}`}
           >
@@ -59,9 +59,9 @@ const PerDay = () => {
 };
 
 const Home = () => {
-  const title = 'Developer';
-  const subtitle = 'TypeScript | Reactjs | React Native';
-  const linkText = ' see my CV';
+  const title = "Developer";
+  const subtitle = "TypeScript | Reactjs | React Native";
+  const linkText = " see my CV";
 
   return (
     <div className="home">
@@ -83,7 +83,7 @@ const Home = () => {
           </div>
         </div>
 
-        <PerDay />
+        {/* <PerDay />
         <section className="services">
           <ServiceOffer
             {...{
@@ -137,7 +137,7 @@ const Home = () => {
               ]
             }}
           />
-        </section>
+        </section> */}
       </div>
     </div>
   );
