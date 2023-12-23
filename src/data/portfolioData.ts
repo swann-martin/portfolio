@@ -168,11 +168,11 @@ export const experienceData = [
     jobTitle: "Developer Full-Stack PHP - TypeScript",
     company: "YesBabylon | BELGIUM",
     companyLink: "https://yesbabylon.com/",
-    date: "Now",
+    date: "November - December 2023",
     summary: "Development of apps and ERP systems using Equal Framework",
     skills:
-      "PHP, TypeScript, Angular, Mysql, Css, Equal and Symbiose Framework, Git",
-    softSkills: "Problem Solving, Teamwork",
+      "PHP, TypeScript, Mysql, Css, Wordpress, Docker, Equal and Symbiose Framework, Git",
+    softSkills: "Problem Solving, Debuging, Docker",
   },
   {
     jobTitle: "Freelance React Developer",
