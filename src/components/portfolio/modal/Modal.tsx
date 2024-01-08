@@ -1,5 +1,5 @@
-import { PortfolioData } from '../../../data/portfolioData';
-import './modal.scss';
+import { PortfolioData } from "../../../data/portfolioData";
+import "./modal.scss";
 
 const Modal = ({
   item,
@@ -22,8 +22,8 @@ const Modal = ({
       className="showInfos"
       style={{
         backgroundImage: `url(${picture})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat"
       }}
       onClick={handleInfo}
     >
@@ -37,8 +37,8 @@ const Modal = ({
 
         {languages.map((language, index) => {
           return (
-            <span key={`${language}-modal-${index}`}>
-              {language === 'all' ? null : ' #' + language}
+            <span key={`${language}-modal-${index}`} className="tags">
+              {language === "all" ? null : " #" + language}
             </span>
           );
         })}

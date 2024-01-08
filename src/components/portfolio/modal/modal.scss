@@ -1,4 +1,4 @@
-@use 'src/styles/settings.scss';
+@use "src/styles/settings.scss";
 .showInfos {
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
     width: 600px;
     max-width: 100vw;
     margin: 0 auto;
-    color: settings.$color-5;
+    color: settings.$white;
     background: settings.$color-1-transparent;
     border-radius: settings.$borderRadius;
     padding: 2rem;
@@ -33,7 +33,7 @@
   }
   .head {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
     h2 {
@@ -50,14 +50,25 @@
     border-radius: settings.$borderRadius;
     padding: 0.5rem;
     transition: 0.2s;
-
     &:hover {
-      background: red;
+      background: settings.$color-3;
     }
+  }
+  .close {
+    &:hover {
+      background: orangered;
+    }
+  }
+
+  .tags {
+    font-style: italic;
+    font-weight: bold;
+    color: settings.$color-3;
   }
   .text {
     text-align: justify;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
 }

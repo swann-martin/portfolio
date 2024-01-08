@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nova+Round&family=Ubuntu+Mono:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nova+Round&family=Ubuntu+Mono:ital@1&display=swap");
 
-$font-1: 'Nova Round', cursive;
-$font-2: 'Josefin Sans', sans-serif;
-$font-3: 'Ubuntu Mono', monospace;
+$font-1: "Nova Round", cursive;
+$font-2: "Josefin Sans", sans-serif;
+$font-3: "Ubuntu Mono", monospace;
 
 $color-1: #264653ff;
-$color-1-transparent: rgba(38, 70, 83, 0.747);
-$color-2: #2a9d8fff;
+$color-1-transparent: rgba(38, 70, 83, 0.87);
+// $color-2: #2a9d8fff;
+$color-2: rgb(62, 106, 128);
 $color-3: #e9c46aff;
 $color-4: #f4a261ff;
-$color-5: #e76f51ff;
+// $color-5: #e76f51ff;
+$color-5: rgb(216, 144, 85);
 $white: #ddd;
 $black: #333;
 

@@ -1,7 +1,7 @@
-import { Suspense, useState } from 'react';
-import { PortfolioData } from '../../../data/portfolioData';
-import Modal from '../modal/Modal';
-import './project.scss';
+import { Suspense, useState } from "react";
+import { PortfolioData } from "../../../data/portfolioData";
+import Modal from "../modal/Modal";
+import "./project.scss";
 
 export const Project = ({
   item,
@@ -45,27 +45,27 @@ export const Project = ({
                 handleRadio(e);
               }}
               className={
-                language === 'all'
-                  ? ''
+                language === "all"
+                  ? ""
                   : language === selectedLanguage
-                  ? 'tag tag--selected'
-                  : 'tag'
+                  ? "tag tag--selected"
+                  : "tag"
               }
               key={`${language}-${index}`}
             >
-              {language === 'all' ? null : ' #' + language}
+              {language === "all" ? null : " #" + language}
             </p>
           ))}
         </div>
       </div>
 
-      <h3>{name}</h3>
-      {picture === '' ? (
+      <h3 className="project-title">{name}</h3>
+      {picture === "" ? (
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
           }}
         >
           <i
@@ -91,7 +91,7 @@ export const Project = ({
       )}
 
       <div className="infos">
-        {!!deployedAt && deployedAt !== '' && (
+        {!!deployedAt && deployedAt !== "" && (
           <a
             className="infos-link"
             href={deployedAt}
