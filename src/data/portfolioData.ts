@@ -12,13 +12,23 @@ export type PortfolioData = {
 export const portfolioData: PortfolioData[] = [
   {
     id: Math?.random()?.toString(),
+    name: "Pizzeria locale",
+    deployedAt: "https://pizzerialocale.vercel.app/",
+    languages: ["nextjs", "react", "typescript", "tailwind", "all"],
+    languagesIcons: ["fab fa-js", "fab fa-react"],
+    sourceCode: "https://github.com/swann-martin/pizzerialocale",
+    info: "A simple website using Nextjs, typescript, tailwind, a postgresql database and drizzle orm. It was made because I really did not enjoy my local pizzeria website and I wanted to learn drizzle.",
+    picture: "./media/pizzerialocaleOg.avif"
+  },
+  {
+    id: Math?.random()?.toString(),
     name: "Wedding website",
     deployedAt: "https://mariage-orpin-delta.vercel.app/",
     languages: ["nextjs", "react", "typescript", "tailwind", "all"],
     languagesIcons: ["fab fa-js", "fab fa-react"],
     sourceCode: "https://github.com/swann-martin/mariage",
     info: "A simple website using Nextjs, typescript, tailwind. It was used to give informations about a wedding event.",
-    picture: "./media/project12.webp",
+    picture: "./media/project12.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -28,7 +38,7 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: ["fa-brands fa-wordpress", "fa-brands fa-elementor"],
     sourceCode: "",
     info: "I worked on the existing website of an organization which aims to prevent an urbanisation project to destroy a local animal sanctuary in Bruxelles. I was tasked with maintaining and updating the website informations and content. This project was using Wordpress with an old Twenty-Twenty template. I redesigned and remade most of the pages. I used Elementor since it was easier to use for an amateur and the site might be maintained by one in the future.",
-    picture: "./media/project11.webp",
+    picture: "./media/project11.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -38,7 +48,7 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: ["fab fa-js", "fab fa-react"],
     sourceCode: "https://github.com/swann-martin/react-leSofa",
     info: "A simple website using React, typescript, tailwind, react-router and vite. It is a mock website for a fake company very interested in sofas.",
-    picture: "./media/project4.webp",
+    picture: "./media/project4.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -49,12 +59,12 @@ export const portfolioData: PortfolioData[] = [
       "react native",
       "zustand",
       "mobile",
-      "all",
+      "all"
     ],
     languagesIcons: ["fab fa-js", "fab fa-react", "fab fa-css3-alt"],
     sourceCode: "https://github.com/swann-martin/sharewash",
     info: "This project was made to follow up on the WashAtHome end of course project wich was made. My aim was to recreate and adapt the app for mobile by using typescript, react native, expo and zustand.",
-    picture: "./media/project10.webp",
+    picture: "./media/project10.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -66,13 +76,13 @@ export const portfolioData: PortfolioData[] = [
       "deno",
       "fresh",
       "tailwind",
-      "all",
+      "all"
     ],
     deployedAt: "https://menuiserie-joire.deno.dev/",
     languagesIcons: ["fab fa-js", "fab fa-react"],
     sourceCode: "https://github.com/swann-martin/lanerie",
     info: "This project was made for a wood artisan shop. My aim was to create a simple SPA using the framework fresh with deno, typescript, preact and tailwind-css.",
-    picture: "./media/project9.webp",
+    picture: "./media/project9.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -81,7 +91,7 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: ["fab fa-js", "fab fa-react", "fab fa-sass"],
     sourceCode: "https://github.com/swann-martin/washathome",
     info: " This project was in group as an end of training project for my specialization in React.js with O'Clock School. It was made using Reactjs, Redux, Sass, react-leaflet, nodejs . ",
-    picture: "./media/project7.webp",
+    picture: "./media/project7.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -91,7 +101,7 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: ["fab fa-js", "fab fa-react", "fab fa-sass"],
     sourceCode: "https://github.com/swann-martin/moms-burgers",
     info: "Just a simple example of a burger shop build for fun using react with hooks for the cart. ",
-    picture: "./media/project1.webp",
+    picture: "./media/project1.webp"
   },
 
   {
@@ -104,7 +114,7 @@ export const portfolioData: PortfolioData[] = [
     sourceCode:
       "https://codeberg.org/swann-martin/flutter-news-app/src/branch/develop",
     info: "This website was made in order to learn flutter and dart. It is an on going side project",
-    picture: "./media/project2.webp",
+    picture: "./media/project2.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -114,7 +124,7 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
     sourceCode: "https://github.com/swann-martin/vue-spotify-clone",
     info: "This project was made following a YouTube tutorial to learn Vue3, Pinia and tailwind.",
-    picture: "./media/project8.webp",
+    picture: "./media/project8.webp"
   },
 
   {
@@ -126,11 +136,11 @@ export const portfolioData: PortfolioData[] = [
       "fab fa-js",
       "fab fa-php",
       "fab fa-css3-alt",
-      "fab fa-symfony",
+      "fab fa-symfony"
     ],
     sourceCode: "https://github.com/swann-martin/archive_jummmp",
     info: "Web application delivered during the evaluation for the CNCP certification Web Integration Techniques & Web Development Techniques. Directed by Swann Martin, Michael Krysztofiak & Thomas Barnabé.",
-    picture: "./media/project3.webp",
+    picture: "./media/project3.webp"
   },
   {
     id: Math?.random()?.toString(),
@@ -140,17 +150,17 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: ["fab fa-js", "fab fa-php", "fab fa-css3-alt"],
     sourceCode: "https://github.com/swann-martin/animalsitter",
     info: "Web app for a mock pet sitter. The aim was to learn eQual Framework.",
-    picture: "",
+    picture: ""
   },
-  {
-    id: Math?.random()?.toString(),
-    name: "Quiz App",
-    languages: ["typescript", "css", "opendb-api", "all"],
-    languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
-    sourceCode: "https://github.com/swann-martin/react-quiz",
-    info: "This project was made following a YouTube tutorial to learn React.js and TypeScript and material ui. Trivia API was used to generate the questions.",
-    picture: "./media/project5.webp",
-  },
+  // {
+  //   id: Math?.random()?.toString(),
+  //   name: "Quiz App",
+  //   languages: ["typescript", "css", "opendb-api", "all"],
+  //   languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
+  //   sourceCode: "https://github.com/swann-martin/react-quiz",
+  //   info: "This project was made following a YouTube tutorial to learn React.js and TypeScript and material ui. Trivia API was used to generate the questions.",
+  //   picture: "./media/project5.webp"
+  // },
 
   {
     id: Math?.random()?.toString(),
@@ -159,8 +169,8 @@ export const portfolioData: PortfolioData[] = [
     languagesIcons: [],
     sourceCode: "https://github.com/swann-martin/",
     info: " More projects on Github",
-    picture: "",
-  },
+    picture: ""
+  }
 ];
 
 export const experienceData = [
@@ -172,7 +182,7 @@ export const experienceData = [
     summary: "Development of apps and ERP systems using Equal Framework",
     skills:
       "PHP, TypeScript, Mysql, Css, Wordpress, Docker, Equal and Symbiose Framework, Git",
-    softSkills: "Problem Solving, Debuging, Docker",
+    softSkills: "Problem Solving, Debuging, Docker"
   },
   {
     jobTitle: "Freelance React Developer",
@@ -181,7 +191,7 @@ export const experienceData = [
     date: "2023",
     summary: "Development of websites and apps in React, React Native",
     skills: "React, React Native, Supabase, Firebase, Git",
-    softSkills: "Self-organized, Autonomous, Problem Solving,",
+    softSkills: "Self-organized, Autonomous, Problem Solving,"
   },
   {
     jobTitle: "Developer",
@@ -191,7 +201,7 @@ export const experienceData = [
     summary: "Hybrid & web development",
     skills:
       "React Native, Node, Reactjs, Angular, Ionic, git, Jira, Office 360",
-    softSkills: "Self-organized, Autonomy, problem solving, team work",
+    softSkills: "Self-organized, Autonomy, problem solving, team work"
   },
   {
     jobTitle: "Trainee Developer",
@@ -201,6 +211,6 @@ export const experienceData = [
     summary: "Training in Web & Mobile Developement",
     skills: "React, Angular, Ionic, Php, Symfony, Mysql, Scss, Wordpress",
     softSkills: "Certification Techniques de développement Web RS1448",
-    softSkills2: "Certification Techniques d'intégration RSRS1447",
-  },
+    softSkills2: "Certification Techniques d'intégration RSRS1447"
+  }
 ];
