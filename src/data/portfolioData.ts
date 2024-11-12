@@ -43,7 +43,7 @@ export const portfolioData: PortfolioData[] = [
   {
     id: Math?.random()?.toString(),
     name: "Sofas shop",
-    deployedAt: "https://sofas-shop.vercel.app/",
+    deployedAt: "https://swannmartin-lesofa.deno.dev/",
     languages: ["vite", "react", "typescript", "tailwind", "all"],
     languagesIcons: ["fab fa-js", "fab fa-react"],
     sourceCode: "https://github.com/swann-martin/react-leSofa",
@@ -119,7 +119,7 @@ export const portfolioData: PortfolioData[] = [
   {
     id: Math?.random()?.toString(),
     name: "Spotify Clone UI",
-    deployedAt: "https://vue-spotify-clone-two.vercel.app/",
+    deployedAt: "https://swannmartin-vue-spotify.deno.dev/",
     languages: ["javacript", "vue", "tailwind", "all"],
     languagesIcons: ["fab fa-js", "fab fa-css3-alt"],
     sourceCode: "https://github.com/swann-martin/vue-spotify-clone",
@@ -174,6 +174,16 @@ export const portfolioData: PortfolioData[] = [
 ];
 
 export const experienceData = [
+  {
+    jobTitle: "Developer Full-Stack PHP - TypeScript",
+    company: "OpenGraphy | BELGIUM",
+    companyLink: "https://opengraphy.com/",
+    date: "March 2024 - Present ",
+    summary:
+      "Optimizing application performance, developing new features and maintaining legacy code, leveraging a wide range of technologies like Vue, Laravel, Ajax to deliver projects",
+    skills: "PHP, TypeScript, Mysql, Css, Wordpress, Docker, Laravel, AWS, Git",
+    softSkills: "Problem Solving, Debuging, AWS"
+  },
   {
     jobTitle: "Developer Full-Stack PHP - TypeScript",
     company: "YesBabylon | BELGIUM",
